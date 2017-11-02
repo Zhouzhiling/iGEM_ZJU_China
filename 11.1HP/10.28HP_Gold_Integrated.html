@@ -1,0 +1,638 @@
+<html lang="zh-CN">
+<head>
+
+    <link href="http://2017.igem.org/Zju/css/bootstrap?action=raw&ctype=text/css" rel="stylesheet" media="screen" />
+    <link href="http://2017.igem.org/Zju/css/bootstraptheme?action=raw&ctype=text/css" rel="stylesheet" id="bs-theme-stylesheet">
+    <link href="http://2017.igem.org/Zju/css/docs/min?action=raw&ctype=text/css" rel="stylesheet" type="text/css"/>
+    <!-- <link href="css/doc-style.css" rel="stylesheet" type="text/css"/> -->
+    <link href="http://2017.igem.org/Zju/css/doc-style?action=raw&ctype=text/css" rel="stylesheet">
+    <link href="http://2017.igem.org/Zju/css/responsive/min?action=raw&ctype=text/css" rel="stylesheet">
+    <!-- 按钮的字体 -->
+    <link href='http://2017.igem.org/Team:ZJU-China/cs/font?action=raw&ctype=text/css' rel='stylesheet' type='text/css'>
+    <!-- 按钮的字体end -->
+    <script>
+        var _hmt = _hmt || [];
+    </script>
+    <script src="http://2017.igem.org/wiki/images/8/85/ZJUChina_js_docsmin.txt?action=raw&ctype=text/javascript"></script>
+</head>
+
+
+<style>
+    /*Override default CSS*/
+    #sideMenu, #top_title {display:none;}
+    #content { padding:0px; width:100%; margin-top:-7px; margin-left:0px;background-color: transparent;}
+
+
+    /* set all basic objects to neutral formatting*/
+    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+    }
+
+    #globalWrapper {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+    }
+
+
+    /* set page to fill window*/
+    html{
+        height: 100%;
+    }
+    body {
+        min-height: 100%;
+        background-color: #FFFFFF;
+    }
+
+
+    #content_wrapper {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        margin: 0px;
+        width: 100%;
+        height: 100%;
+        text-align:center;
+        background-color: #FFFFFF;
+    }
+
+    #content_wrapper p {
+        font-family: 'Yanone Kaffeesatz',Tahoma, Geneva, sans-serif;
+    }
+
+    #content_wrapper a {
+        color:#004789;
+    }
+
+
+    #footer {
+        position:absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        background-color: #FFFFFF;
+        text-align: center;
+    }
+
+    .center {
+        width: 60%;
+        margin-top: 16px;
+        min-width: 500px;
+        padding-bottom:32px;
+        display: inline-block;
+    }
+
+    .TextContent {
+        text-align: left;
+        vertical-align: baseline;
+        font-size: 0.875em;
+        font-family:'Yanone Kaffeesatz', verdana, sans-serif;
+    }
+
+    .TextContent h1{
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 1em;
+        margin-top: 0.2em;
+        color: #3399ff;
+        font-family:'Yanone Kaffeesatz', verdana, sans-serif;
+    }
+
+    .TextContent h2{
+        line-height: 1.6;
+        margin-bottom: 0em;
+        margin-top: 1em;
+        text-align: left;
+        font-family:'Yanone Kaffeesatz', verdana, sans-serif;
+    }
+
+    .TextContent p{
+        margin-bottom: 1.2em;
+        font-family:'Yanone Kaffeesatz', verdana, sans-serif;
+    }
+
+    .Page_Wide {
+        width:100%;
+    }
+
+    .Quarter_Image {
+        width:25%;
+        max-height:250px;
+        float:left;
+    }
+
+    .Quarter_Image img {
+        display:block;
+        margin:auto;
+        max-height: 250px;
+        width: auto;
+    }
+
+    .SocialMediaIconWrapper {
+        width:100%;
+    }
+
+    .SocialMediaIcon {
+        width:4%;
+        height:auto;
+        margin-left:20px;
+        display: inline-block;
+        float:left;
+
+    }
+
+    .SocialMediaIcon img{
+        max-width:100%;
+        height:auto
+    }
+
+    .TeamImage {
+        width:100%;
+    }
+
+    .TeamImage img {
+        max-width:100%;
+        height:auto
+    }
+
+    .sponsors {
+        width: 100%;
+    }
+
+    .sponsor_row {
+        width: 100%;
+    }
+
+    .sponsor_img {
+        width: 16.6666667%;
+        float:left;
+    }
+
+    .sponsor_img img{
+        max-width:100%;
+        height:auto
+    }
+
+    .clear {
+        clear:both;
+    }
+
+    .clear.extra_space {
+        height: 20px;
+    }
+
+    .line_divider {
+        border-top: 1px solid #d3d3d3;
+        width: 98%;
+        margin: auto;
+    }
+
+    .copyright{
+        color: #888888;
+        font-size: 13px;
+        text-align: center !important;
+    }
+
+
+    .copyright a{
+        color: #d2ebe3;
+        border-bottom: dotted 1px #a5d8c7;
+    }
+
+    /*文中自定义*/
+    .CuteButton:active {
+        color:white !important;
+        -webkit-box-shadow: 0px 3px 0px rgba(0,52,63,1), 0px 3px 6px rgba(0,0,0,.9);
+        -moz-box-shadow: 0px 3px 0px rgba(0,52,63,1), 0px 3px 6px rgba(0,0,0,.9);
+        box-shadow: 0px 3px 0px rgba(0,52,63,1), 0px 3px 6px rgba(0,0,0,.9);
+        position: relative;
+        top: 6px;
+    }
+
+    .CuteButton:visited {
+        color:white !important;
+        -webkit-box-shadow: 0px 3px 0px rgba(0,52,63,1), 0px 3px 6px rgba(0,0,0,.9);
+        -moz-box-shadow: 0px 3px 0px rgba(0,52,63,1), 0px 3px 6px rgba(0,0,0,.9);
+        box-shadow: 0px 3px 0px rgba(0,52,63,1), 0px 3px 6px rgba(0,0,0,.9);
+        position: relative;
+        top: 6px;
+    }
+
+    .YellowCB {
+        background-color: rgba(254,196,62,1);
+        -webkit-box-shadow: 0px 9px 0px rgba(245,253,202,1), 0px 9px 25px rgba(0,0,0,.7);
+        -moz-box-shadow: 0px 9px 0px rgba(245,253,202,1), 0px 9px 25px rgba(0,0,0,.7);
+        box-shadow: 0px 9px 0px rgba(245,253,202,1), 0px 9px 25px rgba(0,0,0,.7);
+    }
+
+    .GreenCB {
+        background-color: rgba(25,148,117,1);
+        -webkit-box-shadow: 0px 9px 0px rgba(4,77,34,1), 0px 9px 25px rgba(0,0,0,.7);
+        -moz-box-shadow: 0px 9px 0px rgba(4,77,34,1), 0px 9px 25px rgba(0,0,0,.7);
+        box-shadow: 0px 9px 0px rgba(4,77,34,1), 0px 9px 25px rgba(0,0,0,.7);
+    }
+
+    .SmallCB {
+        font-size: 1.5em;
+        margin-left: 2px;
+        padding: 2px 10px ;
+        width: 100px;
+    }
+
+
+
+    .ArticleHead{
+        font-family: 'Tempus Sans ITC',georgia !important;
+        font-size: 40px !important;
+        font-weight: 800 !important;
+        color: #56A36C !important;
+        text-align: center !important;
+        margin-bottom: 0 !important;
+        margin-top: .6em !important;
+    }
+
+    .H3Head{
+        font-family: 'Tempus Sans ITC',georgia !important;
+        color: #FEC43E !important;
+        font-size: 25px !important;
+        font-weight: 400 !important;
+        text-align: left !important;
+        margin-bottom: 0 !important;
+        margin-top:.6em !important;
+    }
+
+    .PP{
+        font-family:Tahoma, Geneva, sans-serif !important;
+        font-size: 20px !important;
+        font-weight: 100 !important;
+        text-align: left !important;
+        margin-bottom:20px !important;
+    }
+
+
+    .Retract{
+        padding-left: 50px;
+    }
+
+    .GreenAH{
+        color: #56A36C;
+    }
+
+    .YellowAH{
+        color: #FEC43E;
+    }
+
+    .contentLi{
+        margin:0;
+        font-size:17px;
+        line-height: 27px;
+        padding-bottom: 20px;
+        color: #111111;
+    }
+
+    .blueTable
+    {
+        color: #1E90FF;
+    }
+
+    .yellowTable
+    {
+        color: #CD9B1D;
+    }
+
+    h2{
+        font-family: 'Tempus Sans ITC';
+        font-weight: 500;
+        font-size: 35px;
+        text-align: left;
+    }
+
+    h3{
+        font-family: 'Tempus Sans ITC';
+        font-weight: 500;
+        font-size: 32px;
+        text-align: left;
+    }
+
+    h4{
+        font-family: 'Tempus Sans ITC';
+        font-weight: 500;
+        font-size: 28px;
+        text-align: left;
+    }
+
+    h5{
+        font-family: 'Tempus Sans ITC';
+        font-weight: 500;
+        font-size: 25px;
+        text-align: left;
+    }
+
+    p{
+        margin:0;
+        font-size:17px;
+        line-height: 30px;
+        /*padding-bottom: 20px;*/
+        color: #111111;
+    }
+
+    .bs-docs-sidenav
+    {
+        font-family:Tahoma, Geneva, sans-serif !important;
+        font-size: 20px !important;
+        font-weight: 100 !important;
+        text-align: left !important;
+    }
+
+
+    .textli li{
+        font-family:Tahoma, Geneva, sans-serif !important;
+        font-size: 20px !important;
+        font-weight: 100 !important;
+        text-align: left !important;
+    }
+
+    .textimg
+    {
+        width:60% !important;
+    }
+    /*文中自定义*/
+</style>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<div class="page-loader"></div>
+<!-- Docs master nav -->
+<!-- <h1><a class="navbar-brand" href="index.html">MuMei Lab</a></h1> -->
+<div class="container">
+    <!-- header -->
+    <div class="header-w3layouts">
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                </button>
+
+                <a href="http://2017.igem.org/Team:ZJU-China">
+                    <img style="margin-top:11px" class="navbar-brand"  src="http://2017.igem.org/wiki/images/d/d5/ZJUChina_logo.png">
+                </a>
+
+                <!-- <h1><a class="navbar-brand" href="index.html">My Design</a></h1> -->
+
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right cl-effect-15">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden"><a class="page-scroll" href="#page-top"></a> </li>
+
+                    <li class="m_nav_item dropdown">
+                        <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Overview<b class="caret"></b></a>
+                        <ul class="dropdown-menu ">
+                            <li><a href="http://2017.igem.org/Team:ZJU-China/Overview">Description</a></li>
+                            <li><a href="http://2017.igem.org/Team:ZJU-China/Demonstrate">Demonstrate</a></li>
+                            <li><a href="http://2017.igem.org/Team:ZJU-China/Applied_Design">Applied Design</a></li>
+                            <li><a href="http://2017.igem.org/Team:ZJU-China/Achievements">Achievements</a></li>
+                            <li><a href="http://2017.igem.org/Team:ZJU-China/Improve">Improve Parts</a></li>
+                            <li><a href="http://2017.igem.org/Team:ZJU-China/InterLab">InterLab</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="m_nav_item dropdown">
+                        <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Project<b class="caret"></b></a>
+                        <ul class="dropdown-menu ">
+                            <li><a href="http://2017.igem.org/Team:ZJU-China/Project/tp">Trichoderma Proof</a></li>
+                            <li><a href="http://2017.igem.org/Team:ZJU-China/Project/voc">VOC sensors</a></li>
+                            <li><a style="font-size: 0.7em!important;" href="http://2017.igem.org/Team:ZJU-China/Project/st">Chemical Signal Transduction</a></li>
+                            <li><a style="font-size: 0.7em!important;" href="http://2017.igem.org/Team:ZJU-China/Project/mt">Medium Wave Transduction</a></li>
+                            <li><a href="http://2017.igem.org/Team:ZJU-China/Project/Downstream">Downstream</a></li>
+                            <li><a href="http://2017.igem.org/Team:ZJU-China/Project/conclusion">Conclusions</a></li>
+                            <li><a href="http://2017.igem.org/Team:ZJU-China/Notebook">Notebook</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Protocols">Protocols</a></li>
+                          </ul>
+                    </li>
+
+                    <li class="m_nav_item dropdown" >
+                        <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Model<b class="caret"></b></a>
+                        <ul class="dropdown-menu ">
+                            <!--<li><a href="http://2017.igem.org/Team:ZJU-China/Model">Summery</a></li>-->
+                            <li><a href="http://2017.igem.org/Team:ZJU-China/Model">VOC analysis</a></li>
+                            <li><a href="http://2017.igem.org/Team:ZJU-China/Model/Coculture">Coculture</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="m_nav_item dropdown">
+                        <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Parts<b class="caret"></b></a>
+                        <ul class="dropdown-menu ">
+                            <li><a href="http://2017.igem.org/Team:ZJU-China/Parts">All Parts</a></li>
+                            <li><a href="http://2017.igem.org/Team:ZJU-China/Basic_Part">Basic Parts</a></li>
+                            <li><a href="http://2017.igem.org/Team:ZJU-China/Composite_Part">Composite Parts</a></li>
+                            <li><a href="http://2017.igem.org/Team:ZJU-China/Part_Collection">Part Collection</a></li>
+
+
+
+
+                        </ul>
+                    </li>
+
+                    <li class="m_nav_item dropdown" >
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Hardware<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Hardware">Overview</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Hardware/Device">Device</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Hardware/Improvements">Improvements</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Hardware/MediumWave">Medium Wave</a></li>
+                          </ul>
+                      </li>
+
+                    <li class="m_nav_item dropdown" >
+                        <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Safety<b class="caret"></b></a>
+                        <ul class="dropdown-menu ">
+                            <li><a href="http://2017.igem.org/Team:ZJU-China/Safety">Environment</a></li>
+                            <li><a href="http://2017.igem.org/Team:ZJU-China/Safety/Lab">Laboratory</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="m_nav_item dropdown">
+                        <a href="#" class="dropdown-toggle link" data-toggle="dropdown">HP<b class="caret"></b></a>
+                        <ul class="dropdown-menu ">
+
+                            <li><a href="http://2017.igem.org/Team:ZJU-China/Human_Practices">Summary</a></li>
+                            <li><a href="http://2017.igem.org/Team:ZJU-China/HP/Silver">Silver</a></li>
+                            <li><a href="http://2017.igem.org/Team:ZJU-China/HP/Gold_Integrated">Gold Integrated</a></li>
+                            <li><a href="http://2017.igem.org/Team:ZJU-China/Engagement">Engagement</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="m_nav_item dropdown" >
+                        <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Team<b class="caret"></b></a>
+                        <ul class="dropdown-menu ">
+                            <li><a href="http://2017.igem.org/Team:ZJU-China/Team">Teammates</a></li>
+                            <li><a href="http://2017.igem.org/Team:ZJU-China/Attributions">Attribution</a></li>
+                            <li><a href="http://2017.igem.org/Team:ZJU-China/Collaborations">Collaboration</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div><p></p>
+<!--<div style="margin-top:0;padding-top:0">-->
+<!--<img id="partsPage" src="http://2017.igem.org/wiki/images/b/be/ZJUChina_interlab_banner.jpg" width="100%">-->
+<!--&lt;!&ndash; <img src="images/HP_temp/banner.jpg" width="100%"> &ndash;&gt;-->
+<!--</div>-->
+
+
+
+
+<div style="width: 100%" class="container zjuContent">
+    <div class="col-md-3"></div>
+    <div class="col-md-9" role="main">
+        <p class="bs-docs-section">
+
+        <div style="height: 50px;"></div>
+
+
+        <h1 id="humanpractice" class="page-header ArticleHead GreenAH">Human Practice: Gold</h1>
+        <p class="PP"><br><br>Tobacco is an important economic crop in the global world. In China alone, the planting ares of tobacco can reach 16 million mu (about 10600 km<sup>2</sup>). In 2015, the GDP(Gross Domestic Product) in China is totally 676,70 billion yuan, while the cigarette sales reached 142,2 billion yuan, making up to 4.7% of the total retail sales of consumer goods, which was 300,93 billion yuan. This shows that tobacco has high economic value. </p>
+        <p class="PP">However, due to the black shank caused by Phytophtora, tobacco yield reduces a lot every year. In China, Hunan province, there's nearly 2.5 million mu of tobacco planting area. There are 5%-10% tobacco affected by the disrase each year. Through a simple calculation, the whole country loses nearly 100 billion yuan of tobacco in a single year. The traditional method for control is spraying pesticide in all the plant in the certain field after tocacco infected black bank is found. Nevertheless, the sicken rate is stabilized at 5%-10%. In another word, the traditional method shows a lot of defects in cost and effect. Therefore, we chose tobacco as our testing plants and decided to go out of the lab to gain firsthand information.</p>
+
+        <!--<div class="imgdiv col-md-6 col-sm-6"><img class="textimg" style="height: 230px !important; width: auto !important;"  src=""></div>-->
+        <!--<div class="imgdiv col-md-6 col-sm-6"><img class="textimg" style="height: 230px !important; width: auto !important;"  src=""></div>-->
+        <div class="imgdiv col-md-6 col-sm-6"><img class="textimg"  style="height: 229px !important; width: auto !important;" src="http://2017.igem.org/wiki/images/e/ef/ZJU_China_Gold_1.png"></div>
+        <div class="imgdiv col-md-6 col-sm-6"><img class="textimg"  style="height: 229px !important; width: auto !important;" src="http://2017.igem.org/wiki/images/d/db/ZJU_China_Gold_2.png"></div>
+
+        <h2 class="H2Head" > </h2>
+
+        <p class="H2Head" style="font-size: 30px !important; text-align: left !important;"> </p>
+        <p id="afieldstudy" class="H2Head" style="font-size: 30px !important; text-align: left !important;"><br/>A Field Study at the Midpoint</p>
+
+        <p class="PP"><br/>Tobaccos are a kind of main cash crop for Huayuan County, Xiangxi Tujia&Miao Autonomous. Meanwhile, tobacco black shank is an annual disease there. </p>
+        <h3 class="H3Head" id="whatwesaw">What we saw</h3>
+        <div class="imgdiv"><img class="textimg" src="http://2017.igem.org/wiki/images/a/ae/ZJU_China_HPGold_313.jpg"></div>
+        <p class="PP">Rows of tobacco plants with straight stems, green large leaves welcomed us, but when we walked into the field, we found some sick plants with yellow leaves and black shanks. What’s more, some plants seemed healthy, but after we broke them up, the <em>Phytophthora nicotianae</em> can be seen inner their stem.</p>
+        <p class="PP">Then we knew that there are large acres of tobacco planted in Huayuan County, many farmers rely on exporting tobacco to earn the bread. However, when rains and high temperature comes along in summer, tobacco black shank spreads from one plant to another, which makes economical loss annually.</p>
+
+        <h3 class="H3Head" id="conversation">What we talked about</h3>
+        <div class="imgdiv"><img class="textimg" src="http://2017.igem.org/wiki/images/4/4e/ZJU_China_HPGold_105.jpg"></div>
+
+        <p class="PP">The officials in the tobacco planting base told us that when the tobacco black shank happened they usually sprayed insecticides to the whole field, but it didn’t work very well, not to mention the chemical influence on the environment. Also, the <em>Phytophthora nicotianae</em> would stay in the soil for a long time. Therefore, the tobacco black shank caused by <em>Phytophthora nicotianae</em> is a serious headache.</p>
+        <p class="PP">After visiting the farmland we had a meeting with them and introduced our project to them, which might solve their problem to some extent.</p>
+        <p class="PP">The officials showed interest in our project, and they gave us some useful suggestions:</p>
+        <p class="PP">First, they hoped that a warning system could be designed, since when they found the tobacco black shank, it might be too late to control it. What could help them a lot is a device which could monitor the condition in the field and report the disease immediately, or even better, help controlling the disease from spreading.</p>
+        <p class="PP">Second, they suggested that the <em>Trichoderma</em> could be inoculated during the seedling stage of tobacco, and they would not be infected after being planted into the field.</p>
+        <p class="PP">Finally, if we choose to inoculate <em>Trichoderma</em> in the field instead of during the seedling stage, a handy way is to spray <em>Trichoderma</em> on the farmland before the black shank season comes.</p>
+
+        <h3 id="whatwedid" class="H3Head">What we did</h3>
+        <p class="PP">After the conversation, we reflected on our project seriously.</p>
+        <p class="PP">For the first suggestion, we searched for the warning method. We found that the plant and microorganisms around it would emit VOC (volatile organic compounds),and the VOC from healthy plants and ill ones are different. Therefore, we used sensors to detect the gas around plants, and used machine learning to able the system to define whether the plant is healthy. We also added an accumulating part so that it could apply in the practical farmland better.</p>
+        <p class="PP">To achieve the second suggestion mentioned above, the lasting time of <em>Trichoderma</em> has to be considered——they should survive and be "active" until the wet and hot black shank season ends.</p>
+        <p class="PP">When it comes to the third one, spraying the <em>Trichoderma</em>, whether it could get access to the tobacco is a problem. Thus, the more complicated soil microecology will be involved. However, we have to consider these topics in the future due to the time limit.</p>
+        <p class="PP">By visiting the tobacco field as well as communicating with the officials in the tobacco company, we got useful suggestions and inspirations. Then we designed our VOC device and modified our "wetlab" work.</p>
+        <div class="imgdiv"><img class="textimg" src="http://2017.igem.org/wiki/images/6/6f/ZJU_China_HPGold_000.jpg"></div>
+        <p class="PP"> This communication also inspired us to improve our wet-labs and refine our design on practical application. Since the officials worried <em>P.nicotianae</em> exploded in field and biocontrol agents might not work in time, we later connected with UESTC for testing the <em>T.atroviride</em> effects in plants.They thought our signal transduction process was very meaningful and encouraged us combined it with modern automatic agriculture like using unscrewed vehicle to monitor a large of field dynamically instead of many settled devices.</p>
+
+        <h2 id="design" class="H2Head">Our Design</h2>
+        <p class="PP">We also focus on building access between biology-synthesis fans as well as between researchers and public.</p>
+
+        <p class="PP">Our design is based on our project of Trichoderma as well as our college. Since Trichoderma is basically green, with quantities of sections of hyphae, we choose green as our logo’s apparent color. It’s a special cartoon image with four arms, which stand for Trichoderma’s hyphae. Besides, it looks a little like the "Qiushi Ji" of our school, which is a fluffy yellow chick. We just hope that our logo can not only be combined with both our project and our school, but also keep cute and interesting at the same time. At the base of this design, we have created two sets of color themes, one is in red and green-based colors, the other is in blue and yellow-based colors. The bulb in the former pattern represents inspiration, while the gear in the latter pattern is closely related to the logo of iGEM. The use of multiple colors makes our design more colorful and appealing.</p>
+        <p class="PP">Once we have determined our logo, we then designed some derivative products, such as postcard, key chain, badge, notebook, stickers, etc. Their main logos are those two designs we mentioned before, added with different colors and creativity. We sincerely hope that these gifts designed for the project can get everyone’s favor during intercollegiate communication.</p>
+        <div class="imgdiv"><img class="textimg" src="http://2017.igem.org/wiki/images/7/75/ZJU_China_HP_zb.jpg"></div>
+
+        <h2 id="miniprogram" class="H2Head">iGEM Index: Mini Program Helps Gaining Inspiration</h2>
+        <p class="PP">When a new iGEM team starts, the first thing is to come up with a good idea, and we may gain inspiration by taking a look at team wikis from previous years. However, sometimes we may troubled by finding a team in a specific track, region, award etc., or don’t get a laptop with you to visit the iGEM website. Under that condition, we designed and programmed a mini program in Wechat to help solve the problem.</p>
+        <p class="PP">For example, you can choose "track: environment, region: North America, year: 2015, award: All, medal: gold", and the qualified teams’ information will show up immediately. What’s more, you can search by key words.</p>
+        <p class="PP">We hope this program can help other iGEM teams to get resources faster, and come up with more and more fascinating projects.</p>
+        <div style="height: 280px !important;" class="imgdiv col-md-3 col-sm-3"><img class="textimg" style="height: 230px !important; width: auto !important;"  src="http://2017.igem.org/wiki/images/4/40/ZJU_China_HP_gold_igemindex.png"></div>
+        <div style="height: 280px !important;" class="imgdiv col-md-3 col-sm-3"><img class="textimg" style="height: 230px !important; width: auto !important;"  src="http://2017.igem.org/wiki/images/9/91/ZJU_China_HP_gold_igemindex2.png"></div>
+        <div style="height: 280px !important;" class="imgdiv col-md-6 col-sm-6"><img class="textimg" style="height: 230px !important; width: auto !important;"  src="http://2017.igem.org/wiki/images/1/15/ZJU_China_Notebook_27.jpg"></div>
+
+        <h2 id="td2w" class="H2Head"> </h2>
+        <p id="tdw" class="H2Head" style="font-size: 30px !important;">a<em>Trichoderma</em> Defense War</p>
+        <p class="PP">We designed a computer game to introduce knowledge related to our project in a relaxing way.</p>
+        <p class="PP">In that game, you should protect the little plant from danger and get as much biomass as you can. Different transferred genes into <em>Trichoderma</em> can enable the plant to prevent from pests, virus or freezing damage. Remember that you should evaluate the circumstance and make clever decisions.</p>
+
+        <h2 id="public" class="H2Head">Public</h2>
+        <p class="PP">Apart from the "virtual" game, we also make effort on the interaction with public in the "real world". We held a "garden party" in the Zhejiang Science and Technology Museum.</p>
+
+        <div style="text-align: center;"><br><br>
+            <a class="CuteButton YellowCB" href="http://2017.igem.org/Team:ZJU-China/Engagement">More About Public Engagement Page...</a>
+            <br><br><br><br><br><br>
+        </div>
+
+    </div>
+
+    <!-- 右侧监听开始 -->
+    <div class="col-md-3 disappear-on-top" role="complementary">
+        <nav  style="position: fixed; top: 100px ; left:50px;" class="bs-docs-sidebar hidden-print hidden-xs hidden-sm">
+            <ul class="nav bs-docs-sidenav shorterli">
+
+                <li>
+                    <a href="#afieldstudy">A Field Study</a>
+                    <ul class="nav">
+                        <li><a href="#whatwesaw">What We Saw</a></li>
+                        <li><a href="#conversation">What We Talked About</a></li>
+                        <li><a href="#whatwedid">What We Did</a></li>
+                    </ul>
+                </li>
+                <li><a href="#design">Our Design</a></li>
+                <li><a href="#miniprogram">iGEM Index: Mini Program</a></li>
+                <li><a href="#tdw">Trichoderma Defense War</a></li>
+                <li><a href="#public">Public</a></li>
+
+
+
+            </ul>
+
+            <a class="back-to-top" href="#top">
+                <!--   <i class="fa fa-arrow-up nav_icon"></i> -->
+                <img style="width: 50px;" src="http://2017.igem.org/wiki/images/d/da/ZJU_China_UP.png">
+            </a>
+
+
+        </nav>
+    </div>
+
+</div>
+</div>
+<!-- 右侧监听结束 -->
+<!-- footer开始 -->
+<div class="footer"  style="background-color: #000000">
+    <div class="copyright container text-center">
+        <p class="copyright"><br></p>
+        <p class="copyright">Copyright &copy; 2017 ZJU-IGEM | <a href="http://www.zju.edu.cn/">Zhejiang University</a> |
+        </p>
+        <!--<p class="copyright">Contact us:<a class="copyright" href="">WeChat</a></p>-->
+        <p class="copyright"><br></p>
+    </div>
+</div>
+<!-- footer结束 -->
+
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<!--script src="js/bootstrap.min.js"></script-->
+<script src="http://2017.igem.org/wiki/images/8/85/ZJUChina_js_docsmin.txt"></script>
+<!--script src="js/button.js"></script-->
+<script src="http://2017.igem.org/wiki/images/2/22/ZJUChina_bootstrap.min.txt"></script>
+<script src="http://2017.igem.org/wiki/images/3/32/ZJUChina_docs.min.txt"></script>
+<script src="http://2017.igem.org/wiki/images/e/e0/ZJUChina_button.txt"></script>
+
+<script src="http://2017.igem.org/Team:ZJU-China/js/scrollingnavnonPic?action=raw&ctype=text/javascript"></script>
+<!--<script src="http://2017.igem.org/wiki/images/9/92/ZJUChina_scrolling-nav.txt"></script>  -->
+<script src="http://2017.igem.org/wiki/images/c/c0/ZJUChina_txtSmoothScroll.min.txt"></script>
+
+</body>
+</html>

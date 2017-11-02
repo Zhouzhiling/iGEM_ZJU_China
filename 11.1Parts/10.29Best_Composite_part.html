@@ -1,0 +1,646 @@
+<html lang="zh-CN">
+<head>
+
+    <link href="http://2017.igem.org/Zju/css/bootstrap?action=raw&ctype=text/css" rel="stylesheet" media="screen" />
+    <link href="http://2017.igem.org/Zju/css/bootstraptheme?action=raw&ctype=text/css" rel="stylesheet" id="bs-theme-stylesheet">
+    <link href="http://2017.igem.org/Zju/css/docs/min?action=raw&ctype=text/css" rel="stylesheet" type="text/css"/>
+    <!-- <link href="css/doc-style.css" rel="stylesheet" type="text/css"/> -->
+    <link href="http://2017.igem.org/Zju/css/doc-style?action=raw&ctype=text/css" rel="stylesheet">
+    <link href="http://2017.igem.org/Zju/css/responsive/min?action=raw&ctype=text/css" rel="stylesheet">
+    <!-- 按钮的字体 -->
+    <link href='http://2017.igem.org/Team:ZJU-China/cs/font?action=raw&ctype=text/css' rel='stylesheet' type='text/css'>
+    <!-- 按钮的字体end -->
+    <script>
+        var _hmt = _hmt || [];
+    </script>
+    <script src="http://2017.igem.org/wiki/images/8/85/ZJUChina_js_docsmin.txt?action=raw&ctype=text/javascript"></script>
+</head>
+
+
+<style>
+    /*Override default CSS*/
+    #sideMenu, #top_title {display:none;}
+    #content { padding:0px; width:100%; margin-top:-7px; margin-left:0px;background-color: transparent;}
+
+
+    /* set all basic objects to neutral formatting*/
+    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+    }
+
+    #globalWrapper {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+    }
+
+
+    /* set page to fill window*/
+    html{
+        height: 100%;
+    }
+    body {
+        min-height: 100%;
+        background-color: #FFFFFF;
+    }
+
+
+    #content_wrapper {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        margin: 0px;
+        width: 100%;
+        height: 100%;
+        text-align:center;
+        background-color: #FFFFFF;
+    }
+
+    #content_wrapper p {
+        font-family: 'Yanone Kaffeesatz',Tahoma, Geneva, sans-serif;
+    }
+
+    #content_wrapper a {
+        color:#004789;
+    }
+
+
+    #footer {
+        position:absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        background-color: #FFFFFF;
+        text-align: center;
+    }
+
+    .center {
+        width: 60%;
+        margin-top: 16px;
+        min-width: 500px;
+        padding-bottom:32px;
+        display: inline-block;
+    }
+
+    .TextContent {
+        text-align: left;
+        vertical-align: baseline;
+        font-size: 0.875em;
+        font-family:'Yanone Kaffeesatz', verdana, sans-serif;
+    }
+
+    .TextContent h1{
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 1em;
+        margin-top: 0.2em;
+        color: #3399ff;
+        font-family:'Yanone Kaffeesatz', verdana, sans-serif;
+    }
+
+    .TextContent h2{
+        line-height: 1.6;
+        margin-bottom: 0em;
+        margin-top: 1em;
+        text-align: left;
+        font-family:'Yanone Kaffeesatz', verdana, sans-serif;
+    }
+
+    .TextContent p{
+        margin-bottom: 1.2em;
+        font-family:'Yanone Kaffeesatz', verdana, sans-serif;
+    }
+
+    .Page_Wide {
+        width:100%;
+    }
+
+    .Quarter_Image {
+        width:25%;
+        max-height:250px;
+        float:left;
+    }
+
+    .Quarter_Image img {
+        display:block;
+        margin:auto;
+        max-height: 250px;
+        width: auto;
+    }
+
+    .SocialMediaIconWrapper {
+        width:100%;
+    }
+
+    .SocialMediaIcon {
+        width:4%;
+        height:auto;
+        margin-left:20px;
+        display: inline-block;
+        float:left;
+
+    }
+
+    .SocialMediaIcon img{
+        max-width:100%;
+        height:auto
+    }
+
+    .TeamImage {
+        width:100%;
+    }
+
+    .TeamImage img {
+        max-width:100%;
+        height:auto
+    }
+
+    .sponsors {
+        width: 100%;
+    }
+
+    .sponsor_row {
+        width: 100%;
+    }
+
+    .sponsor_img {
+        width: 16.6666667%;
+        float:left;
+    }
+
+    .sponsor_img img{
+        max-width:100%;
+        height:auto
+    }
+
+    .clear {
+        clear:both;
+    }
+
+    .clear.extra_space {
+        height: 20px;
+    }
+
+    .line_divider {
+        border-top: 1px solid #d3d3d3;
+        width: 98%;
+        margin: auto;
+    }
+
+    .copyright{
+        color: #888888;
+        font-size: 13px;
+        text-align: center !important;
+    }
+
+
+    .copyright a{
+        color: #d2ebe3;
+        border-bottom: dotted 1px #a5d8c7;
+    }
+
+
+    /*文中自定义*/
+    .CuteButton:active {
+        color:white !important;
+        -webkit-box-shadow: 0px 3px 0px rgba(0,52,63,1), 0px 3px 6px rgba(0,0,0,.9);
+        -moz-box-shadow: 0px 3px 0px rgba(0,52,63,1), 0px 3px 6px rgba(0,0,0,.9);
+        box-shadow: 0px 3px 0px rgba(0,52,63,1), 0px 3px 6px rgba(0,0,0,.9);
+        position: relative;
+        top: 6px;
+    }
+
+    .CuteButton:visited {
+        color:white !important;
+        -webkit-box-shadow: 0px 3px 0px rgba(0,52,63,1), 0px 3px 6px rgba(0,0,0,.9);
+        -moz-box-shadow: 0px 3px 0px rgba(0,52,63,1), 0px 3px 6px rgba(0,0,0,.9);
+        box-shadow: 0px 3px 0px rgba(0,52,63,1), 0px 3px 6px rgba(0,0,0,.9);
+        position: relative;
+        top: 6px;
+    }
+
+    .YellowCB {
+        background-color: rgba(254,196,62,1);
+        -webkit-box-shadow: 0px 9px 0px rgba(245,253,202,1), 0px 9px 25px rgba(0,0,0,.7);
+        -moz-box-shadow: 0px 9px 0px rgba(245,253,202,1), 0px 9px 25px rgba(0,0,0,.7);
+        box-shadow: 0px 9px 0px rgba(245,253,202,1), 0px 9px 25px rgba(0,0,0,.7);
+    }
+
+    .GreenCB {
+        background-color: rgba(25,148,117,1);
+        -webkit-box-shadow: 0px 9px 0px rgba(4,77,34,1), 0px 9px 25px rgba(0,0,0,.7);
+        -moz-box-shadow: 0px 9px 0px rgba(4,77,34,1), 0px 9px 25px rgba(0,0,0,.7);
+        box-shadow: 0px 9px 0px rgba(4,77,34,1), 0px 9px 25px rgba(0,0,0,.7);
+    }
+
+    .SmallCB {
+        font-size: 1.5em;
+        margin-left: 2px;
+        padding: 2px 10px ;
+        width: 100px;
+    }
+
+
+
+    .ArticleHead{
+        font-family: 'Tempus Sans ITC',georgia !important;
+        font-size: 40px !important;
+        font-weight: 800 !important;
+        color: #56A36C !important;
+        text-align: center !important;
+        margin-bottom: 0 !important;
+        margin-top: .6em !important;
+    }
+
+    .H3Head{
+        font-family: 'Tempus Sans ITC',georgia !important;
+        color: #FEC43E !important;
+        font-size: 25px !important;
+        font-weight: 400 !important;
+        text-align: left !important;
+        margin-bottom: 0 !important;
+        margin-top:.6em !important;
+    }
+
+    .PP{
+        font-family:Tahoma, Geneva, sans-serif !important;
+        font-size: 20px !important;
+        font-weight: 100 !important;
+        text-align: left !important;
+        margin-bottom: 20px;
+    }
+
+
+    .Retract{
+        padding-left: 50px;
+    }
+
+    .GreenAH{
+        color: #56A36C;
+    }
+
+    .YellowAH{
+        color: #FEC43E;
+    }
+
+    .contentLi{
+        margin:0;
+        font-size:17px;
+        line-height: 27px;
+        padding-bottom: 20px;
+        color: #111111;
+    }
+
+    .grayTable
+    {
+        background-color: #979797;
+    }
+
+    .yellowTable
+    {
+        background-color: #CD9B1D;
+        color: #000;
+    }
+
+    h2{
+        font-family: 'Tempus Sans ITC';
+        font-weight: 500;
+        font-size: 35px;
+        text-align: left;
+    }
+
+    h3{
+        font-family: 'Tempus Sans ITC';
+        font-weight: 500;
+        font-size: 32px;
+        text-align: left;
+    }
+
+    h4{
+        font-family: 'Tempus Sans ITC';
+        font-weight: 500;
+        font-size: 28px;
+        text-align: left;
+    }
+
+    h5{
+        font-family: 'Tempus Sans ITC';
+        font-weight: 500;
+        font-size: 25px;
+        text-align: left;
+    }
+
+    p{
+        margin:0;
+        font-size:17px;
+        line-height: 30px;
+        /*padding-bottom: 20px;*/
+        color: #111111;
+    }
+
+    .bs-docs-sidenav
+    {
+        font-family:Tahoma, Geneva, sans-serif !important;
+        font-size: 20px !important;
+        font-weight: 100 !important;
+        text-align: left !important;
+    }
+
+
+    .textli li{
+        font-family:Tahoma, Geneva, sans-serif !important;
+        font-size: 20px !important;
+        font-weight: 100 !important;
+        text-align: left !important;
+    }
+
+    .textimg
+    {
+        width:70% !important;
+    }
+
+    .ref
+    {
+        font-size: 16px !important;
+        line-height:22px !important;
+        margin-bottom: 5px !important;
+        color: #353535;
+    }
+    /*文中自定义*/
+</style>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<div class="page-loader"></div>
+<!-- Docs master nav -->
+<!-- <h1><a class="navbar-brand" href="index.html">MuMei Lab</a></h1> -->
+  <div class="container">
+      <!-- header -->
+      <div class="header-w3layouts">
+          <!-- Navigation -->
+          <nav class="navbar navbar-default navbar-fixed-top">
+              <div class="navbar-header page-scroll">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                  </button>
+
+                  <a href="http://2017.igem.org/Team:ZJU-China">
+                      <img style="margin-top:11px" class="navbar-brand"  src="http://2017.igem.org/wiki/images/d/d5/ZJUChina_logo.png">
+                  </a>
+
+                  <!-- <h1><a class="navbar-brand" href="index.html">My Design</a></h1> -->
+
+              </div>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse navbar-ex1-collapse">
+                  <ul class="nav navbar-nav navbar-right cl-effect-15">
+                      <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                      <li class="hidden"><a class="page-scroll" href="#page-top"></a> </li>
+
+                      <li class="m_nav_item dropdown">
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Overview<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Overview">Description</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Demonstrate">Demonstrate</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Applied_Design">Applied Design</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Achievements">Achievements</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Improve">Improve Parts</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/InterLab">InterLab</a></li>
+
+                          </ul>
+                      </li>
+
+                      <li class="m_nav_item dropdown">
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Project<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Project/tp">Trichoderma Proof</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Project/voc">VOC sensors</a></li>
+                              <li><a style="font-size: 0.7em!important;" href="http://2017.igem.org/Team:ZJU-China/Project/st">Chemical Signal Transduction</a></li>
+                              <li><a style="font-size: 0.7em!important;" href="http://2017.igem.org/Team:ZJU-China/Project/mt">Medium Wave Transduction</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Project/Downstream">Downstream</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Project/conclusion">Conclusions</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Notebook">Notebook</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Protocols">Protocols</a></li>
+                          </ul>
+                      </li>
+
+                      <li class="m_nav_item dropdown" >
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Model<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+                              <!--<li><a href="http://2017.igem.org/Team:ZJU-China/Model">Summery</a></li>-->
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Model">VOC analysis</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Model/Coculture">Coculture</a></li>
+
+                          </ul>
+                      </li>
+
+                      <li class="m_nav_item dropdown">
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Parts<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Parts">All Parts</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Basic_Part">Basic Parts</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Composite_Part">Composite Parts</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Part_Collection">Part Collection</a></li>
+
+
+
+
+                          </ul>
+                      </li>
+
+                      <li class="m_nav_item dropdown" >
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Hardware<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Hardware">Overview</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Hardware/Device">Device</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Hardware/Improvements">Improvements</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Hardware/MediumWave">Medium Wave</a></li>
+                          </ul>
+                      </li>
+
+                      <li class="m_nav_item dropdown" >
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Safety<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Safety">Environment</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Safety/Lab">Laboratory</a></li>
+                          </ul>
+                      </li>
+
+                      <li class="m_nav_item dropdown">
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">HP<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Human_Practices">Summary</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/HP/Silver">Silver</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/HP/Gold_Integrated">Gold Integrated</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Engagement">Engagement</a></li>
+                          </ul>
+                      </li>
+
+                      <li class="m_nav_item dropdown" >
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Team<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Team">Teammates</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Attributions">Attribution</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Collaborations">Collaboration</a></li>
+                          </ul>
+                      </li>
+                  </ul>
+              </div>
+          </nav>
+      </div>
+  </div>
+
+<p>"<br></p>
+<!--<div style="margin-top:0;padding-top:0">-->
+<!--<img id="partsPage" src="http://2017.igem.org/wiki/images/b/be/ZJUChina_interlab_banner.jpg" width="100%">-->
+<!--&lt;!&ndash; <img src="images/HP_temp/banner.jpg" width="100%"> &ndash;&gt;-->
+<!--</div>-->
+
+
+
+
+<div style="width: 100%" class="container zjuContent">
+    <div class="col-md-3"></div>
+    <div class="col-md-9" role="main">
+        <p class="bs-docs-section">
+
+
+        <h1 id="humanpractice" class="page-header ArticleHead GreenAH">Best Composite Part</h1>
+        <h2 class="H2Head" id="overview"><br/>Overview</h2>
+        <p class="PP">This year, we aim to construct a diseases-monitoring system for automatic agriculture (AA) in which biological, physical and chemical elements can act as a whole. DAPG plays an essential role in operation of the system including serving as signal molecule or effector. Thanks to <a class="cite" target="_blank" href="http://parts.igem.org/Part:BBa_K2207997">BBa_K2207997</a>, we successfully made <em>E.coli</em> synthesize the DAPG and achieved our goal.</p>
+
+        <h2 class="H2Head" id="introduction">Introduction</h2>
+        <p class="PP">2,4-DAPG (DAPG), full name 2,4-diacetylphloroglucinol, is a natural phenol found in specific strains of Gram-negative bacterium <em>Pseudomonas fluorescens</em>. This compound is found to be anti-phytopathogenic and plays an important role in the biocontrol of many plant pathogens<sup>[1]</sup>. Meanwhile, 2,4-DAPG has also shown to induce systematic resistance in plants and enhance the plant’s resistance<sup>[2]</sup>. What’s more, DAPG can also serve as signal molecule to construct a transcriptional switch that is similar to Tet on/off system<sup>[3]</sup>. What’s also worth mentioning is that previous studies confirmed that DAPG almost has no harmful impact on human health under the effective concentration, and can be degraded easily in nature. <sup>[4]</sup></p>
+
+        <p class="PP"></p>
+        <h2 class="H2Head" id="design">Design</h2>
+        <p class="PP">As has mentioned before, DAPG is initially found in specific strain of <em>Pseudomonas fluorescens</em>. And it has been demonstrated that a cluster named phl responsible for the biosynthesis of DAPG, which contains eight genes, from phlA to phlH. Further studies shows that phlABCD are the DAPG synthesis genes. <sup>[5][6][7]</sup></p>
+        <div class="imgdiv"><img class="textimg" src="http://2017.igem.org/wiki/images/2/23/ZJU_China_best_composite_1.jpg"></div>
+        <p style="color: #363636; text-align: center;" class="capture">Fig.1 2,4-DAPG synthesis pathway</p>
+        <p class="PP">We successfully cloned the phlABCD via colony PCR from <em>Pseudomonas fluorescens</em> 2P24. We put these four genes, phlABCD, under the control of a strong promoter which is present in the plasmid backbone we used. This backbone(<a class="cite" target="_blank" href="http://parts.igem.org/Part:BBa_K525998">BBa_K525998</a>) was obtained from the part registry. We call this new biobrick <strong>2,4-DAPG PhlABCD Cluster</strong> (<a class="cite" target="_blank" href="http://parts.igem.org/Part:BBa_K2207997">BBa_K2207997</a>). Upon transformation of this biobrick into BL21 E. coli cells and induced with IPTG，our engineered bacteria will synthesize DAPG.</p>
+
+        <h2 class="H2Head" id="result">Result</h2>
+        <p class="PP">We utilize the High-performance liquid chromatography (HPLC) method to detect the biosynthesized DAPG. Luckily, we finally detected the DAPG from <em>E.coli</em> cells as Fig. 2. shows.</p>
+        <div class="imgdiv"><img class="textimg" src="http://2017.igem.org/wiki/images/4/4c/ZJU_China_best_composite_2.jpg"></div>
+        <p class="capture">Fig.2 Results of DAPG detecting by HPLC</p>
+        <p class="PP">In this way, we successfully confirmed that this biobrick can work in <em>E.coli</em>.</p>
+
+        <h2 class="H2Head" id="prospect">Application Prospect</h2>
+        <p class="PP">We have confirmed that the biobrick can work smoothly in <em>E.coli</em>, and the amount of biosynthesized DAPG is considerable. Therefore, we believe this part has promising application prospect.</p>
+        <p class="PP Retract">DAPG can act as signal molecules to affect the structure and function of the relative protein (phlF). Therefore, we can make use this biobrick to construct a new type of transcriptional switch together with phlF protein and phlO operator. We will have other choice other than tet system. Meanwhile, it is demonstrated that the transcriptional regulation is rapid, so this set of system has strong potential to be applied to several signal transduction pathways that requires higher sensitivity.</p>
+        <p class="PP Retract">DAPG can act as antibiotic, and be toxic to certain organisms. So we can use this biobrick to construct a type of kill switch for some organisms together with phlE(<a class="cite" target="_blank" href="http://parts.igem.org/Part:BBa_K2207031">BBa_ K2207031</a>), which is codes for an efflux pump<sup>[8]</sup>.</p>
+        <p class="PP Retract">DAPG can act as induction factors of ISR. The plants' autoimmune mechanism can be activated under the presence of the DAPG, which will lead the plants to their prime state. Thus, the plants will have stronger resistance to the following diseases and invasion.</p>
+
+
+        <h2 class="H2Head" id="bba">Composite Part BBa_K2207022</h2>
+
+        <h3 class="H3Head" id="overview2">Overview</h3>
+        <p class="PP">We constructed a calcium-sensitive promoter which works well in Saccharomyces cerevisiae and we chose mRFP as the report gene. This part (<a class="cite" target="_blank" href="http://parts.igem.org/Part:BBa_K2207036">BBa_K2207022</a>) can cooperate with TRPV1-Ferritin system (<a class="cite" target="_blank" href="http://parts.igem.org/Part:BBa_K2207019">BBa_K2207019</a>) to build up our Electrobiologic Interface and fulfill the signal transduction from electronic signal to gene expression. Even without TRPV1-Ferritin system, this part can be a sensitive reporter for intracellular calcium ion.</p>
+
+        <h3 class="H3Head" id="introduction2">Introduction</h3>
+        <p class="PP">This year, to achieve the signal transduction through medium radio frequencies (RF), we tried to construct an Electrobiologic Interface between electronic device and engineered creature. We formerly have expressed TRPV1-Ferritin in Saccharomyces cerevisiae, which can receive the medium RF signal and induce calcium influx. To complete this interface, we need a calcium-sensitive promoter. CDRE，calcineurin-dependent response element，is a segment of DNA sequence which can be regulated by specific transcription factor Crz I. This TF is activated by calcineurin in the present of calcium ion. We can construct a calcium sensitive promoter with CDRE sequence<sup>[9]</sup>.</p>
+
+        <h3 class="H3Head" id="design2">Design</h3>
+        <p class="PP">We replaced the upstream activating sequence(UAS) of CYC1 promoter with 4x CDREs. We called this promoter Pcdre (<a class="cite" target="_blank" href="http://parts.igem.org/Part:BBa_K2207021">BBa_K2207021</a>) and it’s fully synthesized by UCAS through Gibson Assembly. We adapted overlap PCR to assembly it with mRFP(<a class="cite" target="_blank" href="http://parts.igem.org/Part:BBa_K2207036">BBa_K2207036</a>), which is originated from mRFP(<a class="cite" target="_blank" href="http://parts.igem.org/Part:BBa_E1010">BBa_E1010</a>), a widely used report gene. We made a little change to <a class="cite" target="_blank" href="http://parts.igem.org/Part:BBa_E1010">BBa_E1010</a> to make it more suitable for expression in S. cerevisiae<sup>[9][10]</sup>. </p>
+
+        <h3 class="H3Head" id="result2">Result</h3>
+        <p class="PP">We transferred this part (the backbone is pYES2.1) into S. cerevisiae BY4741 and cultured the transgenic clone in calcium-inducing medium and uninducing medium. The calcium concentration in the inducing medium is 200mM while the uninducing medium contains a relatively low concentration of calcium ion (natural medium 1x YPD).  Then we detected the fluorescence of these two cultures. To eliminate the influence of the concentration of the yeast, we calculated the value of Fluorescent Intensity/OD600 to evaluate these two groups.</p>
+
+        <div class="imgdiv col-sm-6 col-md-6"><img class="textimg" style="height: 300px !important; width: auto !important;" src="http://2017.igem.org/wiki/images/1/19/ZJU_China_MWF_Rplot05.jpeg"></div>
+        <div class="imgdiv col-sm-6 col-md-6"><img class="textimg" style="height: 300px !important; width: auto !important;" src="http://2017.igem.org/wiki/images/e/ea/ZJU_China_MWF_Rplot03.jpeg"></div>
+
+        <p class="capture">Fig.3 Relative fluorescent intensity of induced and uninduced groups</p>
+        <p class="capture">Fig.4 intracellular relative calcium concentration</p>
+        <p class="PP">The data shows that the relative intensity of the induced group is only 149% higher than the uninduced group. We were not content with this result, and we wondered the reason why the 200mM calcium ion cannot cause a much higher fluorescent intensity as we expected. So we tried to detect the intracellular relative calcium concentration of the two groups.</p>
+
+
+
+        <p class="PP">To our surprise, the difference of the intracellular calcium is not as large as we expected. When the yeast is cultured in medium containing 200mM calcium, its intracellular calcium concentration is only enhanced 8% and the basic level of the uninduced group is relative high. And these phenomena may explain the former result.</p>
+        <p class="PP">Though the expression level of the induced group does not enhance more times as we hoped, from another perspective, only the 8% increment can cause the 147% enhancement of the expression level which means this part can be a sensitive intracellular calcium reporter. Especially when considering the ability that TRPV1 can induce a more than 60% increment of intracellular calcium ion, we're sure this part will work well when combined with TRPV1-Ferritin system.</p>
+
+
+        <h2 class="H2Head" id="ref">Reference<hr></h2>
+        <p class="PP ref">[1] https://en.wikipedia.org/wiki/DAPG</p>
+        <p class="PP ref">[2] Rezzonico F, Zala M, Keel C, et al. Is the ability of biocontrol fluorescent pseudomonads to produce the antifungal metabolite 2,4‐diacetylphloroglucinol really synonymous with higher plant protection?[J]. New Phytologist, 2007, 173(4):861-872.</p>
+        <p class="PP ref">[3] Ikushima S, Boeke J D. New Orthogonal Transcriptional Switches Derived from Tet Repressor Homologues for Saccharomyces cerevisiae Regulated by 2, 4-Diacetylphloroglucinol and Other Ligands[J]. ACS Synthetic Biology, 2016.</p>
+        <p class="PP ref">[4] Gao Y, Chi J, eta. Effects of 2,4-diacetylphloroglucinol on two plant diseases[J]. Shandong Science, 2006, 19(4):36-39.</p>
+        <p class="PP ref">[5] Yang F, Cao Y. Biosynthesis of phloroglucinol compounds in microorganisms—review[J]. Applied Microbiology and Biotechnology, 2012, 93(2):487-495.</p>
+        <p class="PP ref">[6] Bangera M G, Thomashow L S. Characterization of a genomic locus required for synthesis of the antibiotic 2,4-diacetylphloroglucinol by the biological control agent Pseudomonas fluorescens Q2-87[J]. Molecular plant-microbe interactions : MPMI, 1996, 9(2):83.</p>
+        <p class="PP ref">[7] Bangera M G, Thomashow L S. Identification and Characterization of a Gene Cluster for Synthesis, of the Polyketide Antibiotic 2,4-Diacetylphloroglucinol, from Pseudomonas fluorescens Q2-87[J]. Journal of Bacteriology, 1999, 181(10):3155.</p>
+        <p class="PP ref">[8] Bangera M G, Thomashow L S. Identification and Characterization of a Gene Cluster for Synthesis, of the Polyketide Antibiotic 2,4-Diacetylphloroglucinol, from Pseudomonas fluorescens Q2-87[J]. Journal of Bacteriology, 1999, 181(10):3155.</p>
+        <p class="PP ref">[9] Cyert M S. Calcineurin signaling in Saccharomyces cerevisiae: how yeast go crazy in response to stress[J]. Biochemical and biophysical research communications, 2003, 311(4): 1143-1150.</p>
+        <p class="PP ref">[10] Cyert M S. Genetic analysis of calmodulin and its targets in Saccharomyces cerevisiae[J]. Annual review of genetics, 2001, 35(1): 647-672.</p>
+<br><br><br>
+
+    </div>
+
+    <!-- 右侧监听开始 -->
+    <div class="col-md-3 disappear-on-top" role="complementary">
+        <nav  style="position: fixed; top: 100px ; left:50px;" class="bs-docs-sidebar hidden-print hidden-xs hidden-sm">
+            <ul class="nav bs-docs-sidenav shorterli">
+
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#design">Design</a></li>
+                <li><a href="#prospect">Application Prospect</a></li>
+                <li>
+                    <a href="#bba">Composite Part</a>
+                    <ul class="nav">
+                        <li><a href="#overview2">Overview</a></li>
+                        <li><a href="#introduction2">Introduction</a></li>
+                        <li><a href="#design2">Design</a></li>
+                        <li><a href="#result2">Result</a></li>
+                    </ul>
+                </li>
+                <li><a href="#ref">Reference</a></li>
+
+            </ul>
+
+            <a class="back-to-top" href="#top">
+                <!--   <i class="fa fa-arrow-up nav_icon"></i> -->
+                <img style="width: 50px;" src="http://2017.igem.org/wiki/images/d/da/ZJU_China_UP.png">
+            </a>
+
+
+        </nav>
+    </div>
+
+</div>
+</div>
+<!-- 右侧监听结束 -->
+<!-- footer开始 -->
+<div class="footer"  style="background-color: #000000">
+    <div class="copyright container text-center">
+        <p><br></p>
+        <p class="copyright">Copyright &#169; 2017 ZJU-IGEM | <a href="http://www.zju.edu.cn/">Zhejiang University</a> |</p>
+        <p><br></p>
+    </div>
+</div>
+<!-- footer结束 -->
+
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<!--script src="js/bootstrap.min.js"></script-->
+<script src="http://2017.igem.org/wiki/images/8/85/ZJUChina_js_docsmin.txt"></script>
+<!--script src="js/button.js"></script-->
+<script src="http://2017.igem.org/wiki/images/2/22/ZJUChina_bootstrap.min.txt"></script>
+<script src="http://2017.igem.org/wiki/images/3/32/ZJUChina_docs.min.txt"></script>
+<script src="http://2017.igem.org/wiki/images/e/e0/ZJUChina_button.txt"></script>
+
+<script src="http://2017.igem.org/Team:ZJU-China/js/scrollingnavnonPic?action=raw&ctype=text/javascript"></script>
+<!--<script src="http://2017.igem.org/wiki/images/9/92/ZJUChina_scrolling-nav.txt"></script>  -->
+<script src="http://2017.igem.org/wiki/images/c/c0/ZJUChina_txtSmoothScroll.min.txt"></script>
+
+</body>
+</html>

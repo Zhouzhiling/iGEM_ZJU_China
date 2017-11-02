@@ -1,0 +1,630 @@
+<html lang="zh-CN">
+<head>
+
+    <link href="http://2017.igem.org/Zju/css/bootstrap?action=raw&ctype=text/css" rel="stylesheet" media="screen" />
+    <link href="http://2017.igem.org/Zju/css/bootstraptheme?action=raw&ctype=text/css" rel="stylesheet" id="bs-theme-stylesheet">
+    <link href="http://2017.igem.org/Zju/css/docs/min?action=raw&ctype=text/css" rel="stylesheet" type="text/css"/>
+    <!-- <link href="css/doc-style.css" rel="stylesheet" type="text/css"/> -->
+    <link href="http://2017.igem.org/Zju/css/doc-style?action=raw&ctype=text/css" rel="stylesheet">
+    <link href="http://2017.igem.org/Zju/css/responsive/min?action=raw&ctype=text/css" rel="stylesheet">
+    <!-- 按钮的字体 -->
+    <link href='http://2017.igem.org/Team:ZJU-China/cs/font?action=raw&ctype=text/css' rel='stylesheet' type='text/css'>
+    <!-- 按钮的字体end -->
+    <script>
+        var _hmt = _hmt || [];
+    </script>
+    <script src="http://2017.igem.org/wiki/images/8/85/ZJUChina_js_docsmin.txt?action=raw&ctype=text/javascript"></script>
+</head>
+
+
+<style>
+    /*Override default CSS*/
+    #sideMenu, #top_title {display:none;}
+    #content { padding:0px; width:100%; margin-top:-7px; margin-left:0px;background-color: transparent;}
+
+
+    /* set all basic objects to neutral formatting*/
+    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+    }
+
+    #globalWrapper {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+    }
+
+
+    /* set page to fill window*/
+    html{
+        height: 100%;
+    }
+    body {
+        min-height: 100%;
+        background-color: #FFFFFF;
+    }
+
+
+    #content_wrapper {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        margin: 0px;
+        width: 100%;
+        height: 100%;
+        text-align:center;
+        background-color: #FFFFFF;
+    }
+
+    #content_wrapper p {
+        font-family: 'Yanone Kaffeesatz',Tahoma, Geneva, sans-serif;
+    }
+
+    #content_wrapper a {
+        color:#004789;
+    }
+
+
+    #footer {
+        position:absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        background-color: #FFFFFF;
+        text-align: center;
+    }
+
+    .center {
+        width: 60%;
+        margin-top: 16px;
+        min-width: 500px;
+        padding-bottom:32px;
+        display: inline-block;
+    }
+
+    .TextContent {
+        text-align: left;
+        vertical-align: baseline;
+        font-size: 0.875em;
+        font-family:'Yanone Kaffeesatz', verdana, sans-serif;
+    }
+
+    .TextContent h1{
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 1em;
+        margin-top: 0.2em;
+        color: #3399ff;
+        font-family:'Yanone Kaffeesatz', verdana, sans-serif;
+    }
+
+    .TextContent h2{
+        line-height: 1.6;
+        margin-bottom: 0em;
+        margin-top: 1em;
+        text-align: left;
+        font-family:'Yanone Kaffeesatz', verdana, sans-serif;
+    }
+
+    .TextContent p{
+        margin-bottom: 1.2em;
+        font-family:'Yanone Kaffeesatz', verdana, sans-serif;
+    }
+
+    .Page_Wide {
+        width:100%;
+    }
+
+    .Quarter_Image {
+        width:25%;
+        max-height:250px;
+        float:left;
+    }
+
+    .Quarter_Image img {
+        display:block;
+        margin:auto;
+        max-height: 250px;
+        width: auto;
+    }
+
+    .SocialMediaIconWrapper {
+        width:100%;
+    }
+
+    .SocialMediaIcon {
+        width:4%;
+        height:auto;
+        margin-left:20px;
+        display: inline-block;
+        float:left;
+
+    }
+
+    .SocialMediaIcon img{
+        max-width:100%;
+        height:auto
+    }
+
+    .TeamImage {
+        width:100%;
+    }
+
+    .TeamImage img {
+        max-width:100%;
+        height:auto
+    }
+
+    .sponsors {
+        width: 100%;
+    }
+
+    .sponsor_row {
+        width: 100%;
+    }
+
+    .sponsor_img {
+        width: 16.6666667%;
+        float:left;
+    }
+
+    .sponsor_img img{
+        max-width:100%;
+        height:auto
+    }
+
+    .clear {
+        clear:both;
+    }
+
+    .clear.extra_space {
+        height: 20px;
+    }
+
+    .line_divider {
+        border-top: 1px solid #d3d3d3;
+        width: 98%;
+        margin: auto;
+    }
+
+    .copyright{
+        color: #888888;
+        font-size: 13px;
+        text-align: center !important;
+    }
+
+
+    .copyright a{
+        color: #d2ebe3;
+        border-bottom: dotted 1px #a5d8c7;
+    }
+
+
+    /*文中自定义*/
+    .CuteButton:active {
+        color:white !important;
+        -webkit-box-shadow: 0px 3px 0px rgba(0,52,63,1), 0px 3px 6px rgba(0,0,0,.9);
+        -moz-box-shadow: 0px 3px 0px rgba(0,52,63,1), 0px 3px 6px rgba(0,0,0,.9);
+        box-shadow: 0px 3px 0px rgba(0,52,63,1), 0px 3px 6px rgba(0,0,0,.9);
+        position: relative;
+        top: 6px;
+    }
+
+    .CuteButton:visited {
+        color:white !important;
+        -webkit-box-shadow: 0px 3px 0px rgba(0,52,63,1), 0px 3px 6px rgba(0,0,0,.9);
+        -moz-box-shadow: 0px 3px 0px rgba(0,52,63,1), 0px 3px 6px rgba(0,0,0,.9);
+        box-shadow: 0px 3px 0px rgba(0,52,63,1), 0px 3px 6px rgba(0,0,0,.9);
+        position: relative;
+        top: 6px;
+    }
+
+    .YellowCB {
+        background-color: rgba(254,196,62,1);
+        -webkit-box-shadow: 0px 9px 0px rgba(245,253,202,1), 0px 9px 25px rgba(0,0,0,.7);
+        -moz-box-shadow: 0px 9px 0px rgba(245,253,202,1), 0px 9px 25px rgba(0,0,0,.7);
+        box-shadow: 0px 9px 0px rgba(245,253,202,1), 0px 9px 25px rgba(0,0,0,.7);
+    }
+
+    .GreenCB {
+        background-color: rgba(25,148,117,1);
+        -webkit-box-shadow: 0px 9px 0px rgba(4,77,34,1), 0px 9px 25px rgba(0,0,0,.7);
+        -moz-box-shadow: 0px 9px 0px rgba(4,77,34,1), 0px 9px 25px rgba(0,0,0,.7);
+        box-shadow: 0px 9px 0px rgba(4,77,34,1), 0px 9px 25px rgba(0,0,0,.7);
+    }
+
+    .SmallCB {
+        font-size: 1.5em;
+        margin-left: 2px;
+        padding: 2px 10px ;
+        width: 100px;
+    }
+
+
+
+    .ArticleHead{
+        font-family: 'Tempus Sans ITC',georgia !important;
+        font-size: 40px !important;
+        font-weight: 800 !important;
+        color: #56A36C !important;
+        text-align: center !important;
+        margin-bottom: 0 !important;
+        margin-top: .6em !important;
+    }
+
+    .H3Head{
+        font-family: 'Tempus Sans ITC',georgia !important;
+        color: #FEC43E !important;
+        font-size: 25px !important;
+        font-weight: 400 !important;
+        text-align: left !important;
+        margin-bottom: 0 !important;
+        margin-top:.6em !important;
+    }
+
+    .PP{
+        font-family:Tahoma, Geneva, sans-serif !important;
+        font-size: 20px !important;
+        font-weight: 100 !important;
+        text-align: left !important;
+        margin-bottom: 20px;
+    }
+
+
+    .Retract{
+        padding-left: 50px;
+    }
+
+    .GreenAH{
+        color: #56A36C;
+    }
+
+    .YellowAH{
+        color: #FEC43E;
+    }
+
+    .contentLi{
+        margin:0;
+        font-size:17px;
+        line-height: 27px;
+        padding-bottom: 20px;
+        color: #111111;
+    }
+
+    .grayTable
+    {
+        background-color: #979797;
+    }
+
+    .yellowTable
+    {
+        background-color: #CD9B1D;
+        color: #000;
+    }
+
+    h2{
+        font-family: 'Tempus Sans ITC';
+        font-weight: 500;
+        font-size: 35px;
+        text-align: left;
+    }
+
+    h3{
+        font-family: 'Tempus Sans ITC';
+        font-weight: 500;
+        font-size: 32px;
+        text-align: left;
+    }
+
+    h4{
+        font-family: 'Tempus Sans ITC';
+        font-weight: 500;
+        font-size: 28px;
+        text-align: left;
+    }
+
+    h5{
+        font-family: 'Tempus Sans ITC';
+        font-weight: 500;
+        font-size: 25px;
+        text-align: left;
+    }
+
+    p{
+        margin:0;
+        font-size:17px;
+        line-height: 30px;
+        /*padding-bottom: 20px;*/
+        color: #111111;
+    }
+
+    .bs-docs-sidenav
+    {
+        font-family:Tahoma, Geneva, sans-serif !important;
+        font-size: 20px !important;
+        font-weight: 100 !important;
+        text-align: left !important;
+    }
+
+
+    .textli li{
+        font-family:Tahoma, Geneva, sans-serif !important;
+        font-size: 20px !important;
+        font-weight: 100 !important;
+        text-align: left !important;
+    }
+
+    .textimg
+    {
+        width:60% !important;
+    }
+
+    .ref
+    {
+        font-size: 16px !important;
+        line-height:22px !important;
+        margin-bottom: 5px !important;
+        color: #353535;
+    }
+    /*文中自定义*/
+</style>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<div class="page-loader"></div>
+<!-- Docs master nav -->
+<!-- <h1><a class="navbar-brand" href="index.html">MuMei Lab</a></h1> -->
+  <div class="container">
+      <!-- header -->
+      <div class="header-w3layouts">
+          <!-- Navigation -->
+          <nav class="navbar navbar-default navbar-fixed-top">
+              <div class="navbar-header page-scroll">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                  </button>
+
+                  <a href="http://2017.igem.org/Team:ZJU-China">
+                      <img style="margin-top:11px" class="navbar-brand"  src="http://2017.igem.org/wiki/images/d/d5/ZJUChina_logo.png">
+                  </a>
+
+                  <!-- <h1><a class="navbar-brand" href="index.html">My Design</a></h1> -->
+
+              </div>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse navbar-ex1-collapse">
+                  <ul class="nav navbar-nav navbar-right cl-effect-15">
+                      <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                      <li class="hidden"><a class="page-scroll" href="#page-top"></a> </li>
+
+                      <li class="m_nav_item dropdown">
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Overview<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Overview">Description</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Demonstrate">Demonstrate</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Applied_Design">Applied Design</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Achievements">Achievements</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Improve">Improve Parts</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/InterLab">InterLab</a></li>
+
+                          </ul>
+                      </li>
+
+                      <li class="m_nav_item dropdown">
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Project<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Project/tp">Trichoderma Proof</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Project/voc">VOC sensors</a></li>
+                              <li><a style="font-size: 0.7em!important;" href="http://2017.igem.org/Team:ZJU-China/Project/st">Chemical Signal Transduction</a></li>
+                              <li><a style="font-size: 0.7em!important;" href="http://2017.igem.org/Team:ZJU-China/Project/mt">Medium Wave Transduction</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Project/Downstream">Downstream</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Project/conclusion">Conclusions</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Notebook">Notebook</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Protocols">Protocols</a></li>
+                          </ul>
+                      </li>
+
+                      <li class="m_nav_item dropdown" >
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Model<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+                              <!--<li><a href="http://2017.igem.org/Team:ZJU-China/Model">Summery</a></li>-->
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Model">VOC analysis</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Model/Coculture">Coculture</a></li>
+
+                          </ul>
+                      </li>
+
+                      <li class="m_nav_item dropdown">
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Parts<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Parts">All Parts</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Basic_Part">Basic Parts</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Composite_Part">Composite Parts</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Part_Collection">Part Collection</a></li>
+
+
+
+
+                          </ul>
+                      </li>
+
+                      <li class="m_nav_item dropdown" >
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Hardware<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Hardware">Overview</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Hardware/Device">Device</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Hardware/Improvements">Improvements</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Hardware/MediumWave">Medium Wave</a></li>
+                          </ul>
+                      </li>
+
+                      <li class="m_nav_item dropdown" >
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Safety<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Safety">Environment</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Safety/Lab">Laboratory</a></li>
+                          </ul>
+                      </li>
+
+                      <li class="m_nav_item dropdown">
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">HP<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Human_Practices">Summary</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/HP/Silver">Silver</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/HP/Gold_Integrated">Gold Integrated</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Engagement">Engagement</a></li>
+                          </ul>
+                      </li>
+
+                      <li class="m_nav_item dropdown" >
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Team<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Team">Teammates</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Attributions">Attribution</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Collaborations">Collaboration</a></li>
+                          </ul>
+                      </li>
+                  </ul>
+              </div>
+          </nav>
+      </div>
+  </div>
+
+<p>"<br></p>
+<!--<div style="margin-top:0;padding-top:0">-->
+<!--<img id="partsPage" src="http://2017.igem.org/wiki/images/b/be/ZJUChina_interlab_banner.jpg" width="100%">-->
+<!--&lt;!&ndash; <img src="images/HP_temp/banner.jpg" width="100%"> &ndash;&gt;-->
+<!--</div>-->
+
+
+
+
+<div style="width: 100%" class="container zjuContent">
+    <div class="col-md-3"></div>
+    <div class="col-md-9" role="main">
+        <p class="bs-docs-section">
+
+
+        <h1 id="bbp" class="page-header ArticleHead GreenAH">Best Basic Part</h1>
+        <p class="PP"><br/>For this year’s iGEM competition, our team has chosen to present Calcineurin-dependent response element (CDRE) (BBa_K2207021)and Mature serine protein from <em>Paecilomyces lilacinus</em> (BBa_K2207023) for the award of the basic part.</p>
+        <h2 class="H2Head" id="cdre">CDRE</h2>
+        <p class="PP">CDRE，calcineurin-dependent response element，is a segment of DNA sequence which can be regulated by specific transcription factor. This TF is activated by calcineurin in the present of calcium ion. To create a promoter can be up-regulated by calcium influx，we replaced the upstream activating sequence(UAS) of CYC1 promoter with 4 CDREs. This promoter is designed for Saccharomyces cerevisiae and it depends on S.cerevisiae's endogenous calcineurin and calmodulin<sup>[1][2]</sup>. We choose mRFP as the report gene. We cultured the yeast in calcium-inducing medium and uninduced medium which contains a relatively low concentration of calcium ion (1xYPD medium).</p>
+        <p class="PP">Obviously, the transgenic yeast cultured in the calcium-inducing medium(200mM Ca<sup>2+</sup>) is turning red while the control shows no significant changes. Then we detected the fluorescence of this two cultures. To eliminate the influence of the concentration of the yeast, we calculated the value of Fluorescent Intensity/OD600 to evaluate these two groups.</p>
+        <p class="PP">The value indicated that the fluorescence intensity of the calcium-induced group has improved about 147%. It’s not quite a huge change and the uninduced group has already shown a great intensity of fluorescence. Then we detected the intracellular calcium ion concentration with Fluo 4-AM whose fluorescent intensity can represent the relative concentration of calcium ion.</p>
+
+        <div class="imgdiv col-md-6 col-sm-6"><img class="textimg" style="height: 300px !important; width:auto !important;" src="http://2017.igem.org/wiki/images/1/19/ZJU_China_MWF_Rplot05.jpeg"></div>
+        <div class="imgdiv col-md-6 col-sm-6"><img class="textimg" style="height: 300px !important; width:auto !important;"  src="http://2017.igem.org/wiki/images/e/ea/ZJU_China_MWF_Rplot03.jpeg"></div>
+        <p class="capture">Fig.1 (a) Relative fluorescent intensity of two groups. (b) Relative calcium content in two groups</p>
+
+        <p class="PP"> As the result shows, 8% change of the intracellular ion concentration can contribute to 147% higher expression level of the downstream gene. It seems that our CDRE promoter is much more sensitive than we expected.</p>
+
+
+        <h2 class="H2Head" id="msp">Mature serine protein</h2>
+
+        <p class="PP">Root-knot nematodes (Meloidogyne spp.), which are one of the most destructive nematodes, cause the loss of crop about 10%, serious as high as 75%. Like the insect cuticlehe, nematode eggshell consists mainly of proteins and chitins. The egg-parasitic fungus <em>P.lilacinum</em> secretes protease and chitinase to hydrolyze the nematode eggshell, so that the root knot nematodes cannot grow normally<sup>[3]</sup>. Among them, serine protases plays an important role in hydrolyzing the eggshell of root-knot nematodes.</p>
+        <p class="PP">The gene which can express serine protease in yeast was synthesized by Genscript. Before synthesizing this gene, we did codon optimization based on the codon preference of yeast and added a flag-tag to the N-terminal of the serine protease.After extracting the whole proteins of the yeast which transferred plasmid successfully, we performed western-blot and checked the serine protein was expressed in the yeast. (Result is as follow) The band was very shallow, in other words, the concentration of the serine protease was very low.</p>
+        <div class="imgdiv"><img class="textimg" src="http://2017.igem.org/wiki/images/f/fe/ZJU_China_temp_1.png"></div>
+        <p class="capture">Fig.2 Western-blot result</p>
+        <p class="PP">The band with red circle was the band of the serine protease and the marker was a protein marker of aidlab.</p>
+        <p class="PP">In order to test whether the serine protease could work normally in the yeast, we performed the enzyme activity detection using BAEE solution. We did two sets of experiments: one added PMSF, which was a inhibitor of serine protease, and the other did not. And then, reading the OD253 of these two solutions.(You can know more details about the detection from the protocol) Obviously, the OD253 of the former one is higher than the later one and the values of OD253 increased with time in a period of time ; therefore, we made the conclusion that the yeast produced the serine protase successfully and effectively.</p>
+        <div class="imgdiv"><img class="textimg" src="http://2017.igem.org/wiki/images/8/83/ZJU_China_temp_2.png"></div>
+        <p class="capture">Fig.3 The values of OD253 increased with time</p>
+        <p class="PP">The values of OD253 increased with time and this solution did not add the PMSF.</p>
+        <div class="imgdiv"><img class="textimg" style="width: 40% !important;" src="http://2017.igem.org/wiki/images/9/9c/ZJU_China_temp_3.png"></div>
+        <p class="capture">Fig.4 A box-plot of the OD253</p>
+        <p class="PP">These were the OD253 of the solutions after a period of reaction.The red one was the solution that did not add the PMSF; the blue one was the solution that added. Obviously, the OD253 of the former one is higher than the later one, so that, we could say that the yeast produced the serine protase successfully and effectively.</p>
+
+        <p class="PP">This year we submitted several well-working basic parts to the BioBrick Registry.</p>
+        <p class="PP" style="text-align: center !important;"><strong>Table of the Basic Parts we submitted to the BioBrick Registry</strong></p>
+        <table class="table">
+            <tr><th class="yellowTable">Name</th><th class="yellowTable">Type</th><th class="yellowTable">Description</th><th class="yellowTable">Designer</th><th class="yellowTable">Length(bp)</th><th class="yellowTable">Submitted</th></tr>
+            <tr><th class="grayTable">BBa_K2207003</th><td>Composite Parts</td><td>Trichoderma HR System I SOD-Tubulin dobule promoter</td><td>Yihe Zhang</td><td>3155</td><td>✔</td></tr>
+            <tr><th class="grayTable">BBa_K2207004</th><td>Composite Parts</td><td>Trichoderma HR System II Ech42-H3 double promoter</td><td>Yihe Zhang</td><td>4845</td><td>✔</td></tr>
+            <tr><th class="grayTable">BBa_K2207005</th><td>Composite Parts</td><td>Trichoderma HR System III L1-ADH1-RP27-L2</td><td>Yihe Zhang</td><td>903</td><td>✔</td></tr>
+            <tr><th class="grayTable">BBa_K2207006</th><td>Composite Parts</td><td>Trichoderma HR System IV L3-ADH1-RP27-L4</td><td>Yihe Zhang</td><td>903</td><td>✔</td></tr>
+            <tr><th class="grayTable">BBa_K2207007</th><td>Composite Parts</td><td>Trichoderma HR System V Homologous Binding SiteA</td><td>Yihe Zhang</td><td>1676</td><td>✔</td></tr>
+            <tr><th class="grayTable">BBa_K2207008</th><td>Composite Parts</td><td>Trichoderma HR System VI Homologous Binding SiteB</td><td>Yihe Zhang</td><td>1650</td><td>✔</td></tr>
+            <tr><th class="grayTable">BBa_K2207009</th><td>Coding Sequences</td><td>PhlF transcription factor</td><td>Qianjin Jiang</td><td>627</td><td>✔</td></tr>
+            <tr><th class="grayTable">BBa_K2207010</th><td>Other</td><td>Phl Operator</td><td>Yuxing Chen</td><td>825</td><td>✔</td></tr>
+            <tr><th class="grayTable">BBa_K2207021</th><td>Promoters</td><td>Calcineurin-dependent response element (CDRE)</td><td>Shisheng Li</td><td>474</td><td>✔</td></tr>
+            <tr><th class="grayTable">BBa_K2207023</th><td>Coding Sequences</td><td>Mature serine protein from Paecilomyces lilacinus</td><td>Zifan Xie</td><td>882</td><td>✔</td></tr>
+            <tr><th class="grayTable">BBa_K2207024</th><td>Promoters</td><td>T7-mutant1</td><td>Yuxing Chen</td><td>42</td><td>✔</td></tr>
+            <tr><th class="grayTable">BBa_K2207025</th><td>Promoters</td><td>T7-mutant2</td><td>Yuxing Chen</td><td>42</td><td>✔</td></tr>
+            <tr><th class="grayTable">BBa_K2207026</th><td>Promoters</td><td>T7-mutant3</td><td>Yuxing Chen</td><td>42</td><td>✔</td></tr>
+            <tr><th class="grayTable">BBa_K2207027</th><td>Promoters</td><td>T7-mutant4</td><td>Yuxing Chen</td><td>42</td><td>✔</td></tr>
+            <tr><th class="grayTable">BBa_K2207028</th><td>Promoters</td><td>T7-mutant5</td><td>Yuxing Chen</td><td>42</td><td>✔</td></tr>
+            <tr><th class="grayTable">BBa_K2207029</th><td>Promoters</td><td>T7-mutant6</td><td>Yuxing Chen</td><td>42</td><td>✔</td></tr>
+            <tr><th class="grayTable">BBa_K2207030</th><td>Promoters</td><td>T7-mutant7</td><td>Yuxing Chen</td><td>42</td><td>✔</td></tr>
+            <tr><th class="grayTable">BBa_K2207031</th><td>Coding Sequences</td><td>PhlE efflux pump</td><td>Junming Qian</td><td>1272</td><td>✔</td></tr>
+        </table>
+        <p class="capture">Table.OD600 reference point</p>
+
+
+        <h2 class="H2Head" id="ref">Reference<hr></h2>
+        <p class="PP ref">[1] Cyert M S. Calcineurin signaling in Saccharomyces cerevisiae: how yeast go crazy in response to stress[J]. Biochemical and biophysical research communications, 2003, 311(4): 1143-1150.</p>
+        <p class="PP ref">[2] Cyert M S. Genetic analysis of calmodulin and its targets in Saccharomyces cerevisiae[J]. Annual review of genetics, 2001, 35(1): 647-672.</p>
+        <p class="PP ref">[3] Brand D, Roussos S, Pandey A, et al. Development of a bionematicide with Paecilomyces lilacinus to control Meloidogyne incognita.[J]. Applied Biochemistry & Biotechnology, 2004, 118(1-3):81-88.</p>
+
+        <br><br><br>
+
+    </div>
+
+    <!-- 右侧监听开始 -->
+    <div class="col-md-3 disappear-on-top" role="complementary">
+        <nav  style="position: fixed; top: 100px ; left:50px;" class="bs-docs-sidebar hidden-print hidden-xs hidden-sm">
+            <ul class="nav bs-docs-sidenav shorterli">
+
+                <li><a href="#cdre">CDRE</a></li>
+                <li><a href="#msp">Mature serine protein</a></li>
+                <li><a href="#ref">Reference</a></li>
+
+            </ul>
+
+            <a class="back-to-top" href="#top">
+                <!--   <i class="fa fa-arrow-up nav_icon"></i> -->
+                <img style="width: 50px;" src="http://2017.igem.org/wiki/images/d/da/ZJU_China_UP.png">
+            </a>
+
+
+        </nav>
+    </div>
+
+</div>
+</div>
+<!-- 右侧监听结束 -->
+<!-- footer开始 -->
+<div class="footer"  style="background-color: #000000">
+    <div class="copyright container text-center">
+        <p><br></p>
+        <p class="copyright">Copyright &#169; 2017 ZJU-IGEM | <a href="http://www.zju.edu.cn/">Zhejiang University</a> |</p>
+        <p><br></p>
+    </div>
+</div>
+<!-- footer结束 -->
+
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<!--script src="js/bootstrap.min.js"></script-->
+<script src="http://2017.igem.org/wiki/images/8/85/ZJUChina_js_docsmin.txt"></script>
+<!--script src="js/button.js"></script-->
+<script src="http://2017.igem.org/wiki/images/2/22/ZJUChina_bootstrap.min.txt"></script>
+<script src="http://2017.igem.org/wiki/images/3/32/ZJUChina_docs.min.txt"></script>
+<script src="http://2017.igem.org/wiki/images/e/e0/ZJUChina_button.txt"></script>
+
+<script src="http://2017.igem.org/Team:ZJU-China/js/scrollingnavnonPic?action=raw&ctype=text/javascript"></script>
+<!--<script src="http://2017.igem.org/wiki/images/9/92/ZJUChina_scrolling-nav.txt"></script>  -->
+<script src="http://2017.igem.org/wiki/images/c/c0/ZJUChina_txtSmoothScroll.min.txt"></script>
+
+</body>
+</html>

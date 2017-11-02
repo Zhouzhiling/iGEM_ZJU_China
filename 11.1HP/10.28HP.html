@@ -1,0 +1,628 @@
+<html lang="zh-CN">
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+<title>
+  
+    HP
+  
+</title>
+
+<!-- Bootstrap core CSS -->
+
+<!-- <link href="css/bootstrap.css" rel="stylesheet"> -->
+<!-- <link href='css/bootstrap.css' rel='stylesheet' type='text/css'> -->
+<link href="http://2017.igem.org/Zju/css/bootstrap?action=raw&ctype=text/css" rel="stylesheet" media="screen" />
+  <!-- Optional Bootstrap Theme -->
+      <link href="http://2017.igem.org/Team:ZJU-China/css/timelinelight?action=raw&ctype=text/css" rel="stylesheet">
+
+
+<!-- <link href="css/bootstrap-theme.css" rel="stylesheet" id="bs-theme-stylesheet"> -->
+<link href="http://2017.igem.org/Zju/css/bootstraptheme?action=raw&ctype=text/css" rel="stylesheet" id="bs-theme-stylesheet">
+
+ <!-- 按钮的字体 -->
+<link href='http://2017.igem.org/Team:ZJU-China/cs/font?action=raw&ctype=text/css' rel='stylesheet' type='text/css'>
+<!-- 按钮的字体end -->
+
+<!-- Documentation extras -->
+
+<link href="http://2017.igem.org/Zju/css/docs/min?action=raw&ctype=text/css" rel="stylesheet" type="text/css"/>
+
+<link href="http://2017.igem.org/Zju/css/doc-style?action=raw&ctype=text/css" rel="stylesheet" type="text/css"/>
+<!-- <link href="http://2017.igem.org/Zju/css/doc-style?action=raw&ctype=text/css" rel="stylesheet"> -->
+<link href="http://2017.igem.org/Zju/css/responsive/min?action=raw&ctype=text/css" rel="stylesheet">
+
+<script>
+  var _hmt = _hmt || [];
+</script>
+  </head>
+
+
+<style>
+/*Override default CSS*/
+#sideMenu, #top_title {display:none;}
+#content { padding:0px; width:100%; margin-top:-7px; margin-left:0px;background-color: transparent;}
+
+
+/* set all basic objects to neutral formatting*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+#globalWrapper {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+
+/* set page to fill window*/
+html{
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    background-color: #FFFFFF;
+}
+
+
+#content_wrapper {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    text-align:center;
+    background-color: #FFFFFF;
+}
+
+#content_wrapper p {
+    font-family: 'Yanone Kaffeesatz',Tahoma, Geneva, sans-serif;
+}
+
+#content_wrapper a {
+    color:#004789;
+}
+
+
+#footer {
+    position:absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.center {
+    width: 60%;
+    margin-top: 16px;
+    min-width: 500px;
+    padding-bottom:32px;
+    display: inline-block;
+}
+
+.TextContent {
+    text-align: left;
+    vertical-align: baseline;
+    font-size: 0.875em;
+    font-family:'Yanone Kaffeesatz', verdana, sans-serif;
+}
+
+.TextContent h1{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+    margin-top: 0.2em;
+    color: #3399ff;
+    font-family:'Yanone Kaffeesatz', verdana, sans-serif;
+}
+
+.TextContent h2{
+    line-height: 1.6;
+    margin-bottom: 0em;
+    margin-top: 1em;
+    text-align: left;
+    font-family:'Yanone Kaffeesatz', verdana, sans-serif;
+}
+
+.TextContent p{
+    margin-bottom: 1.2em;
+    font-family:'Yanone Kaffeesatz', verdana, sans-serif;
+}
+
+.Page_Wide {
+    width:100%;
+}
+
+.Quarter_Image {
+    width:25%;
+    max-height:250px;
+    float:left;
+}
+
+.Quarter_Image img {
+    display:block;
+    margin:auto;
+    max-height: 250px;
+    width: auto;
+}
+
+.SocialMediaIconWrapper {
+    width:100%;
+}
+
+.SocialMediaIcon {
+    width:4%;
+    height:auto;
+    margin-left:20px;
+    display: inline-block;
+    float:left;
+
+}
+
+.SocialMediaIcon img{
+    max-width:100%;
+    height:auto
+}
+
+.TeamImage {
+    width:100%;
+}
+
+.TeamImage img {
+    max-width:100%;
+    height:auto
+}
+
+.sponsors {
+    width: 100%;
+}
+
+.sponsor_row {
+    width: 100%;
+}
+
+.sponsor_img {
+    width: 16.6666667%;
+    float:left;
+}
+
+.sponsor_img img{
+    max-width:100%;
+    height:auto
+}
+
+.clear {
+    clear:both;
+}
+
+.clear.extra_space {
+    height: 20px;
+}
+
+.line_divider {
+    border-top: 1px solid #d3d3d3;
+    width: 98%;
+    margin: auto;
+}
+
+.copyright{
+    color: #888888;
+    font-size: 13px;
+    text-align: center !important;
+}
+
+
+.copyright a{
+    color: #d2ebe3;
+    border-bottom: dotted 1px #a5d8c7;
+}
+
+.PP {
+    font-family: georgia;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: left;
+}
+
+/*文中自定义*/
+.CuteButton:active {
+    -webkit-box-shadow: 0px 3px 0px rgba(0,52,63,1), 0px 3px 6px rgba(0,0,0,.9);
+    -moz-box-shadow: 0px 3px 0px rgba(0,52,63,1), 0px 3px 6px rgba(0,0,0,.9);
+    box-shadow: 0px 3px 0px rgba(0,52,63,1), 0px 3px 6px rgba(0,0,0,.9);
+    color: white !important;
+    position: relative;
+    top: 6px;
+}
+
+.YellowCB {
+    background-color: rgba(254,196,62,1);
+    -webkit-box-shadow: 0px 9px 0px rgba(245,253,202,1), 0px 9px 25px rgba(0,0,0,.7);
+    -moz-box-shadow: 0px 9px 0px rgba(245,253,202,1), 0px 9px 25px rgba(0,0,0,.7);
+    box-shadow: 0px 9px 0px rgba(245,253,202,1), 0px 9px 25px rgba(0,0,0,.7);
+    color: white !important;
+}
+
+.GreenCB {
+    background-color: rgba(25,148,117,1);
+    -webkit-box-shadow: 0px 9px 0px rgba(4,77,34,1), 0px 9px 25px rgba(0,0,0,.7);
+    -moz-box-shadow: 0px 9px 0px rgba(4,77,34,1), 0px 9px 25px rgba(0,0,0,.7);
+    box-shadow: 0px 9px 0px rgba(4,77,34,1), 0px 9px 25px rgba(0,0,0,.7);
+    color: white !important;
+}
+
+.SmallCB {
+    font-size: 1.5em;
+    margin-left: 2px;
+    padding: 2px 10px ;
+    width: 100px;
+}
+
+.Retract{
+    padding-left: 50px;
+}
+
+.GreenAH{
+    color: #56A36C;
+}
+
+.YellowAH{
+    color: #FEC43E;
+}
+
+.contentLi{
+    margin:0;
+    font-size:17px;
+    line-height: 27px;
+    padding-bottom: 20px;
+    color: #111111;
+}
+
+.blueTable
+{
+    color: #1E90FF;
+}
+
+.yellowTable
+{
+    color: #CD9B1D;
+}
+
+h2{
+    font-family: 'Yanone Kaffeesatz';
+    font-weight: 500;
+    font-size: 35px;
+    text-align: left;
+}
+
+h3{
+    font-family: 'Yanone Kaffeesatz';
+    font-weight: 500;
+    font-size: 32px;
+    text-align: left;
+}
+
+h4{
+    font-family: 'Yanone Kaffeesatz';
+    font-weight: 500;
+    font-size: 28px;
+    text-align: left;
+}
+
+h5{
+    font-family: 'Yanone Kaffeesatz';
+    font-weight: 500;
+    font-size: 25px;
+    text-align: left;
+}
+
+p{
+    margin:0;
+    font-size:17px;
+    line-height: 27px;
+    /*padding-bottom: 20px;*/
+    color: #111111;
+}
+/*文中自定义*/
+</style>
+
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <div class="page-loader"></div>
+      <!-- Docs master nav -->
+                  <!-- <h1><a class="navbar-brand" href="index.html">MuMei Lab</a></h1> -->
+
+  <div class="container">
+      <!-- header -->
+      <div class="header-w3layouts">
+          <!-- Navigation -->
+          <nav class="navbar navbar-default navbar-fixed-top">
+              <div class="navbar-header page-scroll">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                  </button>
+
+                  <a href="http://2017.igem.org/Team:ZJU-China">
+                      <img style="margin-top:11px" class="navbar-brand"  src="http://2017.igem.org/wiki/images/d/d5/ZJUChina_logo.png">
+                  </a>
+
+                  <!-- <h1><a class="navbar-brand" href="index.html">My Design</a></h1> -->
+
+              </div>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse navbar-ex1-collapse">
+                  <ul class="nav navbar-nav navbar-right cl-effect-15">
+                      <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                      <li class="hidden"><a class="page-scroll" href="#page-top"></a> </li>
+
+                      <li class="m_nav_item dropdown">
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Overview<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Overview">Description</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Demonstrate">Demonstrate</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Applied_Design">Applied Design</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Achievements">Achievements</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Improve">Improve Parts</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/InterLab">InterLab</a></li>
+
+                          </ul>
+                      </li>
+
+                      <li class="m_nav_item dropdown">
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Project<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Project/tp">Trichoderma Proof</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Project/voc">VOC sensors</a></li>
+                              <li><a style="font-size: 0.7em!important;" href="http://2017.igem.org/Team:ZJU-China/Project/st">Chemical Signal Transduction</a></li>
+                              <li><a style="font-size: 0.7em!important;" href="http://2017.igem.org/Team:ZJU-China/Project/mt">Medium Wave Transduction</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Project/Downstream">Downstream</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Project/conclusion">Conclusions</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Notebook">Notebook</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Protocols">Protocols</a></li>
+                          </ul>
+                      </li>
+
+                      <li class="m_nav_item dropdown" >
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Model<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+                              <!--<li><a href="http://2017.igem.org/Team:ZJU-China/Model">Summery</a></li>-->
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Model">VOC analysis</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Model/Coculture">Coculture</a></li>
+
+                          </ul>
+                      </li>
+
+                      <li class="m_nav_item dropdown">
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Parts<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Parts">All Parts</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Basic_Part">Basic Parts</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Composite_Part">Composite Parts</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Part_Collection">Part Collection</a></li>
+
+
+
+
+                          </ul>
+                      </li>
+
+                      <li class="m_nav_item dropdown" >
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Hardware<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Hardware">Overview</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Hardware/Device">Device</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Hardware/Improvements">Improvements</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Hardware/MediumWave">Medium Wave</a></li>
+                          </ul>
+                      </li>
+
+                      <li class="m_nav_item dropdown" >
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Safety<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Safety">Environment</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Safety/Lab">Laboratory</a></li>
+                          </ul>
+                      </li>
+
+                      <li class="m_nav_item dropdown">
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">HP<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Human_Practices">Summary</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/HP/Silver">Silver</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/HP/Gold_Integrated">Gold Integrated</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Engagement">Engagement</a></li>
+                          </ul>
+                      </li>
+
+                      <li class="m_nav_item dropdown" >
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Team<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Team">Teammates</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Attributions">Attribution</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Collaborations">Collaboration</a></li>
+                          </ul>
+                      </li>
+                  </ul>
+              </div>
+          </nav>
+      </div>
+  </div>
+
+
+
+<div style="margin:0 auto;z-index:50;">
+  <img src="http://2017.igem.org/wiki/images/1/1b/ZJU_China_HPPublic_248.jpg" width="100%">
+  <!-- <img src="images/HP_temp/banner.jpg" width="100%"> -->
+</div>
+
+<!-- BEGIN TIMELINE -->
+<div class="timelineLight tl">
+    <div class="item" data-id="23/05/2017" data-description="Software">
+      <img class="con_borderImage" src="http://2017.igem.org/wiki/images/3/3c/ZJU_China_HP_wx.png" alt="" />
+      <h2 class="timelineHead">MAY, 23</h2>
+      <span>When your team is on the stage of brainstorming, are you bothered with looking for the former iGEM teams' information? Take out your smart phone and try our Mini Program.
+</span>
+    </div>
+    
+    <div class="item" data-id="28/05/2017" data-description="Scientific and Technological Business Incubator">
+      <img class="con_borderImage" src="http://2017.igem.org/wiki/images/3/33/ZJU_China_HP_high.jpg" alt="" />
+      <h2 class="timelineHead">MAY, 28</h2>
+      <span>"We just built up a iGEM high school team, how shall we start?"<br>
+"Don't worry! We can share our experience with you."
+
+
+</span>
+    </div>
+
+    
+    <div class="item" data-id="04/07/2017" data-description="Design">
+      <img class="con_borderImage" src="http://2017.igem.org/wiki/images/c/cf/ZJU_China_HP_zbsmall.jpg" alt="" />
+      <h2 class="timelineHead">JULY, 4</h2>
+      <span>After determining our logo, we designed some derivative products such as postcard, key chain, badge, notebook, stickers, etc. We sincerely hope that these gifts can get everyone's favor during intercollegiate communication.</span>
+    </div>
+
+
+    <div class="item" data-id="09/07/2017" data-description="The hall in ZJSTM">
+      <img class="con_borderImage" src="http://2017.igem.org/wiki/images/2/28/ZJU_China_HP_kjg.jpg" alt="" />
+      <h2 class="timelineHead">JULY, 9</h2>
+      <span>We held a "garden party" in the Zhejiang Science and Technology Museum. The children who joined in it said: "I've learned lots of scientific knowledge in this activity." "I found it interesting. Give the thumbs up."</span>
+    </div>
+    
+    
+    <div class="item" data-id="13/07/2017" data-description="State Food and Drug Administration">
+      <img class="con_borderImage" src="http://2017.igem.org/wiki/images/1/13/ZJU_China_HP_yjj.jpg" alt="" />
+      <h2 class="timelineHead">JULY, 13</h2>
+      <span>"I do believe that such cutting edge technology can do great benefits to people once it grows fully mature. But we have to make sure it's safe before we take a closer look at its effectiveness," one of the officials said.</span>
+    </div>
+    
+    
+    
+    <div class="item" data-id="19/07/2017" data-description="National Demonstration Center for Experimental Biology Education in ZJU">
+      <img class="con_borderImage" src="http://2017.igem.org/wiki/images/f/f6/ZJU_China_HP_kxy.jpg" alt="" />
+      <h2 class="timelineHead">JULY, 19</h2>
+      <span>National Demonstration Center for Experimental Biology Education in ZJU<br>"Wow, What is this? How shall I use it?"<br>"Welcome to our lab, let me guide you!"</span>
+    </div>
+    
+    <div class="item" data-id="20/07/2017" data-description="Software">
+      <img class="con_borderImage" src="http://2017.igem.org/wiki/images/1/13/ZJU_China_HP_Game.png" alt="" />
+      <h2 class="timelineHead">JULY, 20</h2>
+      <span>Can Trichoderma defend your plant from dangerous? It depends on you. Play our computer game and see who's the winner.</span>
+    </div>
+    
+    <div class="item" data-id="23/08/2017" data-description="Hunan Province">
+      <img class="con_borderImage" src="http://2017.igem.org/wiki/images/5/59/ZJU_China_HP_ycgs.jpg" alt="" />
+      <h2 class="timelineHead">AUGUST, 23</h2>
+      <span>By visiting the tobacco field as well as communicating with the officials in the tobacco company, we got useful suggestions and inspirations. Then we designed our device and modified our "wetlab" work.</span>
+    </div>
+
+    <div class="item" data-id="25/08/2017" data-description="Northeastern University">
+        <img class="con_borderImage" src="http://2017.igem.org/wiki/images/5/5d/ZJU_China_HP_DBDX.jpg" alt="" />
+        <h2 class="timelineHead">AUGUST, 25</h2>
+        <span>We had a freewheeling talk with the iGEM team of Northeastern University, because of this talk,  we later had opportunities to collaborate with them in experiments.</span>
+    </div>
+    
+    <div class="item" data-id="26/08/2017" data-description="CCiC">
+      <img class="con_borderImage" src="http://2017.igem.org/wiki/images/5/52/ZJU_China_HP_CCIC.jpg" alt="" />
+      <h2 class="timelineHead">AUGHST, 26</h2>
+      <span>Many suggestions that we received from other teams are of value, so we further improved our design after coming back. Besides, we built close cooperation with UESTC-China since we both used the tobacco.</span>
+    </div>
+
+    <div class="item" data-id="07/10/2017" data-description="BTGEM Summit">
+        <img class="con_borderImage" src="http://2017.igem.org/wiki/images/d/db/ZJU_China_HP_BTGEM.jpg" alt="" />
+        <h2 class="timelineHead">OCTOBER, 7</h2>
+        <span>We trained ourselves through telling others our story, and they fed back what they were interested in or what they could not figure out, and all these information helped us discover many defects in our presentation.</span>
+    </div>
+    
+
+</div> <!-- /END TIMELINE -->
+
+
+<div style="width: 100%" class="container zjuContent">
+  <div class="col-md-3"></div>
+    <div class="col-md-9" role="main">
+      <div class="bs-docs-section">
+
+  
+  <h1 id="summary" class="page-header ArticleHead GreenAH">Human Practice Summary</h1>
+          <p class="PP">We engaged with stakeholders as well as experts,and did field study etc., which as a whole helped us to design and improve our project.</p>
+          <p class="PP">We consider the safety problem and interviewed the officials about bio-safety legislation. New designs and changes occurred after we made a trip to the tobacco company. Also, we made a lot of connection with public, especially teenagers, through activities like garden party, open house day, project-related computer game and so on. What's more, we joined in some meetings with other participants.</p>
+          <p class="PP">We saw the current condition and problem, and made dialogues with professors and common people to got useful advice. Then, we made new things(like our VOC device) and confirmed one direction of our project. Through the project process, human practice helped us throw light on public issues and make efforts to solve the practical problem.</p>
+
+          <div style="text-align: center;">
+              <br><br>
+          <a class="CuteButton GreenCB" href="http://2017.igem.org/Team:ZJU-China/HP/Silver">More HP About Silver...</a>
+          <br><br><br>
+          <a class="CuteButton YellowCB" href="http://2017.igem.org/Team:ZJU-China/HP/Gold_Integrated">More HP About Gold...</a>
+          </div>
+      </div>
+        
+
+<!-- 右侧监听开始 -->
+<div class="col-md-3 disappear-on-top" role="complementary">
+  <nav  style="position: fixed; top: 100px ; left:50px;" class="bs-docs-sidebar hidden-print hidden-xs hidden-sm">
+    <ul class="nav bs-docs-sidenav">
+      <li><a href="#summary">Summary</a></li>
+
+    </ul>
+
+      <a class="back-to-top" href="#top">
+          <!--   <i class="fa fa-arrow-up nav_icon"></i> -->
+          <img style="width: 50px;" src="http://2017.igem.org/wiki/images/d/da/ZJU_China_UP.png">
+      </a>
+
+
+          </nav>
+        </div>
+
+      </div>
+</div>
+<!-- 右侧监听结束 -->
+
+  <!-- footer开始 -->
+  <div class="footer"  style="background-color: #000000">
+      <div class="copyright container text-center">
+          <p><br></p>
+          <p class="copyright">Copyright &copy; 2017 ZJU-IGEM | <a href="http://www.zju.edu.cn/">Zhejiang University</a> |</p>
+          <p><br></p>
+      </div>
+  </div>
+  <!-- footer结束 -->
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <!--script src="js/bootstrap.min.js"></script-->
+  <script src="http://2017.igem.org/wiki/images/8/85/ZJUChina_js_docsmin.txt"></script>
+  <!--script src="js/button.js"></script-->
+  <script src="http://2017.igem.org/wiki/images/2/22/ZJUChina_bootstrap.min.txt"></script>
+  <script src="http://2017.igem.org/wiki/images/3/32/ZJUChina_docs.min.txt"></script>
+  <script src="http://2017.igem.org/wiki/images/e/e0/ZJUChina_button.txt"></script>
+
+  <script src="http://2017.igem.org/Team:ZJU-China/js/scrollingnavhpman?action=raw&ctype=text/javascript"></script>
+  <!--<script src="js/scrolling-nav-hpman.js"></script>-->
+
+  <script src="http://2017.igem.org/wiki/images/c/c0/ZJUChina_txtSmoothScroll.min.txt"></script>
+
+  <!-- timeline begin -->
+  <script src="http://2017.igem.org/Team:ZJU-China/js/timelinecycle?action=raw&ctype=text/javascript"></script>
+  <script src="http://2017.igem.org/Team:ZJU-China/js/timelineeasing?action=raw&ctype=text/javascript"></script>
+  <script src="http://2017.igem.org/Team:ZJU-China/js/timelinemin?action=raw&ctype=text/javascript"></script>
+  <!-- timeline end -->
+
+  </body>
+</html>
