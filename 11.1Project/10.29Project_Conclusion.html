@@ -1,0 +1,608 @@
+<html lang="zh-CN">
+<head>
+
+    <link href="http://2017.igem.org/Zju/css/bootstrap?action=raw&ctype=text/css" rel="stylesheet" media="screen" />
+    <link href="http://2017.igem.org/Zju/css/bootstraptheme?action=raw&ctype=text/css" rel="stylesheet" id="bs-theme-stylesheet">
+    <link href="http://2017.igem.org/Zju/css/docs/min?action=raw&ctype=text/css" rel="stylesheet" type="text/css"/>
+    <link href="http://2017.igem.org/Zju/css/doc-style?action=raw&ctype=text/css" rel="stylesheet">
+    <link href="http://2017.igem.org/Zju/css/responsive/min?action=raw&ctype=text/css" rel="stylesheet">
+    <!-- 按钮的字体 -->
+    <link href='http://2017.igem.org/Team:ZJU-China/cs/font?action=raw&ctype=text/css' rel='stylesheet' type='text/css'>
+    <!-- 按钮的字体end -->
+    <script>
+        var _hmt = _hmt || [];
+    </script>
+    <script src="http://2017.igem.org/wiki/images/8/85/ZJUChina_js_docsmin.txt?action=raw&ctype=text/javascript"></script>
+</head>
+
+
+<style>
+    /*Override default CSS*/
+    #sideMenu, #top_title {display:none;}
+    #content { padding:0px; width:100%; margin-top:-7px; margin-left:0px;background-color: transparent;}
+
+
+    /* set all basic objects to neutral formatting*/
+    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+    }
+
+    #globalWrapper {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+    }
+
+
+    /* set page to fill window*/
+    html{
+        height: 100%;
+    }
+    body {
+        min-height: 100%;
+        background-color: #FFFFFF;
+    }
+
+
+    #content_wrapper {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        margin: 0px;
+        width: 100%;
+        height: 100%;
+        text-align:center;
+        background-color: #FFFFFF;
+    }
+
+    #content_wrapper p {
+        font-family: 'Yanone Kaffeesatz',Tahoma, Geneva, sans-serif;
+    }
+
+    #content_wrapper a {
+        color:#004789;
+    }
+
+
+    #footer {
+        position:absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        background-color: #FFFFFF;
+        text-align: center;
+    }
+
+    .center {
+        width: 60%;
+        margin-top: 16px;
+        min-width: 500px;
+        padding-bottom:32px;
+        display: inline-block;
+    }
+
+    .TextContent {
+        text-align: left;
+        vertical-align: baseline;
+        font-size: 0.875em;
+        font-family:'Yanone Kaffeesatz', verdana, sans-serif;
+    }
+
+    .TextContent h1{
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 1em;
+        margin-top: 0.2em;
+        color: #3399ff;
+        font-family:'Yanone Kaffeesatz', verdana, sans-serif;
+    }
+
+    .TextContent h2{
+        line-height: 1.6;
+        margin-bottom: 0em;
+        margin-top: 1em;
+        text-align: left;
+        font-family:'Yanone Kaffeesatz', verdana, sans-serif;
+    }
+
+    .TextContent p{
+        margin-bottom: 1.2em;
+        font-family:'Yanone Kaffeesatz', verdana, sans-serif;
+    }
+
+    .Page_Wide {
+        width:100%;
+    }
+
+    .Quarter_Image {
+        width:25%;
+        max-height:250px;
+        float:left;
+    }
+
+    .Quarter_Image img {
+        display:block;
+        margin:auto;
+        max-height: 250px;
+        width: auto;
+    }
+
+    .SocialMediaIconWrapper {
+        width:100%;
+    }
+
+    .SocialMediaIcon {
+        width:4%;
+        height:auto;
+        margin-left:20px;
+        display: inline-block;
+        float:left;
+
+    }
+
+    .SocialMediaIcon img{
+        max-width:100%;
+        height:auto
+    }
+
+    .TeamImage {
+        width:100%;
+    }
+
+    .TeamImage img {
+        max-width:100%;
+        height:auto
+    }
+
+    .sponsors {
+        width: 100%;
+    }
+
+    .sponsor_row {
+        width: 100%;
+    }
+
+    .sponsor_img {
+        width: 16.6666667%;
+        float:left;
+    }
+
+    .sponsor_img img{
+        max-width:100%;
+        height:auto
+    }
+
+    .clear {
+        clear:both;
+    }
+
+    .clear.extra_space {
+        height: 20px;
+    }
+
+    .line_divider {
+        border-top: 1px solid #d3d3d3;
+        width: 98%;
+        margin: auto;
+    }
+
+    .copyright{
+        color: #888888;
+        font-size: 13px;
+        text-align: center !important;
+    }
+
+
+    .copyright a{
+        color: #d2ebe3;
+        border-bottom: dotted 1px #a5d8c7;
+    }
+
+
+    /*文中自定义*/
+    .CuteButton:active {
+        color:white !important;
+        -webkit-box-shadow: 0px 3px 0px rgba(0,52,63,1), 0px 3px 6px rgba(0,0,0,.9);
+        -moz-box-shadow: 0px 3px 0px rgba(0,52,63,1), 0px 3px 6px rgba(0,0,0,.9);
+        box-shadow: 0px 3px 0px rgba(0,52,63,1), 0px 3px 6px rgba(0,0,0,.9);
+        position: relative;
+        top: 6px;
+    }
+
+    .CuteButton:visited {
+        color:white !important;
+        -webkit-box-shadow: 0px 3px 0px rgba(0,52,63,1), 0px 3px 6px rgba(0,0,0,.9);
+        -moz-box-shadow: 0px 3px 0px rgba(0,52,63,1), 0px 3px 6px rgba(0,0,0,.9);
+        box-shadow: 0px 3px 0px rgba(0,52,63,1), 0px 3px 6px rgba(0,0,0,.9);
+        position: relative;
+        top: 6px;
+    }
+
+    .YellowCB {
+        background-color: rgba(254,196,62,1);
+        -webkit-box-shadow: 0px 9px 0px rgba(245,253,202,1), 0px 9px 25px rgba(0,0,0,.7);
+        -moz-box-shadow: 0px 9px 0px rgba(245,253,202,1), 0px 9px 25px rgba(0,0,0,.7);
+        box-shadow: 0px 9px 0px rgba(245,253,202,1), 0px 9px 25px rgba(0,0,0,.7);
+    }
+
+    .GreenCB {
+        background-color: rgba(25,148,117,1);
+        -webkit-box-shadow: 0px 9px 0px rgba(4,77,34,1), 0px 9px 25px rgba(0,0,0,.7);
+        -moz-box-shadow: 0px 9px 0px rgba(4,77,34,1), 0px 9px 25px rgba(0,0,0,.7);
+        box-shadow: 0px 9px 0px rgba(4,77,34,1), 0px 9px 25px rgba(0,0,0,.7);
+    }
+
+    .SmallCB {
+        font-size: 1.5em;
+        margin-left: 2px;
+        padding: 2px 10px ;
+        width: 100px;
+    }
+
+
+
+    .ArticleHead{
+        font-family: 'Tempus Sans ITC',georgia !important;
+        font-size: 40px !important;
+        font-weight: 800 !important;
+        color: #56A36C !important;
+        text-align: center !important;
+        margin-bottom: 0 !important;
+        margin-top: .6em !important;
+    }
+
+    .H3Head{
+        font-family: 'Tempus Sans ITC',georgia !important;
+        color: #FEC43E !important;
+        font-size: 25px !important;
+        font-weight: 400 !important;
+        text-align: left !important;
+        margin-bottom: 0 !important;
+        margin-top:.6em !important;
+    }
+
+    .PP{
+        font-family:Tahoma, Geneva, sans-serif !important;
+        font-size: 20px !important;
+        font-weight: 100 !important;
+        text-align: left !important;
+        margin-bottom: 20px !important;
+    }
+
+
+    .Retract{
+        padding-left: 50px;
+    }
+
+    .GreenAH{
+        color: #56A36C;
+    }
+
+    .YellowAH{
+        color: #FEC43E;
+    }
+
+    .contentLi{
+        margin:0;
+        font-size:17px;
+        line-height: 27px;
+        padding-bottom: 20px;
+        color: #111111;
+    }
+
+    .blueTable
+    {
+        color: #1E90FF;
+    }
+
+    .yellowTable
+    {
+        color: #CD9B1D;
+    }
+
+    h2{
+        font-family: 'Tempus Sans ITC';
+        font-weight: 500;
+        font-size: 35px;
+        text-align: left;
+    }
+
+    h3{
+        font-family: 'Tempus Sans ITC';
+        font-weight: 500;
+        font-size: 32px;
+        text-align: left;
+    }
+
+    h4{
+        font-family: 'Tempus Sans ITC';
+        font-weight: 500;
+        font-size: 28px;
+        text-align: left;
+    }
+
+    h5{
+        font-family: 'Tempus Sans ITC';
+        font-weight: 500;
+        font-size: 25px;
+        text-align: left;
+    }
+
+    p{
+        margin:0;
+        font-size:17px;
+        line-height: 30px;
+        /*padding-bottom: 20px;*/
+        color: #111111;
+    }
+
+    .bs-docs-sidenav
+    {
+        font-family:Tahoma, Geneva, sans-serif !important;
+        font-size: 20px !important;
+        font-weight: 100 !important;
+        text-align: left !important;
+    }
+
+
+    .textli li{
+        font-family:Tahoma, Geneva, sans-serif !important;
+        font-size: 20px !important;
+        font-weight: 100 !important;
+        text-align: left !important;
+    }
+
+    .textimg
+    {
+        width:70% !important;
+    }
+    /*文中自定义*/
+    .cite {
+        color: #3d7b4f !important;
+        border-bottom: dotted 1px #3d7b4f !important;
+    }
+
+    .ref
+    {
+        font-size: 16px !important;
+        line-height:22px !important;
+        margin-bottom: 5px !important;
+        color: #353535;
+    }
+</style>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<div class="page-loader"></div>
+<!-- Docs master nav -->
+<!-- <h1><a class="navbar-brand" href="index.html">MuMei Lab</a></h1> -->
+<div class="container">
+      <!-- header -->
+      <div class="header-w3layouts">
+          <!-- Navigation -->
+          <nav class="navbar navbar-default navbar-fixed-top">
+              <div class="navbar-header page-scroll">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                  </button>
+
+                  <a href="http://2017.igem.org/Team:ZJU-China">
+                      <img style="margin-top:11px" class="navbar-brand"  src="http://2017.igem.org/wiki/images/d/d5/ZJUChina_logo.png">
+                  </a>
+
+                  <!-- <h1><a class="navbar-brand" href="index.html">My Design</a></h1> -->
+
+              </div>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse navbar-ex1-collapse">
+                  <ul class="nav navbar-nav navbar-right cl-effect-15">
+                      <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                      <li class="hidden"><a class="page-scroll" href="#page-top"></a> </li>
+
+                      <li class="m_nav_item dropdown">
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Overview<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Overview">Description</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Demonstrate">Demonstrate</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Applied_Design">Applied Design</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Achievements">Achievements</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Improve">Improve Parts</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/InterLab">InterLab</a></li>
+
+                          </ul>
+                      </li>
+
+                      <li class="m_nav_item dropdown">
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Project<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Project/tp">Trichoderma Proof</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Project/voc">VOC sensors</a></li>
+                              <li><a style="font-size: 0.7em!important;" href="http://2017.igem.org/Team:ZJU-China/Project/st">Chemical Signal Transduction</a></li>
+                              <li><a style="font-size: 0.7em!important;" href="http://2017.igem.org/Team:ZJU-China/Project/mt">Medium Wave Transduction</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Project/Downstream">Downstream</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Project/conclusion">Conclusions</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Notebook">Notebook</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Protocols">Protocols</a></li>
+                          </ul>
+                      </li>
+
+                      <li class="m_nav_item dropdown" >
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Model<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+                              <!--<li><a href="http://2017.igem.org/Team:ZJU-China/Model">Summery</a></li>-->
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Model">VOC analysis</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Model/Coculture">Coculture</a></li>
+
+                          </ul>
+                      </li>
+
+                      <li class="m_nav_item dropdown">
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Parts<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Parts">All Parts</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Basic_Part">Basic Parts</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Composite_Part">Composite Parts</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Part_Collection">Part Collection</a></li>
+
+
+
+
+                          </ul>
+                      </li>
+
+                      <li class="m_nav_item dropdown" >
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Hardware<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Hardware">Overview</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Hardware/Device">Device</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Hardware/Improvements">Improvements</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Hardware/MediumWave">Medium Wave</a></li>
+                          </ul>
+                      </li>
+
+                      <li class="m_nav_item dropdown" >
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Safety<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Safety">Environment</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Safety/Lab">Laboratory</a></li>
+                          </ul>
+                      </li>
+
+                      <li class="m_nav_item dropdown">
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">HP<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Human_Practices">Summary</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/HP/Silver">Silver</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/HP/Gold_Integrated">Gold Integrated</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Engagement">Engagement</a></li>
+                          </ul>
+                      </li>
+
+                      <li class="m_nav_item dropdown" >
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Team<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Team">Teammates</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Attributions">Attribution</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Collaborations">Collaboration</a></li>
+                          </ul>
+                      </li>
+                  </ul>
+              </div>
+          </nav>
+      </div>
+  </div>
+<p></p>
+<!--<div style="margin-top:0;padding-top:0">-->
+<!--<img id="partsPage" src="http://2017.igem.org/wiki/images/b/be/ZJUChina_interlab_banner.jpg" width="100%">-->
+<!--&lt;!&ndash; <img src="images/HP_temp/banner.jpg" width="100%"> &ndash;&gt;-->
+<!--</div>-->
+
+
+<div style="width: 100%" class="container zjuContent">
+    <div class="col-md-3"></div>
+    <div class="col-md-9" role="main">
+        <p class="bs-docs-section">
+
+            <div style="height: 50px;"></div>
+
+        <h1 id="humanpractice" class="page-header ArticleHead GreenAH">Conclusion</h1>
+
+        <h2 class="H2Head" id="oc">Our Verification</h2>
+        <p class="PP"> <a class="cite" href="http://2017.igem.org/Team:ZJU-China/Project/tp">The work we have done</a> in <em>T.atroviride</em> enable us to draw the conclusion that we have managed to do genetic manipulation in it and the Homologous Recombination Kit makes it much easier.   It is worth mention that we have verified the function of Pech42 during mycoparasitism, which means it may be possible to utilize Pech42 as a sensor for phytopathogens.</p>
+        <h2 class="H2Head" id="od">Our Device</h2>
+        <p class="PP">Besides, we have built up <a class="cite" href="http://2017.igem.org/Team:ZJU-China/Hardware">a device with multiple functions</a>, such as VOC sensing, environmental index detection and message-passing. For message-passing, there are two alternative pathways, chemical transduction and medium wave transduction. After finding out the present of phytopathogens, the former pathway releases DAPG and the latter gives out medium wave.</p>
+        <h2 class="H2Head" id="oa">Our Signal Transduction</h2>
+        <p class="PP">Generally speaking, we have finished the preliminary verification of both <a class="cite" href="http://2017.igem.org/Team:ZJU-China/Project/st">chemical signal transduction</a> and <a class="cite" href="http://2017.igem.org/Team:ZJU-China/Project/mt">medium wave transduction</a>. </p>
+        <p class="PP">For chemical signal, we succeeded in producing DAPG and building up the phlo-phlf system. Though our tests is done in lab, promisingly field trial will turn out well since we can use our engineering bacteria to produce enough DAPG to operate the engineered <em>T.atroviride</em> and lower the cost in addition.</p>
+
+        <p class="PP">For medium wave transduction, we have done even more. We managed to construct the TRPV-Ferritin system and verified whether everything worked and tested the whole system.  The only thing uncertain is its function hasn't been tested in T.atroviride due to lime limit. Even though, for fear that it should fail to work in T.atroviride, we have made detailed experimental plans, which go like this:)</p>
+
+
+
+        <h3 class="H3Head" id="fi">Future Development</h3>
+        <p class="PP">Though we have demonstrated that TRPV1 could induce enough calcium influx to activate our CDRE promoter in yeast, we cannot conclude whether TRPV would fail to induce enough Ca<sup>2+</sup> for <em>T.atroviride</em> promoter. AtTPC1 will help. As a calcium-permeable channel activated by depolarisation, AtTPC1 will respond to the inflow of Ca<sup>2+</sup> and open, inducing more Ca<sup>2+</sup> and exaggerating the signal until the downstream gene responds. To realize that, we plan to build up a Ca<sup>2+</sup> signal system consists of XYR1, CRZ1, ACE1 and corresponding Xyr1 promoter. All of them are from Trichoderma reesei Rut-C30. XYR1 is a transcriptional activator upregulated by Ca<sup>2+</sup>. CRZ1 is calcineurin-responsive zinc finger transcription factor 1, which could bind directly to the upstream regions of Xyr1 in response to Ca<sup>2+</sup> with another transcription factor, ACE1 (The putative binding consensus site is 5'-[T/G] GGCG-3' or 50-GGGC[G/T]-3'). We will change the coding sequence with target gene, transduct the system into <em>T.atroviride</em> and do the verification work mentioned before.</p>
+        <p class="PP">If sadly TRPV cannot express in <em>T.atroviride</em> or the protein is of low activation, we will change it for some promoter of heat shock protein(Hsp family, such as Hsp70, Hsp23, etc). Then the heat produced by Ferritin would induce expression of the downstream gene, operating <em>T.atroviride</em> to respond.</p>
+
+        <p class="PP">What if Ferritin in <em>T.atroviride</em> produce too little heat for either TRPV or promoters of heat shock proteins? (Too bad!) There is still another way. For the problem caused by <em>Phytophthora parasitica</em> var. <em>nicotianae</em>, we have designed a response system consists of elicitin and NtTPC1. Elicitin is a kind of protein secreted by <em>P.parasitica</em> spp. to obtain sterol from plants, which elicits immunoreaction of plants by Ca<sup>2+</sup> inflow through NtTPC1. We will introduce NtTPC1 into <em>T.atroviride</em>, enabling it to detect <em>P.parasitica</em> and respond. Since the concentration of Ca<sup>2+</sup> changes, helped with Ca<sup>2+</sup><sub>-</sub>depend promoter mentioned before, <em>T.atroviride</em> will sense <em>P.parasitica</em> and respond. As a result, we can operate <em>T.atroviride</em> without external chemicals, avoiding weather influences or inconvenience.</p>
+
+        <h2 class="H2Head" id="downstream">Downstream</h2>
+        <p class="PP">We have tried several downstream genes to produce the corresponding effects and taken Serine protease as an example to do some experimental verification, and it seems to turn out well.<br></p>
+        <p class="PP"><strong>See You Soon! We've tried our best this year. Looking forward to the Giant Jamboree!</strong><br></p>
+
+        <h2 class="H2Head" id="reference"><hr>Reference</h2>
+        <p class="PP ref">[1] White P J, Bowen H C, Demidchik V, et al. Genes for calcium-permeable channels in the plasma membrane of plant root cells[J]. Biochimica et Biophysica Acta (BBA)-Biomembranes, 2002, 1564(2): 299-309.</p>
+        <p class="PP ref">[2] Montero-Barrientos M, Cardoza R E, Gutiérrez S, et al. The heterologous overexpression of hsp23, a small heat-shock protein gene from Trichoderma virens, confers thermotolerance to T. harzianum[J]. Current genetics, 2007, 52(1): 45-53.</p>
+        <p class="PP ref">[3] Montero-Barrientos M, Hermosa R, Nicolás C, et al. Overexpression of a Trichoderma HSP70 gene increases fungal resistance to heat and other abiotic stresses[J]. Fungal Genetics and Biology, 2008, 45(11): 1506-1513.</p>
+        <p class="PP ref">[4] Kadota Y, Furuichi T, Ogasawara Y, et al. Identification of putative voltage-dependent Ca 2+-permeable channels involved in cryptogein-induced Ca 2+ transients and defense responses in tobacco BY-2 cells[J]. Biochemical and biophysical research communications, 2004, 317(3): 823-830.</p>
+        <p class="PP ref">[5] Osman H, Vauthrin S, Mikes V, et al. Mediation of elicitin activity on tobacco is assumed by elicitin-sterol complexes[J]. Molecular Biology of the Cell, 2001, 12(9): 2825-2834.</p>
+        <p class="PP ref">[6] Chen L, Zou G, Wang J, et al. Characterization of the Ca2+‐responsive signaling pathway in regulating the expression and secretion of cellulases in Trichoderma reesei Rut‐C30[J]. Molecular microbiology, 2016, 100(3): 560-575.<br/><br/></p>
+    </div>
+
+        <!-- 右侧监听开始 -->
+        <div class="col-md-3 disappear-on-top" role="complementary">
+            <nav  style="position: fixed; top: 100px ; left:50px;" class="bs-docs-sidebar hidden-print hidden-xs hidden-sm">
+                <ul class="nav bs-docs-sidenav shorterli">
+
+                    <li><a href="#oc">Our Verification</a></li>
+                    <li><a href="#od">Our Device</a></li>
+                    <li>
+                        <a href="#oa">Our Signal Transduction</a>
+                        <ul class="nav">
+                            <li><a href="fi">Future Development</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#downstream">Downstream</a></li>
+                    <li><a href="#reference">Reference</a></li>
+
+                </ul>
+
+                <a class="back-to-top" href="#top">
+                    <!--   <i class="fa fa-arrow-up nav_icon"></i> -->
+                    <img style="width: 50px;" src="http://2017.igem.org/wiki/images/d/da/ZJU_China_UP.png">
+                </a>
+
+
+            </nav>
+        </div>
+
+    </div>
+</div>
+<!-- 右侧监听结束 -->
+<!-- footer开始 -->
+<div class="footer"  style="background-color: #000000">
+    <div class="copyright container text-center">
+        <p class="copyright"><br></p>
+        <p class="copyright">Copyright &copy; 2017 ZJU-IGEM | <a href="http://www.zju.edu.cn/">Zhejiang University</a> |
+        </p>
+        <!--<p class="copyright">Contact us:<a class="copyright" href="">WeChat</a></p>-->
+        <p class="copyright"><br></p>
+    </div>
+</div>
+<!-- footer结束 -->
+
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<!--script src="js/bootstrap.min.js"></script-->
+<script src="http://2017.igem.org/wiki/images/8/85/ZJUChina_js_docsmin.txt"></script>
+<!--script src="js/button.js"></script-->
+<script src="http://2017.igem.org/wiki/images/2/22/ZJUChina_bootstrap.min.txt"></script>
+<script src="http://2017.igem.org/wiki/images/3/32/ZJUChina_docs.min.txt"></script>
+<script src="http://2017.igem.org/wiki/images/e/e0/ZJUChina_button.txt"></script>
+
+<script src="http://2017.igem.org/Team:ZJU-China/js/scrollingnavnonPic?action=raw&ctype=text/javascript"></script>
+<!--<script src="http://2017.igem.org/wiki/images/9/92/ZJUChina_scrolling-nav.txt"></script>  -->
+<script src="http://2017.igem.org/wiki/images/c/c0/ZJUChina_txtSmoothScroll.min.txt"></script>
+
+</body>
+</html>

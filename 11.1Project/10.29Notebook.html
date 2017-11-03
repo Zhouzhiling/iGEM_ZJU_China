@@ -1,0 +1,874 @@
+<html lang="zh-CN">
+<head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <!-- Bootstrap core CSS -->
+
+    <!-- <link href="css/bootstrap.css" rel="stylesheet"> -->
+    <!-- <link href='css/bootstrap.css' rel='stylesheet' type='text/css'> -->
+    <link href="http://2017.igem.org/Zju/css/bootstrap?action=raw&ctype=text/css" rel="stylesheet" media="screen"/>
+    <!-- Optional Bootstrap Theme -->
+
+
+    <!-- <link href="css/bootstrap-theme.css" rel="stylesheet" id="bs-theme-stylesheet"> -->
+    <link href="http://2017.igem.org/Zju/css/bootstraptheme?action=raw&ctype=text/css" rel="stylesheet"
+          id="bs-theme-stylesheet">
+
+    <!-- 按钮的字体 -->
+    <link href='http://2017.igem.org/Team:ZJU-China/cs/font?action=raw&ctype=text/css' rel='stylesheet' type='text/css'>
+    <!-- 按钮的字体end -->
+
+    <!-- Documentation extras -->
+
+    <link href="http://2017.igem.org/Zju/css/docs/min?action=raw&ctype=text/css" rel="stylesheet" type="text/css"/>
+
+    <!-- <link href="css/doc-style.css" rel="stylesheet" type="text/css"/> -->
+    <link href="http://2017.igem.org/Zju/css/doc-style?action=raw&ctype=text/css" rel="stylesheet">
+    <link href="http://2017.igem.org/Zju/css/responsive/min?action=raw&ctype=text/css" rel="stylesheet">
+
+    <script>
+        var _hmt = _hmt || [];
+    </script>
+</head>
+
+
+<style>
+    /*Override default CSS*/
+    #sideMenu, #top_title {
+        display: none;
+    }
+
+    #content {
+        padding: 0px;
+        width: 100%;
+        margin-top: -7px;
+        margin-left: 0px;
+        background-color: transparent;
+    }
+
+    /* set all basic objects to neutral formatting*/
+    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+    }
+
+    #globalWrapper {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+    }
+
+    /* set page to fill window*/
+    html {
+        height: 100%;
+    }
+
+    body {
+        min-height: 100%;
+        background-color: #FFFFFF;
+    }
+
+    #content_wrapper {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        margin: 0px;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        background-color: #FFFFFF;
+    }
+
+    #content_wrapper p {
+        font-family: 'Yanone Kaffeesatz', Tahoma, Geneva, sans-serif;
+    }
+
+    #content_wrapper a {
+        color: #004789;
+    }
+
+    #footer {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        background-color: #FFFFFF;
+        text-align: center;
+    }
+
+    .center {
+        width: 60%;
+        margin-top: 16px;
+        min-width: 500px;
+        padding-bottom: 32px;
+        display: inline-block;
+    }
+
+    .TextContent {
+        text-align: left;
+        vertical-align: baseline;
+        font-size: 0.875em;
+        font-family: 'Yanone Kaffeesatz', verdana, sans-serif;
+    }
+
+    .TextContent h1 {
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 1em;
+        margin-top: 0.2em;
+        color: #3399ff;
+        font-family: 'Yanone Kaffeesatz', verdana, sans-serif;
+    }
+
+    .TextContent h2 {
+        line-height: 1.6;
+        margin-bottom: 0em;
+        margin-top: 1em;
+        text-align: left;
+        font-family: 'Yanone Kaffeesatz', verdana, sans-serif;
+    }
+
+    .TextContent p {
+        margin-bottom: 1.2em;
+        font-family: 'Yanone Kaffeesatz', verdana, sans-serif;
+    }
+
+    .Page_Wide {
+        width: 100%;
+    }
+
+    .Quarter_Image {
+        width: 25%;
+        max-height: 250px;
+        float: left;
+    }
+
+    .Quarter_Image img {
+        display: block;
+        margin: auto;
+        max-height: 250px;
+        width: auto;
+    }
+
+    .SocialMediaIconWrapper {
+        width: 100%;
+    }
+
+    .SocialMediaIcon {
+        width: 4%;
+        height: auto;
+        margin-left: 20px;
+        display: inline-block;
+        float: left;
+
+    }
+
+    .SocialMediaIcon img {
+        max-width: 100%;
+        height: auto
+    }
+
+    .TeamImage {
+        width: 100%;
+    }
+
+    .TeamImage img {
+        max-width: 100%;
+        height: auto
+    }
+
+    .sponsors {
+        width: 100%;
+    }
+
+    .sponsor_row {
+        width: 100%;
+    }
+
+    .sponsor_img {
+        width: 16.6666667%;
+        float: left;
+    }
+
+    .sponsor_img img {
+        max-width: 100%;
+        height: auto
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    .clear.extra_space {
+        height: 20px;
+    }
+
+    .line_divider {
+        border-top: 1px solid #d3d3d3;
+        width: 98%;
+        margin: auto;
+    }
+
+    .copyright {
+        color: #888888;
+        font-size: 13px;
+        text-align: center !important;
+    }
+
+    .copyright a {
+        color: #d2ebe3;
+        border-bottom: dotted 1px #a5d8c7;
+    }
+
+
+    /*文中自定义*/
+    .CuteButton:active {
+        color:white !important;
+        -webkit-box-shadow: 0px 3px 0px rgba(0,52,63,1), 0px 3px 6px rgba(0,0,0,.9);
+        -moz-box-shadow: 0px 3px 0px rgba(0,52,63,1), 0px 3px 6px rgba(0,0,0,.9);
+        box-shadow: 0px 3px 0px rgba(0,52,63,1), 0px 3px 6px rgba(0,0,0,.9);
+        position: relative;
+        top: 6px;
+    }
+
+    .CuteButton:visited {
+        color:white !important;
+        -webkit-box-shadow: 0px 3px 0px rgba(0,52,63,1), 0px 3px 6px rgba(0,0,0,.9);
+        -moz-box-shadow: 0px 3px 0px rgba(0,52,63,1), 0px 3px 6px rgba(0,0,0,.9);
+        box-shadow: 0px 3px 0px rgba(0,52,63,1), 0px 3px 6px rgba(0,0,0,.9);
+        position: relative;
+        top: 6px;
+    }
+
+    .YellowCB {
+        background-color: rgba(254, 196, 62, 1);
+        -webkit-box-shadow: 0px 9px 0px rgba(245, 253, 202, 1), 0px 9px 25px rgba(0, 0, 0, .7);
+        -moz-box-shadow: 0px 9px 0px rgba(245, 253, 202, 1), 0px 9px 25px rgba(0, 0, 0, .7);
+        box-shadow: 0px 9px 0px rgba(245, 253, 202, 1), 0px 9px 25px rgba(0, 0, 0, .7);
+    }
+
+    .GreenCB {
+        background-color: rgba(25, 148, 117, 1);
+        -webkit-box-shadow: 0px 9px 0px rgba(4, 77, 34, 1), 0px 9px 25px rgba(0, 0, 0, .7);
+        -moz-box-shadow: 0px 9px 0px rgba(4, 77, 34, 1), 0px 9px 25px rgba(0, 0, 0, .7);
+        box-shadow: 0px 9px 0px rgba(4, 77, 34, 1), 0px 9px 25px rgba(0, 0, 0, .7);
+    }
+
+    .SmallCB {
+        font-size: 1.5em;
+        margin-left: 2px;
+        padding: 2px 10px;
+        width: 100px;
+    }
+
+
+
+    .ArticleHead{
+        font-family: 'Tempus Sans ITC',georgia !important;
+        font-size: 40px !important;
+        font-weight: 800 !important;
+        color: #56A36C !important;
+        text-align: center !important;
+        margin-bottom: 0 !important;
+        margin-top: .6em !important;
+    }
+
+    .H3Head{
+        font-family: 'Tempus Sans ITC',georgia !important;
+        color: #FEC43E !important;
+        font-size: 25px !important;
+        font-weight: 400 !important;
+        text-align: left !important;
+        margin-bottom: 0 !important;
+        margin-top:.6em !important;
+    }
+
+    .PP{
+        font-family:Tahoma, Geneva, sans-serif !important;
+        font-size: 20px !important;
+        font-weight: 100 !important;
+        text-align: left !important;
+    }
+
+
+    .Retract{
+        padding-left: 50px;
+    }
+
+    .GreenAH{
+        color: #56A36C;
+    }
+
+    .YellowAH{
+        color: #FEC43E;
+    }
+
+    .contentLi{
+        margin:0;
+        font-size:17px;
+        line-height: 27px;
+        padding-bottom: 20px;
+        color: #111111;
+    }
+
+    .blueTable
+    {
+        color: #1E90FF;
+    }
+
+    .yellowTable
+    {
+        color: #CD9B1D;
+    }
+
+    h2{
+        font-family: 'Tempus Sans ITC';
+        font-weight: 500;
+        font-size: 35px;
+        text-align: left;
+    }
+
+    h3{
+        font-family: 'Tempus Sans ITC';
+        font-weight: 500;
+        font-size: 32px;
+        text-align: left;
+    }
+
+    h4{
+        font-family: 'Tempus Sans ITC';
+        font-weight: 500;
+        font-size: 28px;
+        text-align: left;
+    }
+
+    h5{
+        font-family: 'Tempus Sans ITC';
+        font-weight: 500;
+        font-size: 25px;
+        text-align: left;
+    }
+
+    p{
+        margin:0;
+        font-size:17px;
+        line-height: 30px;
+        /*padding-bottom: 20px;*/
+        color: #111111;
+    }
+
+    .bs-docs-sidenav
+    {
+        font-family:Tahoma, Geneva, sans-serif !important;
+        font-size: 20px !important;
+        font-weight: 100 !important;
+        text-align: left !important;
+    }
+
+
+    .textli li{
+        font-family:Tahoma, Geneva, sans-serif !important;
+        font-size: 20px !important;
+        font-weight: 100 !important;
+        text-align: left !important;
+    }
+
+    .codes
+    {
+
+        display: table;
+        font-family:Consolas !important;
+        /*border: solid #E1E1E8 !important;*/
+        /*background-color: #F7F7F9 !important;*/
+        /*width:auto !important;*/
+    }
+
+    .textimg
+    {
+        width:70% !important;
+    }
+    
+    .imgdiv
+    {
+        text-align: center !important;
+    }
+
+    /*文中自定义*/
+</style>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<div class="page-loader"></div>
+<!-- Docs master nav -->
+<!-- <h1><a class="navbar-brand" href="index.html">MuMei Lab</a></h1> -->
+  <div class="container">
+      <!-- header -->
+      <div class="header-w3layouts">
+          <!-- Navigation -->
+          <nav class="navbar navbar-default navbar-fixed-top">
+              <div class="navbar-header page-scroll">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                  </button>
+
+                  <a href="http://2017.igem.org/Team:ZJU-China">
+                      <img style="margin-top:11px" class="navbar-brand"  src="http://2017.igem.org/wiki/images/d/d5/ZJUChina_logo.png">
+                  </a>
+
+                  <!-- <h1><a class="navbar-brand" href="index.html">My Design</a></h1> -->
+
+              </div>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse navbar-ex1-collapse">
+                  <ul class="nav navbar-nav navbar-right cl-effect-15">
+                      <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                      <li class="hidden"><a class="page-scroll" href="#page-top"></a> </li>
+
+                      <li class="m_nav_item dropdown">
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Overview<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Overview">Description</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Demonstrate">Demonstrate</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Applied_Design">Applied Design</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Achievements">Achievements</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Improve">Improve Parts</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/InterLab">InterLab</a></li>
+
+                          </ul>
+                      </li>
+
+                      <li class="m_nav_item dropdown">
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Project<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Project/tp">Trichoderma Proof</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Project/voc">VOC sensors</a></li>
+                              <li><a style="font-size: 0.7em!important;" href="http://2017.igem.org/Team:ZJU-China/Project/st">Chemical Signal Transduction</a></li>
+                              <li><a style="font-size: 0.7em!important;" href="http://2017.igem.org/Team:ZJU-China/Project/mt">Medium Wave Transduction</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Project/Downstream">Downstream</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Project/conclusion">Conclusions</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Notebook">Notebook</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Protocols">Protocols</a></li>
+                          </ul>
+                      </li>
+
+                      <li class="m_nav_item dropdown" >
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Model<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+                              <!--<li><a href="http://2017.igem.org/Team:ZJU-China/Model">Summery</a></li>-->
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Model">VOC analysis</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Model/Coculture">Coculture</a></li>
+
+                          </ul>
+                      </li>
+
+                      <li class="m_nav_item dropdown">
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Parts<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Parts">All Parts</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Basic_Part">Basic Parts</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Composite_Part">Composite Parts</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Part_Collection">Part Collection</a></li>
+
+
+
+
+                          </ul>
+                      </li>
+
+                      <li class="m_nav_item dropdown" >
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Hardware<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Hardware">Overview</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Hardware/Device">Device</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Hardware/Improvements">Improvements</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Hardware/MediumWave">Medium Wave</a></li>
+                          </ul>
+                      </li>
+
+                      <li class="m_nav_item dropdown" >
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Safety<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Safety">Environment</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Safety/Lab">Laboratory</a></li>
+                          </ul>
+                      </li>
+
+                      <li class="m_nav_item dropdown">
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">HP<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Human_Practices">Summary</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/HP/Silver">Silver</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/HP/Gold_Integrated">Gold Integrated</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Engagement">Engagement</a></li>
+                          </ul>
+                      </li>
+
+                      <li class="m_nav_item dropdown" >
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Team<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Team">Teammates</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Attributions">Attribution</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Collaborations">Collaboration</a></li>
+                          </ul>
+                      </li>
+                  </ul>
+              </div>
+          </nav>
+      </div>
+  </div>
+
+<p></p>
+<div style="margin-top:0;padding-top:0">
+    <img src="http://2017.igem.org/wiki/images/6/6b/ZJU_China_Notebook_231.jpg" width="100%">
+    <!-- <img src="images/HP_temp/banner.jpg" width="100%"> -->
+</div>
+
+
+<div style="width: 100%" class="container zjuContent">
+    <div class="col-md-2"></div>
+    <div class="col-md-10" role="main">
+        <div class="bs-docs-section">
+
+            <h1 id="modeling" class="page-header ArticleHead GreenAH">Notebook</h1>
+
+            <h2 id="2" class="H2Head">2.25</h2>
+            <p class="PP">Concluded the winter project and 14 members were picked out. ZJU-China 2017 team was set up. Our story began.</p>
+            <p class="PP">First meetup. A nice meal with the previous iGEMer.</p>
+            <div class="imgdiv"><img class="textimg" src='http://2017.igem.org/wiki/images/2/29/ZJU_China_Notebook_1.jpg' alt=''/></div>
+
+            <h2 class="H2Head">2.26-3.6</h2>
+            <p class="PP">Everyone mined their winter project and attempted to extend the project and find problems.</p>
+
+            <h2 class="H2Head">2.28</h2>
+            <p class="PP"><strong>1st group meeting in Spring term</strong></p>
+            <p class="PP">We have some games to break the ice. Several rules and principles were built up as well as the duty table.</p>
+
+            <h2  id="3" class="H2Head">3.4</h2>
+            <p class="PP"><strong>2nd group meeting in Spring term</strong></p>
+            <p class="PP">Everyone shared their understand about the principles on the igem website, especially the medal requests. And a delicious chicken soup was cooked.</p>
+
+            <h2 class="H2Head">3.7</h2>
+            <p class="PP"><strong>3rd group meeting in Spring term</strong></p>
+            <p class="PP">Specially, today is a festival for all girls and the day for group meeting. So we pictured the blackboard and had a group photo. Additionally, we talked about the result of the winter project after discussion with related professors.</p>
+            <div class="imgdiv"><img class="textimg" src='http://2017.igem.org/wiki/images/0/00/ZJU_China_Notebook_2.jpg' alt=''/></div>
+
+
+            <h2 class="H2Head">3.8-3.11</h2>
+            <p class="PP">We detailed the experimental protocol of the winter project and find out the difficulties.</p>
+
+            <h2 class="H2Head">3.11</h2>
+            <p class="PP"><strong>4th group meeting in Spring term</strong></p>
+            <p class="PP">The whole team divided into three groups. Two deep mined the winter project and one came up with new ideas.The Brainstorm started. Someone jumped out the winter project. And some interesting ideas appeared. For example rhodopsin as photochemistry signal and resveratrol to attack the injured cells.</p>
+            <div class="imgdiv"><img class="textimg" src='http://2017.igem.org/wiki/images/1/18/ZJU_China_Notebook_3.jpg' alt=''/></div>
+            <h2 class="H2Head">3.14</h2>
+            <p class="PP"><strong>5th group meeting in Spring term</strong></p>
+            <p class="PP">The previous iGEMer came to our group meeting and shared their experience. Then we talked about the project and received their suggestions. At that time 7 different ideas coexisted. We dug previous ideas and considered their safety and feasibility.</p>
+
+            <h2 class="H2Head">3.18</h2>
+            <p class="PP"><strong>6th group meeting in Spring term</strong></p>
+            <p class="PP">We still discussed about the new and old ideas. Fortunately, we didn’t choose the idea of Metarhitium against mosquito. Or I can’t imagine what our lab would be like. But the idea about degradation of melanin was interesting. However, after duplicate checking in Taobao, that idea was over. In addition, it was the birthday of one of our members. So there was another party.</p>
+            <div class="imgdiv"><img class="textimg" src='http://2017.igem.org/wiki/images/4/46/ZJU_China_Notebook_4.jpg' alt=''/></div>
+
+            <h2 class="H2Head">3.21</h2>
+            <p class="PP">7th group meeting in Spring term.</p>
+            <p class="PP">The main part started to tend to the Trichoderma. And other ideas exposed their limitation.</p>
+            <p class="PP">In those days, members were learning about basic molecular clone skills. And we exchange our experience in the group meeting.</p>
+
+            <h2 class="H2Head">3.25</h2>
+            <p class="PP"><strong>8th group meeting in Spring term</strong></p>
+            <p class="PP">The theme of our project was confirmed. And the team divided into groups again to study different directions about Trichoderma.</p>
+            <div class="imgdiv"><img class="textimg" src='http://2017.igem.org/wiki/images/f/f9/ZJU_China_Notebook_5.png' alt=''/></div>
+
+            <h2 class="H2Head">3.29</h2>
+            <p class="PP"><strong>9th group meeting in Spring term</strong></p>
+            <p class="PP">Talked about which the specific Trichoderma we could use and what kind of function we wanted to achieve and something about safety and gene circuit.</p>
+            <div class="imgdiv"><img class="textimg" src='http://2017.igem.org/wiki/images/d/dd/ZJU_China_Notebook_6.jpg' alt=''/></div>
+
+            <h2  id="4" class="H2Head">4.4</h2>
+            <p class="PP"><strong>10th group meeting in Spring term</strong></p>
+            <p class="PP">Discussed the available regulatory in Trichoderma and its function of immune and hyperparasitism. The experimental training came to the next phase. Everyone tried to construct a complete device from the very single part.</p>
+            <div class="imgdiv"><img class="textimg" src='http://2017.igem.org/wiki/images/1/17/ZJU_China_Notebook_7.jpg' alt=''/></div>
+
+            <h2 class="H2Head">4.8</h2>
+            <p class="PP"><strong>11th group meeting in Spring term</strong></p>
+            <p class="PP">We started to choose the certain plant and pathogen. Everyone learned about several candidates and considered their feasibility.</p>
+
+            <h2 class="H2Head">4.15</h2>
+            <p class="PP"><strong>13th group meeting in Spring term</strong></p>
+            <p class="PP">Ensured the specific plant and pathogen and talked about the T3SS system about immune and GPCR about sense.</p>
+            <div class="imgdiv"><img class="textimg" src='http://2017.igem.org/wiki/images/8/8e/ZJU_China_Notebook_8.jpg' alt=''/></div>
+
+            <h2 class="H2Head">4.20-4.30</h2>
+            <p class="PP">Some members began to learn the manipulation skill of Trichoderma in Zhang Lab, Agriculture Constitution, Zhejiang University. They sour out the notes and shared the protocol.</p>
+            <div class="imgdiv"><img class="textimg" src='http://2017.igem.org/wiki/images/6/6c/ZJU_China_Notebook_9.jpg' alt=''/></div>
+
+            <h2 class="H2Head">4.29</h2>
+            <p class="PP">The first dish of Trichoderma came to our lab. We culture it in the illumination incubator.</p>
+            <div class="imgdiv"><img class="textimg" src='http://2017.igem.org/wiki/images/c/c4/ZJU_China_Notebook_10.jpg' alt=''/></div>
+
+            <h2  id="5" class="H2Head">5.6</h2>
+            <p class="PP"><strong>1st group meeting in Summer term</strong></p>
+            <p class="PP">The class about Trichoderma manipulation and gene manipulation mechanism began, which is some posts online. The great idea about VOC device was come up with. The team allocated into groups to extend the direction about immune, hyperparasitism and VOC.</p>
+            <div class="imgdiv"><img class="textimg" src='http://2017.igem.org/wiki/images/c/c0/ZJU_China_Notebook_11.jpg' alt=''/></div>
+
+            <h2 class="H2Head">5.13</h2>
+            <p class="PP"><strong>2nd group meeting in Summer term</strong></p>
+            <p class="PP">Communicated and discussed each group’s design schedule. And a delicate sign-in form was printed.</p>
+            <div class="imgdiv"><img class="textimg" src='http://2017.igem.org/wiki/images/d/d0/ZJU_China_Notebook_12.jpg' alt=''/></div>
+
+            <h2 class="H2Head">5.24</h2>
+            <p class="PP"><strong>3rd group meeting in Summer term</strong></p>
+            <p class="PP">Some Human Practice plans were discussed as well as our team uniform. Several plasmid of Trichoderma design were finished.</p>
+            <div class="imgdiv"><img class="textimg" src='http://2017.igem.org/wiki/images/4/4f/ZJU_China_Notebook_13.jpg' alt=''/></div>
+
+            <h2 class="H2Head">5.25</h2>
+            <p class="PP">Brought back two plates of T.atroviride”CTCCSJ-A-QT32133” isolated from grape and 600μL Agrobacterium Tumefaciens ”AGL1” in freezing tube.</p>
+
+            <h2 class="H2Head">5.26</h2>
+            <p class="PP">Got our team flag!</p>
+            <div class="imgdiv"><img class="textimg" src='http://2017.igem.org/wiki/images/1/19/ZJU_China_Notebook_14.jpg' alt=''/></div>
+
+            <h2 class="H2Head">5.27</h2>
+            <p class="PP"><strong>4th group meeting in Summer term</strong></p>
+            <p class="PP">Arabidopsis was cultured. The consumable items of yeast were prepared. Experiments of Trichoderma started.</p>
+            <div class="imgdiv"><img class="textimg" src='http://2017.igem.org/wiki/images/2/24/ZJU_China_Notebook_15.jpg' alt=''/></div>
+            <p class="PP capture">hph from pKD1 and cleavaged tADH1 backbone 2017.5.27 YJB
+
+            <h2 class="H2Head">5.28</h2>
+            <p class="PP">During the first human practice, three igemers made a presentation to three senior high school igem team. They talked about synthetic biology and igem competition. It’s a meaningful time for both the senior high school students and us.</p>
+            <div class="imgdiv"><img class="textimg" src='http://2017.igem.org/wiki/images/5/57/ZJU_China_Notebook_16.jpg' alt=''/></div>
+
+            <h2 class="H2Head">5.31</h2>
+            <p class="PP">Our first try to amplify fragment of homologous arms from the genome of T.atroviride.</p>
+            <div class="imgdiv"><img class="textimg" src='http://2017.igem.org/wiki/images/9/9c/ZJU_China_Notebook_17.jpg' alt=''/></div>
+            <p class="PP">1st genomic DNA 1st pcr prb1(failed) ech42(successed)</p>
+
+            <h2  id="6" class="H2Head">6.1</h2>
+            <p class="PP">Fine. Today is the Children Festival for us ,children. So everyone two sides up!</p>
+            <div class="imgdiv"><img class="textimg" src='http://2017.igem.org/wiki/images/c/c6/ZJU_China_Notebook_18.jpg' alt=''/></div>
+
+            <h2 class="H2Head">6.3</h2>
+            <p class="PP"><strong>5th group meeting in Summer term</strong></p>
+            <p class="PP">A normal meeting to report progress and make new plan, new human practice to Science and Technology Museum, experimental skills and team uniforms.</p>
+
+            <h2 class="H2Head">6.4</h2>
+            <p class="PP">The first AGL1 competences were finished. There were nearly 100 tubes which was enough for our whole year.</p>
+
+            <h2 class="H2Head">6.5</h2>
+            <p class="PP">The first extended T.atroviride was mature which are just like our sweet children.</p>
+            <div class="imgdiv"><img class="textimg" src='http://2017.igem.org/wiki/images/1/10/ZJU_China_Notebook_19.jpg' alt=''/></div>
+
+            <h2 class="H2Head">6.10</h2>
+            <p class="PP"><strong>6th group meeting in Summer term</strong></p>
+            <p class="PP">It's a very big day. AIM medium was finished which consisted of more than 15 different reagents. Some members were still designing primers and training skills. The parts of VOC device were finished.</p>
+            <div class="imgdiv"><img class="textimg" src='http://2017.igem.org/wiki/images/0/07/ZJU_China_Notebook_20.jpg' alt=''/></div>
+
+            <h2 class="H2Head">6.13</h2>
+            <p class="PP"><strong>7th group meeting in Summer term</strong></p>
+            <p class="PP">It's the last group meeting in this Spring-Summer term. So everyone summarized their whole term work and gave a plan about their first two weeks in the summer holiday(workday).</p>
+            <p class="PP">Up to then, mini apps in Wechat was finished. Gene of DAPG synthesis were amplified. Several plasmid of yeast were being optimized. Several homologous arms of Trichoderma genome were not finished.</p>
+
+            <h2 class="H2Head">6.11-6.17</h2>
+            <p class="PP">The genomic DNA of T.atroviride were extracted over 5 times. The PCR experiments were tried more than 10 times. The experiments had to pause because of the final exam.</p>
+
+            <h2 class="H2Head">6.17-7.3</h2>
+            <p class="PP">Everyone prepared for their final exams. And before the summer holiday, we had a group meeting.</p>
+
+            <h2  id="7" class="H2Head">7.5</h2>
+            <p class="PP">New experimental tobaccos came to our lab. We were still exploring the suitable protocol of genomic DNA.</p>
+
+            <h2 class="H2Head">7.6</h2>
+            <p class="PP">The beautiful cards were printed.</p>
+            <div class="imgdiv"><img class="textimg" src='http://2017.igem.org/wiki/images/c/c9/ZJU_China_Notebook_21.jpg' alt=''/></div>
+
+            <h2 class="H2Head">7.7</h2>
+            <p class="PP">The ferritin protein coding DNA was amplified.</p>
+
+            <h2 class="H2Head">7.9</h2>
+            <p class="PP">We came to Zhejiang Science and Technology Museum and prepared several interesting games for children and teenagers in AST Space. During the games, we advertised synthetic biology.</p>
+            <div class="imgdiv"><img class="textimg" src='http://2017.igem.org/wiki/images/4/41/ZJU_China_Notebook_23.jpg' alt=''/></div>
+
+            <h2 class="H2Head">7.14</h2>
+            <p class="PP">With the senior high igemer, we came to the Zhejiang Food And Drug Administration to discuss the safety of synthetic biology production and the principles and laws in China.</p>
+            <div class="imgdiv"><img class="textimg" src='http://2017.igem.org/wiki/images/b/ba/ZJU_China_Notebook_24.jpg' alt=''/></div>
+
+            <h2 class="H2Head">7.16</h2>
+            <p class="PP">After over a month, we used the 17th and 18th genomic DNA as the templet and amplified all the homologous arms. It is the sentence ”Love for me is not about rice or soup, touch or kiss, is the dream as a hero in my shattered life. ” that helped us to tide over every failure.</p>
+            <div class="imgdiv"><img class="textimg" src='http://2017.igem.org/wiki/images/3/33/ZJU_China_Notebook_25.jpg' alt=''/></div>
+
+            <h2 class="H2Head">7.19</h2>
+            <p class="PP">We started the hex1 and ech42 promoter plasmids construction and finished 4 fragments link of two HRs, hph and the vector. The plasmid with TRPV1, Ferritin and PTH340 was transformed into the yeast.</p>
+
+            <h2 class="H2Head">7.20</h2>
+            <p class="PP">It's a normal day with a little fun.</p>
+            <div class="imgdiv"><img class="textimg" src='http://2017.igem.org/wiki/images/0/0e/ZJU_China_Notebook_26.jpg' alt=''/></div>
+
+            <h2 class="H2Head">7.21</h2>
+            <p class="PP">Our PC game finished! And everyone fell love into it.</p>
+            <div class="imgdiv"><img class="textimg" src='http://2017.igem.org/wiki/images/1/15/ZJU_China_Notebook_27.jpg' alt=''/></div>
+
+            <h2 class="H2Head">7.22</h2>
+            <p class="PP">The VOC device received several series of data. We tried to sort out the data and adjust our hardware and software.</p>
+            <div class="imgdiv"><img class="textimg" src='http://2017.igem.org/wiki/images/d/dd/ZJU_China_Notebook_28.jpg' alt=''/></div>
+
+            <h2 class="H2Head">7.23</h2>
+            <p class="PP">Wiki modules were done. All the data can be saw on the cell phone.</p>
+
+            <h2 class="H2Head">7.24-8.6</h2>
+            <p class="PP">The one step-clone of Homo Recombination plasmid suffered several failures. However, the manipulation of yeast got better. The transformation experiment was explored out. About the molecular cloning, some backbones and fragments were obtained.</p>
+
+            <h2  id="8" class="H2Head">8.7</h2>
+            <p class="PP">The hex1 and ech42 promoter fragments were obtained.</p>
+            <div class="imgdiv"><img class="textimg" src='http://2017.igem.org/wiki/images/9/99/ZJU_China_Notebook_29.jpg' alt=''/></div>
+
+            <h2 class="H2Head">8.13</h2>
+            <p class="PP">The E.coli with hex1-es-pkD1 plasmid and ech42-ol-pkD1 plasmid were obtained. The PCR checkout result was satisfying.</p>
+            <div class="imgdiv"><img class="textimg" src='http://2017.igem.org/wiki/images/f/fb/ZJU_China_Notebook_30.jpg' alt=''/></div>
+
+            <h2 class="H2Head">8.15</h2>
+            <p class="PP">1st group meeting in Summer holiday</p>
+            <p class="PP">After military training and internship, members got together again. VOC had detected a lot of data and matched website was built up. Several models were designed and their requests were put forward. Additionally, a new photo was taken for a new start.</p>
+            <div class="imgdiv"><img class="textimg" src='http://2017.igem.org/wiki/images/3/3c/ZJU_China_Notebook_31.jpg' alt=''/></div>
+
+            <h2 class="H2Head">8.16</h2>
+            <p class="PP">The sequence result was correct. So we finished the construction of two plasmids for random insertion.</p>
+
+            <h2 class="H2Head">8.18</h2>
+            <p class="PP">DAPG was extracted and was verified by HPLC</p>
+            <div class="imgdiv"><img class="textimg" src='http://2017.igem.org/wiki/images/d/df/ZJU_China_Notebook_32.jpg' alt=''/></div>
+
+            <h2 class="H2Head">8.20</h2>
+            <p class="PP">Hex1 and ech42 plasmids were transformed into AGL1 and verified by PCR.</p>
+
+            <h2 class="H2Head">8.22-8.24</h2>
+            <p class="PP">Four members went to Hunan Province to test our device and did human practice with China Tobacco.</p>
+            <div class="imgdiv"><img class="textimg" src='http://2017.igem.org/wiki/images/6/64/ZJU_China_Notebook_33.jpg' alt=''/></div>
+
+            <h2 class="H2Head">8.25-8.28</h2>
+            <p class="PP">Four members went to the CCiC meeting to communicate and exchange ideas with other igem.</p>
+            <div class="imgdiv"><img class="textimg" src='http://2017.igem.org/wiki/images/9/9e/ZJU_China_Notebook_34.jpg' alt=''/></div>
+
+            <h2 class="H2Head">8.27-9.4</h2>
+            <p class="PP">TRPV-PYES2.1 and phlFcheck-pKD1 were amplified. And phlF protein was extracted.</p>
+            <div class="imgdiv"><img class="textimg" src='http://2017.igem.org/wiki/images/6/6f/ZJU_China_Notebook_35.jpg' alt=''/></div>
+
+            <h2  id="9" class="H2Head">9.15</h2>
+            <p class="PP">A unique Kit for Homologous Recombination was designed.</p>
+            <div class="imgdiv"><img class="textimg" src='http://2017.igem.org/wiki/images/6/6f/ZJU_China_Notebook_36.jpg' alt=''/></div>
+
+            <h2 class="H2Head">9.20</h2>
+            <p class="PP"><strong>1st group meeting in Autumn term</strong></p>
+            <p class="PP">The safety of our project was emphasized. Some part of our project came to the phase of reaping the harvest. The three model were detailed.</p>
+
+            <h2 class="H2Head">9.23</h2>
+            <p class="PP"><strong>2nd group meeting in Autumn term</strong></p>
+            <p class="PP">The green fluorescence of three different promoters in T.atroviride were detected. And we took photos. The result was obvious.</p>
+            <div class="imgdiv"><img class="textimg" src='http://2017.igem.org/wiki/images/1/1d/ZJU_China_Notebook_37.jpg' alt=''/></div>
+
+            <h2 class="H2Head">9.30</h2>
+            <p class="PP"><strong>4th group meeting in Autumn term</strong></p>
+            <p class="PP">The duty of wiki were handed out to members. And we discussed job beyond experiments.</p>
+
+            <h2  id="10" class="H2Head">10.1</h2>
+            <p class="PP">The serial number was handed out. And we started to standardize our parts.</p>
+
+            <h2 class="H2Head">10.10</h2>
+            <p class="PP"><strong>5th group meeting in Autumn term</strong></p>
+            <p class="PP">The part of application and auto agriculture were discussed which was just like the brainstorm. Everyone had great ideas. And several questions left to be considered.</p>
+
+            <h2 class="H2Head">10.14</h2>
+            <p class="PP"><strong>6th group meeting in Autumn term</strong></p>
+            <p class="PP">Some western blot were finished and more proteins were confirmed to be expressed by yeast and E.coli.</p>
+
+            <h2 class="H2Head">10.17</h2>
+            <p class="PP"><strong>7th group meeting in Autumn term</strong></p>
+            <p class="PP">We exchanged our wiki and pointed out problems. The phlF and DAPG were verified to work.</p>
+
+            <h2 class="H2Head">10.21</h2>
+            <p class="PP"><strong>8th group meeting in Autumn term</strong></p>
+            <p class="PP">The TRPV1 was verified to work. The following timetable was cleared.</p>
+
+            <h2 class="H2Head">10.22</h2>
+            <p class="PP">Green fluorescence was detected which verified that the gene of synthesis of DAPG were transformed into T.atroviride.</p>
+            <div class="imgdiv"><img class="textimg" src='http://2017.igem.org/wiki/images/4/45/ZJU_China_Notebook_38.jpg' alt=''/></div>
+
+            <h2 class="H2Head">10.23-10.30</h2>
+            <p class="PP">Wiki, Wiki, Monday Wikiday, Tuesday Wikiday, Wednesday Wikiday, Thursday Wikiday, Weekend Wikiweekend.</p>
+            <div class="imgdiv"><img class="textimg" src='http://2017.igem.org/wiki/images/d/d4/ZJU_China_Notebook_39.jpg' alt=''/></div>
+
+            <div style="text-align: center;">
+                <br><br>
+                <a class="CuteButton YellowCB" href="http://2017.igem.org/Team:ZJU-China/Protocols">More About Protocols...</a>
+            </div>
+        </div>
+
+            <br><br>
+        </div>
+
+
+
+        </div>
+</div>
+
+        <!-- 右侧监听开始 -->
+        <div class="col-md-3 disappear-on-top" role="complementary">
+            <nav style="position: fixed; top: 100px ; left:50px; "
+                 class="bs-docs-sidebar hidden-print hidden-xs hidden-sm">
+                <ul class="nav bs-docs-sidenav shorterli">
+                    <li><a href="#2">February</a></li>
+                    <li><a href="#3">March</a></li>
+                    <li><a href="#4">April</a></li>
+                    <li><a href="#5">May</a></li>
+                    <li><a href="#6">June</a></li>
+                    <li><a href="#7">July</a></li>
+                    <li><a href="#8">August</a></li>
+                    <li><a href="#9">September</a></li>
+                    <li><a href="#10">October</a></li>
+                </ul>
+
+                <a class="back-to-top" href="#top">
+                    <!--   <i class="fa fa-arrow-up nav_icon"></i> -->
+                    <img style="width: 50px;" src="http://2017.igem.org/wiki/images/d/da/ZJU_China_UP.png">
+                </a>
+
+
+            </nav>
+        </div>
+
+<!-- 右侧监听结束 -->
+<!-- footer开始 -->
+<div class="footer" style="background-color: #000000">
+    <div class="copyright container text-center">
+        <p class="copyright"><br></p>
+        <p class="copyright">Copyright &copy; 2017 ZJU-IGEM | <a href="http://www.zju.edu.cn/">Zhejiang University</a> |
+        </p>
+        <!--<p class="copyright">Contact us:<a class="copyright" href="">WeChat</a></p>-->
+        <p class="copyright"><br></p>
+    </div>
+</div>
+<!-- footer结束 -->
+
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<!--script src="js/bootstrap.min.js"></script-->
+<script src="http://2017.igem.org/wiki/images/8/85/ZJUChina_js_docsmin.txt"></script>
+<!--script src="js/button.js"></script-->
+<script src="http://2017.igem.org/wiki/images/2/22/ZJUChina_bootstrap.min.txt"></script>
+<script src="http://2017.igem.org/wiki/images/3/32/ZJUChina_docs.min.txt"></script>
+<script src="http://2017.igem.org/wiki/images/e/e0/ZJUChina_button.txt"></script>
+
+<!--<script src="js/scrolling-nav.js"></script>-->
+<script src="http://2017.igem.org/Zju/js/scrollingnav?action=raw&ctype=text/javascript"></script>
+<script src="http://2017.igem.org/wiki/images/c/c0/ZJUChina_txtSmoothScroll.min.txt"></script>
+
+</body>
+</html>

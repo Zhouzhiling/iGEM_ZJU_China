@@ -1,0 +1,1559 @@
+<html lang="zh-CN">
+  <head>
+
+<link href="http://2017.igem.org/Zju/css/bootstrap?action=raw&ctype=text/css" rel="stylesheet" media="screen" />
+<link href="http://2017.igem.org/Zju/css/bootstraptheme?action=raw&ctype=text/css" rel="stylesheet" id="bs-theme-stylesheet">
+<link href="http://2017.igem.org/Zju/css/docs/min?action=raw&ctype=text/css" rel="stylesheet" type="text/css"/>
+ <!--<link href="css/doc-style-protocol-nodot.css" rel="stylesheet" type="text/css"/>-->
+<link href="http://2017.igem.org/Team:ZJU-China/css/docstyleprotocolnodot?action=raw&ctype=text/css" rel="stylesheet">
+<link href="http://2017.igem.org/Zju/css/responsive/min?action=raw&ctype=text/css" rel="stylesheet">
+ <!-- 按钮的字体 -->
+<link href='http://2017.igem.org/Team:ZJU-China/cs/font?action=raw&ctype=text/css' rel='stylesheet' type='text/css'>
+<!-- 按钮的字体end -->
+<script>
+  var _hmt = _hmt || [];
+</script>
+      <script src="http://2017.igem.org/wiki/images/8/85/ZJUChina_js_docsmin.txt?action=raw&ctype=text/javascript"></script>
+      <script src="js/protocolClick.js"></script>
+      <link rel="stylesheet" href="css/doc-style-protocol-nodot.css">
+  </head>
+
+
+<style>
+/*Override default CSS*/
+#sideMenu, #top_title {display:none;}
+#content { padding:0px; width:100%; margin-top:-7px; margin-left:0px;background-color: transparent;}
+
+
+/* set all basic objects to neutral formatting*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+#globalWrapper {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+
+/* set page to fill window*/
+html{
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  background-color: #FFFFFF; 
+}
+
+
+#content_wrapper {
+    position: relative;
+  top: 0px;
+  left: 0px;  
+  margin: 0px;
+    width: 100%; 
+    height: 100%; 
+  text-align:center;
+    background-color: #FFFFFF;
+}
+
+#content_wrapper p {
+    font-family: 'Yanone Kaffeesatz',Tahoma, Geneva, sans-serif;
+}
+
+#content_wrapper a { 
+    color:#004789;
+}
+
+
+#footer { 
+    position:absolute;    
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.center { 
+  width: 60%; 
+    margin-top: 16px;
+  min-width: 500px;
+    padding-bottom:32px;
+  display: inline-block;        
+}
+
+.TextContent {  
+  text-align: left;
+  vertical-align: baseline;
+  font-size: 0.875em;
+  font-family:'Yanone Kaffeesatz', verdana, sans-serif;
+}
+
+.TextContent h1{ 
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+  margin-top: 0.2em;
+  color: #3399ff;
+  font-family:'Yanone Kaffeesatz', verdana, sans-serif;
+}
+
+.TextContent h2{
+  line-height: 1.6;
+  margin-bottom: 0em;
+  margin-top: 1em;
+  text-align: left;
+  font-family:'Yanone Kaffeesatz', verdana, sans-serif;
+}
+
+.TextContent p{
+  margin-bottom: 1.2em;
+  font-family:'Yanone Kaffeesatz', verdana, sans-serif;
+}
+
+.Page_Wide {  
+  width:100%; 
+}
+
+.Quarter_Image {
+  width:25%;
+  max-height:250px;
+  float:left;
+}
+
+.Quarter_Image img {
+    display:block;
+    margin:auto;
+    max-height: 250px;  
+    width: auto;
+}
+
+.SocialMediaIconWrapper {
+    width:100%;
+}
+
+.SocialMediaIcon {
+    width:4%;
+    height:auto;
+    margin-left:20px;
+    display: inline-block;
+    float:left;
+
+}
+
+.SocialMediaIcon img{
+    max-width:100%;
+  height:auto
+}
+
+.TeamImage {
+  width:100%; 
+}
+
+.TeamImage img {  
+    max-width:100%;
+  height:auto
+}
+
+.sponsors {
+  width: 100%;  
+}
+
+.sponsor_row {    
+  width: 100%;
+}
+
+.sponsor_img {    
+  width: 16.6666667%; 
+  float:left;    
+}
+
+.sponsor_img img{   
+  max-width:100%;
+  height:auto
+}
+
+.clear {
+    clear:both;
+}
+
+.clear.extra_space {
+    height: 20px;
+}
+
+.line_divider {
+    border-top: 1px solid #d3d3d3;
+    width: 98%;
+    margin: auto;
+}
+
+.copyright{
+  color: #888888;
+  font-size: 13px;
+  text-align: center !important;
+}
+
+
+.copyright a{
+  color: #d2ebe3;
+  border-bottom: dotted 1px #a5d8c7;
+}
+
+.PP {
+    font-family: georgia;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: left;
+    line-height: 35px;
+}
+
+/*文中自定义*/
+.CuteButton:active {
+    -webkit-box-shadow: 0px 3px 0px rgba(0,52,63,1), 0px 3px 6px rgba(0,0,0,.9);
+    -moz-box-shadow: 0px 3px 0px rgba(0,52,63,1), 0px 3px 6px rgba(0,0,0,.9);
+    box-shadow: 0px 3px 0px rgba(0,52,63,1), 0px 3px 6px rgba(0,0,0,.9);
+    position: relative;
+    top: 6px;
+} 
+
+.YellowCB {
+    background-color: rgba(254,196,62,1);
+    -webkit-box-shadow: 0px 9px 0px rgba(245,253,202,1), 0px 9px 25px rgba(0,0,0,.7);
+    -moz-box-shadow: 0px 9px 0px rgba(245,253,202,1), 0px 9px 25px rgba(0,0,0,.7);
+    box-shadow: 0px 9px 0px rgba(245,253,202,1), 0px 9px 25px rgba(0,0,0,.7);
+}
+
+.GreenCB {
+    background-color: rgba(25,148,117,1);
+    -webkit-box-shadow: 0px 9px 0px rgba(4,77,34,1), 0px 9px 25px rgba(0,0,0,.7);
+    -moz-box-shadow: 0px 9px 0px rgba(4,77,34,1), 0px 9px 25px rgba(0,0,0,.7);
+    box-shadow: 0px 9px 0px rgba(4,77,34,1), 0px 9px 25px rgba(0,0,0,.7);
+}
+
+.SmallCB {
+    font-size: 1.2em;
+    margin-left: 2px;
+    padding: 1px 8px ;
+    width: 70px;
+}
+
+
+
+.ArticleHead{
+    font-family: 'Tempus Sans ITC',georgia !important;
+    font-size: 40px !important;
+    font-weight: 800 !important;
+    color: #56A36C !important;
+    text-align: center !important;
+    margin-bottom: 0 !important;
+    margin-top: .6em !important;
+}
+
+.H3Head{
+    font-family: 'Tempus Sans ITC',georgia !important;
+    color: #FEC43E !important;
+    font-size: 25px !important;
+    font-weight: 400 !important;
+    text-align: left !important;
+    margin-bottom: 0 !important;
+    margin-top:.6em !important;
+}
+
+.PP{
+    font-family:Tahoma, Geneva, sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 100 !important;
+    text-align: left !important;
+}
+
+
+.Retract{
+    padding-left: 50px;
+}
+
+.GreenAH{
+    color: #56A36C !important;
+}
+
+.YellowAH{
+    color: #FEC43E !important;
+}
+
+.contentLi{
+    margin:0;
+    font-size:17px;
+    line-height: 27px;
+    padding-bottom: 20px;
+    color: #111111;
+}
+
+.blueTable
+{
+    color: #1E90FF;
+}
+
+.yellowTable
+{
+    color: #CD9B1D;
+}
+
+h2{
+    font-family: 'Tempus Sans ITC';
+    font-weight: 500;
+    font-size: 35px;
+    text-align: left;
+}
+
+h3{
+    font-family: 'Tempus Sans ITC';
+    font-weight: 500;
+    font-size: 32px;
+    text-align: left;
+}
+
+h4{
+    font-family: 'Tempus Sans ITC';
+    font-weight: 500;
+    font-size: 28px;
+    text-align: left;
+}
+
+h5{
+    font-family: 'Tempus Sans ITC';
+    font-weight: 500;
+    font-size: 25px;
+    text-align: left;
+}
+
+p{
+    margin:0;
+    font-size:17px;
+    line-height: 30px;
+    /*padding-bottom: 20px;*/
+    color: #111111;
+}
+
+.bs-docs-sidenav
+{
+    font-family:Tahoma, Geneva, sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 100 !important;
+    text-align: left !important;
+}
+
+
+.textli li{
+    font-family:Tahoma, Geneva, sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 100 !important;
+    text-align: left !important;
+}
+/*文中自定义*/
+
+    /*点击打开的效果*/
+li .clickMore{
+    /*margin:10px;*/
+    font-size:12px;
+    border:2px solid #DCCAB4;
+    /*background-color: #DCCAB4;*/
+    height:50px;
+    overflow:hidden;
+    line-height:22px;
+    list-style: none !important;
+}
+
+/*#protocolPart1 {*/
+    /*height:auto;*/
+/*}*/
+
+
+li .key {
+    float:right;
+    margin-top:-44px;
+    margin-right:10px;
+    /*color:#900;*/
+    cursor:pointer;
+}
+    /*点击打开的效果止*/
+
+
+/*老姜要好看一点的表格*/
+.tableNice thead, .tableNice tr {
+    text-align: center;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #b1c6d9;
+}
+.tableNice {
+    width: auto;
+    align: center;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #D0E9FF;
+}
+
+/* Padding and font style */
+.tableNice td, .tableNice th {
+    padding: 5px 10px;
+    font-size: 12px;
+
+    color: #00343F;
+}
+
+/* Alternating background colors */
+.tableNice tr:nth-child(even) {
+    background: transparent;
+
+}
+.tableNice tr:nth-child(odd) {
+    background: #EBFFFF;
+}
+
+.tableOuter
+{
+    align: center;
+    text-align: left;
+}
+/*老姜要好看一点的表格止*/
+
+</style>
+
+
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <div class="page-loader"></div>
+      <!-- Docs master nav -->
+                  <!-- <h1><a class="navbar-brand" href="index.html">MuMei Lab</a></h1> -->
+  <div class="container">
+      <!-- header -->
+      <div class="header-w3layouts">
+          <!-- Navigation -->
+          <nav class="navbar navbar-default navbar-fixed-top">
+              <div class="navbar-header page-scroll">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                  </button>
+
+                  <a href="http://2017.igem.org/Team:ZJU-China">
+                      <img style="margin-top:11px" class="navbar-brand"  src="http://2017.igem.org/wiki/images/d/d5/ZJUChina_logo.png">
+                  </a>
+
+                  <!-- <h1><a class="navbar-brand" href="index.html">My Design</a></h1> -->
+
+              </div>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse navbar-ex1-collapse">
+                  <ul class="nav navbar-nav navbar-right cl-effect-15">
+                      <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                      <li class="hidden"><a class="page-scroll" href="#page-top"></a> </li>
+
+                      <li class="m_nav_item dropdown">
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Overview<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Overview">Description</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Demonstrate">Demonstrate</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Applied_Design">Applied Design</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Achievements">Achievements</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Improve">Improve Parts</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/InterLab">InterLab</a></li>
+
+                          </ul>
+                      </li>
+
+                      <li class="m_nav_item dropdown">
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Project<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Project/tp">Trichoderma Proof</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Project/voc">VOC sensors</a></li>
+                              <li><a style="font-size: 0.7em!important;" href="http://2017.igem.org/Team:ZJU-China/Project/st">Chemical Signal Transduction</a></li>
+                              <li><a style="font-size: 0.7em!important;" href="http://2017.igem.org/Team:ZJU-China/Project/mt">Medium Wave Transduction</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Project/Downstream">Downstream</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Project/conclusion">Conclusions</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Notebook">Notebook</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Protocols">Protocols</a></li>
+                          </ul>
+                      </li>
+
+                      <li class="m_nav_item dropdown" >
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Model<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+                              <!--<li><a href="http://2017.igem.org/Team:ZJU-China/Model">Summery</a></li>-->
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Model">VOC analysis</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Model/Coculture">Coculture</a></li>
+
+                          </ul>
+                      </li>
+
+                      <li class="m_nav_item dropdown">
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Parts<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Parts">All Parts</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Basic_Part">Basic Parts</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Composite_Part">Composite Parts</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Part_Collection">Part Collection</a></li>
+
+
+
+
+                          </ul>
+                      </li>
+
+                      <li class="m_nav_item dropdown" >
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Hardware<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Hardware">Overview</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Hardware/Device">Device</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Hardware/Improvements">Improvements</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Hardware/MediumWave">Medium Wave</a></li>
+                          </ul>
+                      </li>
+
+                      <li class="m_nav_item dropdown" >
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Safety<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Safety">Environment</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Safety/Lab">Laboratory</a></li>
+                          </ul>
+                      </li>
+
+                      <li class="m_nav_item dropdown">
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">HP<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Human_Practices">Summary</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/HP/Silver">Silver</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/HP/Gold_Integrated">Gold Integrated</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Engagement">Engagement</a></li>
+                          </ul>
+                      </li>
+
+                      <li class="m_nav_item dropdown" >
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Team<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Team">Teammates</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Attributions">Attribution</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Collaborations">Collaboration</a></li>
+                          </ul>
+                      </li>
+                  </ul>
+              </div>
+          </nav>
+      </div>
+  </div>
+<p></p>
+<div style="margin-top:0;padding-top:0">
+  <img id="partsPage" src="http://2017.igem.org/wiki/images/a/a6/ZJU_China_allhead.jpg" width="100%">
+  <!-- <img src="images/HP_temp/banner.jpg" width="100%"> -->
+</div>
+
+
+
+
+<div style="width: 100%" class="container zjuContent">
+  <div class="col-md-3"></div>
+    <div class="col-md-9" role="main">
+      <div class="bs-docs-section" style="list-style: none !important;">
+
+          <h1 class="page-header ArticleHead GreenAH">Protocol</h1>
+          <h1 id="GeneralEcoliprotocol" class="YellowAH ArticleHead">General/E.coli protocol</h1>
+
+          <ul>
+              <li>
+                  <div class="clickMore" id="protocolPart1">
+                      <h2 class="H2Head">General cloning workflow</h2>
+                      <h3 class="H3Head">Plasmid Cloning</h3>
+                      <p class="PP">PCR was widly used to make a copy of a piece of DNA and at the same time add restriction sites to the ends of that piece of DNA so that it can be easily cloned into a plasmid of interest.</p>
+                      <p class="PP">Designing primers for PCR based cloning. Before running PCR, we needed to design appropriate primers based on the method that we chose to clone a piece of DNA into a plasmid. For example, in our experiment,  we used EcoRI and XabI to ligate our target gene into the recipient plasmid. Therefore, PCR primers for molecular cloning consisted of not hybridization sequence, but EcoRI and XabI restriction site.</p>
+                      <p class="PP">Run PCR and test. In order to amplify insert DNA, we used a high fidelity polymerase to minimize mutations. After that, running Agarose Gel Electrophoresis to check whether the DNA size was correct.</p>
+                      <p class="PP">Isolate the insert and vector by gel purification or PCR purified.</p>
+                      <p class="PP">Ligate the insert into vector. Insert and vector backbone DNA was digested with the appropriate restriction enzymes. In fact, we had try many other ways to ligate the insert into vector, for example, In-Fusion Cloning.</p>
+
+                      <h3 class="H3Head">Transformation</h3>
+                      <p class="PP">Transformed with 5-10μl ligation reaction into competent cells using the general heat shock.</p>
+                      <h3 class="H3Head">Screening positive clones</h3>
+                      <p class="PP">If there were a high number of colonies on plate, colony PCR was used and only the positive clones were mini-prepped.  On the contrary, we picked single colonies for mini-prepping.</p>
+                      <p class="PP">After purifying the DNA, we conducted a diagnostic restriction digest or PCR  and products analysed using agarose gel electrophoresis to confirm if correct construct was present.</p>
+                      <h3 class="H3Head">Verify Plasmid by Sequencing</h3>
+                      <p class="PP">Positive clones were sent for sequencing of the insert using appropriate primers.</p>
+                  </div>
+                  <span class="key CuteButton SmallCB GreenCB" onclick="fn(this,1)">More</span>
+              </li>
+
+
+              <li>
+                  <div class="clickMore" id="protocolPart2">
+                      <h2  class="H2Head">Restriction Digestion</h2>
+                      <h3 class="H3Head">Materials</h3>
+                      <p class="PP">Thermo Scientific FastDigest enzyme</p>
+                      <p class="PP">10X FastDigest</p>
+                      <p class="PP">DNA</p>
+                      <p class="PP">Purified water, nuclease-free</p>
+                      <h3 class="H3Head">Methods</h3>
+                      <table class="table">
+                          <tr>
+                              <td></td>
+                              <td>Plasmid DNA(Double digestion)</td>
+                          </tr>
+                          <tr>
+                              <td>Sterile water</td>
+                              <td>to 20 ul</td>
+                          </tr>
+                          <tr>
+                              <td>10X FatDigest</td>
+                              <td>2 ul</td>
+                          </tr>
+                          <tr>
+                              <td>DNA</td>
+                              <td>2ul(up to 1 ug)</td>
+                          </tr>
+                          <tr>
+                              <td>FastDigest enzyme</td>
+                              <td> 1ul+1ul</td>
+                          </tr>
+                      </table>
+
+                      <p class="PP">Set up the reaction following the instruction in the table above.</p>
+                      <p class="PP">Incubate digestion reaction at 37°C, 20 min. </p>
+                      <p class="PP">Perform heat deactivation at 65°C for 15 minutes, if not running on a gel at the end of incubation.</p>
+
+                      </div>
+
+                  <span class="key CuteButton SmallCB GreenCB" onclick="fn(this,2)">More</span>
+              </li>
+
+
+              <li>
+                  <div class="clickMore" id="protocolPart3">
+
+                      <h2 class="H2Head">Ligation</h2>
+                      <h3 class="H3Head">Materials</h3>
+                      <p class="PP">TaKaRa DNA Ligation Kit Ver.2.1</p>
+                      <p class="PP">DNA solution</p>
+
+                      <h3 class="H3Head">Methods</h3>
+                      <p class="PP">Mix linearized plasmid vector DNA and a DNA fragment in a total volume of 5 - 10 μl.</p>
+                      <p class="PP">Add an equal volume of Solution I (5 - 10 μl) as the DNA solution and mix thoroughly.</p>
+                      <p class="PP">Incubate at 16℃ for 30 minutes</p>
+
+                      <h3 class="H3Head">More details</h3>
+                      <p class="PP">DNA Ligation Kit Ver. 2.1</p>
+
+
+                  </div>
+                  <span class="key CuteButton SmallCB GreenCB" onclick="fn(this,3)">More</span>
+              </li>
+
+
+
+
+              <li>
+                  <div class="clickMore" id="protocolPart4">
+              <h2 class="H2Head">PCR Amplification</h2>
+              <h3 class="H3Head">Materials:</h3>
+              <p class="PP">dNTP mix</p>
+              <p class="PP">Upstream primer</p>
+              <p class="PP">Downstream primer</p>
+              <p class="PP">ddH2O</p>
+              <p class="PP">Phanta Max Super-Fidelity DNA Polymerase</p>
+              <p class="PP">DNA template</p>
+              <p class="PP">2X Phanta Max buffer</p>
+              <h2 class="H2Head">Methods:</h2>
+
+              <table id="partTable" class="table tableNice">
+                  <tr>
+                      <td>components</td>
+                      <td>50ul reaction volume</td>
+                  </tr>
+                  <tr>
+                      <td>dNTP mix</td>
+                      <td>1 ul</td>
+                  </tr>
+                  <tr>
+                      <td>Upstream primer</td>
+                      <td>2 ul</td>
+                  </tr>
+                  <tr>
+                      <td>Downstream primer</td>
+                      <td>2ul</td>
+                  </tr>
+                  <tr>
+                      <td>2X Phanta Max buffer</td>
+                      <td>25ul</td>
+                  </tr>
+                  <tr>
+                      <td>ddH2O</td>
+                      <td>To 50ul</td>
+                  </tr>
+                  <tr>
+                      <td>Phanta Max Super-Fidelity DNA Polymerase</td>
+                      <td>1ul</td>
+                  </tr>
+                  <tr>
+                      <td>DNA template</td>
+                      <td>variable</td>
+                  </tr>
+              </table>
+              <p class="PP">Set up the reaction following the instruction in the table above.</p>
+                      <table  class="table tableNice">
+                          <tr>
+                              <th>Segment</th>
+                              <th>Number of cycles</th>
+                              <th>Temperature(℃)</th>
+                              <th>Duration</th>
+                          </tr>
+                          <tr>
+                              <th>Initial denaturation</th>
+                              <td>1</td>
+                              <td>95</td>
+                              <td>3min(30 sec)</td>
+                          </tr>
+                          <tr>
+                              <th>PCR</th>
+                              <td></td>
+                              <td>95</td>
+                              <td>15 sec</td>
+                          </tr>
+                          <tr>
+                              <th></th>
+                              <td>25-35 cycles</td>
+                              <td>55-65</td>
+                              <td>15 sec</td>
+                          </tr>
+                          <tr>
+                              <th></th>
+                              <td></td>
+                              <td>72</td>
+                              <td>30-60 sec/kb</td>
+                          </tr>
+                          <tr>
+                              <th>Final extension</th>
+                              <td>1</td>
+                              <td>72</td>
+                              <td>5 min</td>
+                          </tr>
+                          <tr>
+                              <th>Hold</th>
+                              <td>1</td>
+                              <td>4</td>
+                              <td>∞</td>
+                          </tr>
+                      </table>
+                      </div>
+                  <span class="key CuteButton SmallCB GreenCB" onclick="fn(this,4)">More</span>
+              </li>
+
+
+
+              <li>
+                  <div class="clickMore" id="protocolPart5">
+
+                      <h2 class="H2Head">PCR Purification, Gel Extraction & Miniprep</h2>
+                          <h3 class="H3Head">PCR purification was performed according to the Axygen® AxyPrep™ PCR Clean-Up Kit.</h3>
+                              <p class="PP"><strong>Materials:</strong></p>
+                                  <p class="PP">Buffer PCR-A</p>
+                                  <p class="PP">2 ml Microfuge tube</p>
+                                  <p class="PP">Buffer W2</p>
+                                  <p class="PP">1.5 ml Microfuge tube</p>
+                                  <p class="PP">Eluent</p>
+
+                              <p class="PP"><strong>Methods:</strong></p>
+                                  <p class="PP">Add a 3×reaction volume of Buffer PCR-A to the sample. If the required volume of Buffer PCR-A is less than 100 μl, add 100 μl of Buffer PCR-A. Vortex briefly to mix the contents.</p>
+                                  <p class="PP">Place a  PCR column into a 2 ml Microfuge tube (provided). Pipette the reaction from Step1 into the PCR column. Centrifuge at 12,000×g for 1 minute.</p>
+                                  <p class="PP">Discard the filtrate from the 2 ml Microfuge tube.  Return the PCR column to the 2 ml  Microfuge tube. Pipette 700 μl of Buffer W2 into the column and centrifuge at 12,000×g for 1 minute.</p>
+                                  <p class="PP">Discard the filtrate. Return the PCR column to the 2 ml Microfuge tube. Pipette 400 μl  of Buffer W2 into the column and centrifuge at 12,000×g for 1 minute.</p>
+                                  <p class="PP">Transfer the PCR column into a clean 1.5 ml Microfuge tube (provided). To  elute the  DNA,  add 25-30μl of Eluent (pre-warmed at 65°C) to the center of the membrane. Let it stand for 1 minute at room temperature. Centrifuge at 12,000×g for 1 minute.</p>
+
+                      <h3 class="H3Head">Gel extraction was performed according to the Axygen® AxyPrep™ DNA Gel Extraction Kit.</h3>
+                      <p class="PP"><strong>Materials:</strong></p>
+                      <p class="PP">1.5 ml microfuge tube</p>
+                      <p class="PP">Buffer DE-A</p>
+                          <p class="PP">Buffer DE-B</p>
+                          <p class="PP">DNA fragment</p>
+                          <p class="PP">2 ml microfuge tube</p>
+                          <p class="PP">Buffer W1</p>
+                          <p class="PP">Buffer W2</p>
+                          <p class="PP">Eluent</p>
+                      <p class="PP"><strong>Methods:</strong></p>
+                          <p class="PP">Excise the agarose gel slice containing the DNA fragment of interest with a clean, sharp scalpel under ultraviolet illumination. Briefly place the excised gel slice on absorbent toweling to remove residual buffer. Transfer the gel slice to a piece or plastic wrap or a weighing boat. Mince the gel into small pieces and weigh. In this application, the weight of gel is regarded as equivalent to the volume. For example, 100 mg of gel is equivalent to a 100 μl volume. Transfer the gel slice into a 1.5 ml microfuge tube.</p>
+                      <p class="PP">Add a 3x sample volume of Buffer DE-A.</p>
+                          <p class="PP">Resuspend the gel in Buffer DE-A by vortexing. Heat at 75°C until the gel is completely dissolved (typically, 6-8 minutes). Heat at 40°C if low-melt agarose gel is used. Intermittent vortexing (every 2-3 minutes) will accelerate gel solubilization.</p>
+                          <p class="PP">Add 0.5x Buffer DE-A volume of Buffer DE-B, mix. If the DNA fragment is less than 400 bp, supplement further with a 1x sample volume of isopropanol.</p>
+                          <p class="PP">Place a Miniprep column into a 2 ml microfuge tube. Transfer the solubilized agarose from Step 4 into the column. Centrifuge at 12,000xg for 1 minute.</p>
+                          <p class="PP">Discard the filtrate from the 2 ml microfuge tube. Return the Miniprep column to the 2 ml microfuge tube and add 500 μl of Buffer W1. Centrifuge at 12,000xg for 30 seconds.</p>
+                          <p class="PP">Discard the filtrate from the 2 ml microfuge tube. Return the Miniprep column to the 2 ml microfuge tube and add 700 μl of Buffer W2. Centrifuge at 12,000xg for 30 seconds.</p>
+                          <p class="PP">Discard the filtrate from the 2 ml microfuge tube. Place the Miniprep column back into the 2 ml microfuge tube. Add a second 700 μl aliquot of Buffer W2 and centrifuge at 12,000xg for 1 minute.</p>
+                          <p class="PP">Discard the filtrate from the 2 ml microfuge tube. Place the Miniprep column back into the 2 ml microfuge tube. Centrifuge at 12,000xg for 1 minute.</p>
+                          <p class="PP">Transfer the Miniprep column into a clean 1.5 ml microfuge tube (provided). To elute the DNA, add 25-30 μl of Eluent or deionized water to the center of the membrane. Let it stand for 1 minute at room temperature. Centrifuge at 12,000xg for 1 minute.</p>
+
+                      <h3 class="H3Head">Minipreps were carried out according to the  Axygen® Plasmid Miniprep Kit.</h3>
+                          <p class="PP"><strong>Materials:</strong></p>
+                              <p class="PP">Buffer S1</p>
+                              <p class="PP">Buffer S2</p>
+                              <p class="PP">Buffer S3</p>
+                              <p class="PP">2 ml Microfuge tube</p>
+                              <p class="PP">Miniprep column</p>
+                              <p class="PP">Buffer W2</p>
+                              <p class="PP">Buffer W1</p>
+                              <p class="PP">Eluent</p>
+                          <p class="PP"><strong>Methods:</strong></p>
+                              <p class="PP">Collect 1-4 ml of overnight LB culture. Centrifuge at 12,000×g for 1 minute to pellet the bacteria.Decant or pipette off as much of the supernatant as practical.</p>
+                              <p class="PP">Resuspend the bacterial pellet in 250 μl of Buffer S1 by vortexing. Please be sure that the bacteria are completely resuspended before proceeding.</p>
+                              <p class="PP">Add 250 μl of Buffer S2, and mix by gently inverting the tube for 4-6×. Do not vortex.</p>
+                              <p class="PP">Add 350 µl of Buffer S3, and mix by gently inverting 6-8×. Centrifuge at 12,000×g for 10 minutes to clarify the lysate. Do not vortex.</p>
+                              <p class="PP">Place a Miniprep column into an uncapped 2 ml Microfuge tube. Transfer the clarified supernatant from Step 4 into the Miniprep column. Transfer the Miniprep column and 2 ml Microfuge tube to microcentrifuge and spin at 12,000×g for 1 minute.</p>
+                              <p class="PP">Pipette 500 µl of Buffer W1 into each Miniprep column. Centrifuge at 12,000×g for 1 minute.</p>
+                              <p class="PP">Pipette 700 µl of Buffer W2 into each Miniprep column. Centrifuge at 12,000×g for 1 minute.</p>
+                              <p class="PP">Discard the filtrate from the 2 ml Microfuge tube. Place the Miniprep column back into the 2 ml Microfuge tube. Add 700 μl of Buffer W2 to the Miniprep column and centrifuge at 12,000×g for 1 minute.</p>
+                              <p class="PP">Discard filtrate from the 2 ml Microfuge tube. Place the Miniprep column back into the 2 ml Microfuge tube. Centrifuge at 12,000×g for 1 minute.</p>
+                              <p class="PP">Transfer the Miniprep column into a clean 1.5 ml Microfuge tube (provided). To elute the purified plasmid DNA, add 60~80 µl of Eluent (or deionized water) to the center of the membrane. Let it stand for 1 min at room temperature. Centrifuge at 12,000×g for 1 minute.</p>
+
+
+
+                  </div>
+                  <span class="key CuteButton SmallCB GreenCB" onclick="fn(this,5)">More</span>
+              </li>
+
+
+              <li>
+                  <div class="clickMore" id="protocolPart6">
+                      <h2 class="H2Head">General Heat-Shock Transformation</h2>
+                          <p class="PP">Add DNA to 50 ul of cells on ice</p>
+                          <p class="PP">Incubate on ice 30 min</p>
+                          <p class="PP">Heat shock 42degC 90 s</p>
+                          <p class="PP">Place samples back on ice for 5 minutes</p>
+                          <p class="PP">Add 1 ml of LB broth</p>
+                          <p class="PP">Incubate at 180 rpm, 37°C for 60 minutes, shaking</p>
+                          <p class="PP">Plate out cells on LB agar with appropriate antibiotic, maximum 200 ul</p>
+                          <p class="PP">Incubate at 37°C overnight.</p>
+
+                      <h2 class="H2Head">Growing Overnight Cultures</h2>
+                        <h3 class="H3Head">Materials:</h3>
+                          <p class="PP">5ml of LB broth/5ml SOC medium</p>
+                          <p class="PP">5μl of specific antibiotic</p>
+                          <p class="PP">12ml of culture tube</p>
+                          <p class="PP">tips
+                        <h3 class="H3Head">Methods:</h3>
+                          <p class="PP">Overnight cultures were prepared under sterile conditions</p>
+                          <p class="PP">Add 5 ml of liquid LB media/SOC into 12 ml culture tubes</p>
+                          <p class="PP">Add 5 μl of appropriate antibiotic into the broth</p>
+                          <p class="PP">Using the tip, pick a single colony and inoculate the cultures by putting the tip into the LB broth/SOC</p>
+                          <p class="PP">Seal the tubes and incubate overnight at 37°C shaking at 180 rpm</p>
+                  </div>
+                  <span class="key CuteButton SmallCB GreenCB" onclick="fn(this,6)">More</span>
+              </li>
+
+
+              <li>
+                  <div class="clickMore" id="protocolPart7">
+                      <h2 class="H2Head">Colony PCR</h2>
+                          <h3 class="H3Head">Materials:</h3>
+                              <p class="PP">Sterile water</p>
+                              <p class="PP">E.coli colony</p>
+                              <p class="PP">2 ul of forward primer</p>
+                              <p class="PP">2 ul of reverse primer</p>
+                              <p class="PP">2 × Taq Master Mix</p>
+                          <h3 class="H3Head">Methods:</h3>
+                              <p class="PP">Add a single colony of E.coli to 10 ul of soc.</p>
+                          <table class="table tableNice">
+                              <tr>
+                                  <td>ddH2O</td>
+                                  <td>7 ul</td>
+                              </tr>
+                              <tr>
+                                  <td>2 × Taq Master Mix</td>
+                                  <td>10 ul</td>
+                              </tr>
+                              <tr>
+                                  <th>Primer 1</th>
+                                  <td>1 ul</td>
+                              </tr>
+                              <tr>
+                                  <th>Primer 2</th>
+                                  <td>1 ul</td>
+                              </tr>
+                              <tr>
+                                  <th>1 ul</th>
+                                  <td></td>
+                              </tr>
+                          </table>
+
+                      <p class="PP">Set up the reaction following the instruction in the table above.</p>
+
+                          <table class="table tableNice">
+                              <tr>
+                                  <th>Segment</th>
+                                  <th>Number of cycles</th>
+                                  <th>Temperature(℃)</th>
+                                  <th>Duration</th>
+                              </tr>
+                              <tr>
+                                  <th>Initial denaturation</th>
+                                  <td>1</td>
+                                  <td>94</td>
+                                  <td>5min</td>
+                              </tr>
+                              <tr>
+                                  <th>PCR</th>
+                                  <td></td>
+                                  <td>94</td>
+                                  <td>30 sec</td>
+                              </tr>
+                              <tr>
+                                  <th></th>
+                                  <td>35 cycles</td>
+                                  <td>55</td>
+                                  <td>30 sec</td>
+                              </tr>
+                              <tr>
+                                  <th></th>
+                                  <td></td>
+                                  <td>72</td>
+                                  <td>60 sec/kb</td>
+                              </tr>
+                              <tr>
+                                  <th>Final extension</th>
+                                  <td>1</td>
+                                  <td>72</td>
+                                  <td>7 min</td>
+                              </tr>
+                              <tr>
+                                  <th>Hold</th>
+                                  <td>1</td>
+                                  <td>4</td>
+                                  <td>∞</td>
+                              </tr>
+                          </table>
+                      </div>
+                  <span class="key CuteButton SmallCB GreenCB" onclick="fn(this,7)">More</span>
+              </li>
+
+
+              <li>
+                  <div class="clickMore" id="protocolPart8">
+                      <h2 class="H2Head">LB Broth & LB Ager</h2>
+                          <h3 class="H3Head">LB Broth</h3>
+                              <p class="PP"><strong>Materials:</strong></p>
+                                  <p class="PP">10g tryptone</p>
+                                  <p class="PP">5g yeast extract</p>
+                                  <p class="PP">10g NaCl</p>
+                                  <p class="PP">1 litre of purified water</p>
+                                  <p class="PP"><strong>Methods:</strong></p>
+                                  <p class="PP">Add 10g tryptone, 5g yeast extract and 10g NaCl to 1 litre purified water</p>
+                                  <p class="PP">Autoclave(120℃, 20min)
+                          <h3 class="H3Head">LB Ager</h3>
+                              <p class="PP"><strong>Materials:</strong></p>
+                                  <p class="PP">1 litre of LB broth</p>
+                                  <p class="PP">15-20g ager</p>
+                              <p class="PP"><strong>Methods:</strong></p>
+                                  <p class="PP">Add 15-20g ager to 1 litre purified water</p>
+                                  <p class="PP">Autoclave(120℃, 20min)</p>
+                  </div>
+                  <span class="key CuteButton SmallCB GreenCB" onclick="fn(this,8)">More</span>
+              </li>
+
+              <li>
+                  <div class="clickMore" id="protocolPart9">
+                      <h2 class="H2Head">Making Agar Plates</h2>
+                      <h3 class="H3Head">Materials:</h3>
+                      <p class="PP">LB ager</p>
+                      <p class="PP">Specific antibiotics</p>
+                      <p class="PP">plates</p>
+                      <h3 class="H3Head">Methods:</h3>
+                      <p class="PP">Once agar is molten, mix carefully. Add specific antibiotics and any other desired additives.</p>
+                      <p class="PP">Pour plates carefully.</p>
+                      <p class="PP">Allow to set for approximately 10 min.</p>
+                      <p class="PP">Invert plates and allow to dry for 20-30 min.</p>
+                      <p class="PP">Store plates at 4°C</p>
+
+
+
+                  </div>
+                  <span class="key CuteButton SmallCB GreenCB" onclick="fn(this,9)">More</span>
+              </li>
+
+
+              <li>
+                  <div class="clickMore" id="protocolPart10">
+                      <h2 class="H2Head">SOC Medium</h2>
+                      <h3 class="H3Head">Materials:</h3>
+                      <p class="PP">5g yeast extract</p>
+                      <p class="PP">20g tryptone</p>
+                      <p class="PP">0.584g NaCl</p>
+                      <p class="PP">0.186g KCl</p>
+                      <p class="PP">2.4g MgSO4</p>
+                      <p class="PP">4g glucose</p>
+                      <p class="PP">1Litre of purified water</p>
+                      <h3 class="H3Head">Methods:</h3>
+                      <p class="PP">Add 5g yeast extract, 20g tryptone, 0.584g NaCl, 0.186g KCl, 2.4g MgSO4 and 4g glucose to 1 liture of purified water</p>
+                      <p class="PP">Autoclave(110℃, 30min)</p>
+
+
+
+                  </div>
+                  <span class="key CuteButton SmallCB GreenCB" onclick="fn(this,10)">More</span>
+              </li>
+
+
+              <li>
+                  <div class="clickMore" id="protocolPart11">
+                      <h2 class="H2Head">1% Agarose Gel</h2>
+                      <h3 class="H3Head">Materials:</h3>
+                      <p class="PP">0.25g agarose</p>
+                      <p class="PP">25 ml of 1 X TAE buffer</p>
+                      <p class="PP">2.5 uL of Gelred</p>
+                      <h3 class="H3Head">Methods:</h3>
+                      <p class="PP">Mix Agarose and 1x TAE buffer</p>
+                      <p class="PP">Heat up until Agarose is dissolved</p>
+                      <p class="PP">Add Gelred</p>
+                      <p class="PP">Pour into gel tray and let cool</p>
+
+                  </div>
+                  <span class="key CuteButton SmallCB GreenCB" onclick="fn(this,11)">More</span>
+              </li>
+
+              <li>
+                  <div class="clickMore" id="protocolPart12">
+                      <h2 class="H2Head">Agarose Gel Electrophoresis</h2>
+                      <h3 class="H3Head">Materials:</h3>
+                      <p class="PP">1% Agarose gel</p>
+                      <p class="PP">DNA Ladder</p>
+                      <p class="PP">10x DNA loading buffer</p>
+                      <p class="PP">Electrophoresis cuvette</p>
+                      <h3 class="H3Head">Methods:</h3>
+                      <p class="PP">Set gel tray into cuvette, filled with 1x TAE buffer</p>
+                      <p class="PP">Inoculate samples, previously dyed with 10x loading buffer.</p>
+                      <p class="PP">Additionally, provided a DNA ladder for further reference of DNA sizes</p>
+                      <p class="PP">Run gel at 90-120V for 20-40min</p>
+                      <p class="PP">Image under UV light</p>
+
+
+
+                  </div>
+                  <span class="key CuteButton SmallCB GreenCB" onclick="fn(this,12)">More</span>
+              </li>
+              <li>
+                  <div class="clickMore" id="protocolPart13">
+                      <h2 class="H2Head">1 X TAE buffer</h2>
+                        <p class="PP">1x solution contains 40nM Tris, 20mM acetic acid, 1mM EDTA</p>
+                      <h2 class="H2Head">60% Glycerol Preparation</h2>
+                          <p class="PP">Add 60ml glycerol to 20ml sterile water</p>
+                          <p class="PP">Autoclave(120 degrees, 20min)</p>
+                      <h2 class="H2Head">Glycerol Stock Preparation</h2>
+                          <p class="PP">Cultures plated on LB Agar + specific antibiotic and grown at 37°C overnight.</p>
+                          <p class="PP">A 5ml LB culture in LB+ specific antibiotic inoculated from a single, freshly growing colony.</p>
+                          <p class="PP">Cultivate for 16h at 37°C, with constant shaking</p>
+                          <p class="PP">1 ml of this culture inoculated into sterile vial</p>
+                          <p class="PP">Add 1ml of 60% glycerol</p>
+                          <p class="PP">Mix.</p>
+                          <p class="PP">Freeze them at -80 degrees</p>
+                  </div>
+                  <span class="key CuteButton SmallCB GreenCB" onclick="fn(this,13)">More</span>
+              </li>
+
+              <li>
+                  <div class="clickMore" id="protocolPart14">
+                      <h2 class="H2Head">fluorescence testing</h2>
+                          <p class="PP"><strong>Materials:</strong>
+                              <p class="PP">1 X YPAD</p>
+                              <p class="PP">ddH2O</p>
+                              <p class="PP">96-well plate</p>
+                              <p class="PP">Plate reader</p>
+                          <p class="PP"><strong>Methods:</strong>
+                              <p class="PP">Culture the yeast in 25ml 1xYPAD medium，220rpm，for 24h</p>
+                              <p class="PP">Harvest the culture and add 1ml into a 1.5ml EP tube</p>
+                              <p class="PP">Centrifuge for 2 min, 6000 rpm</p>
+                              <p class="PP">Collect the yeast and wash it with ddH2O twice</p>
+                              <p class="PP">Suspend the yeast in 1ml ddH2O，100𝜇l per well, add into the 96-well plate</p>
+                              <p class="PP">Detect the fluorescence(mRFP） with plate reader, excitation length 585nm，emission length 605nm</p>
+                  </div>
+                  <span class="key CuteButton SmallCB GreenCB" onclick="fn(this,14)">More</span>
+              </li>
+
+
+
+              <li>
+                  <div class="clickMore" id="protocolPart15">
+                      <h2 class="H2Head">Extraction of DAPG from E.coli and Detection of DAPG by HPLC</h2>
+                      <p class="PP"><strong>Materials:</strong></p>
+                      <p class="PP">DAPG</p>
+                      <p class="PP">Methanol</p>
+                      <p class="PP">ethyl acetate</p>
+                      <p class="PP">LB broth</p>
+                      <p class="PP">1 mol / L HCl</p>
+                      <p class="PP"><strong>Methods:</strong></p>
+                      <p class="PP">Preparation of standard samples. Take 0.02 g of DAPG and dissolve it with 5 ml of methanol as a stock solution. Diluting the stock solution 50 times with methanol, and taking 1 mL diluent(at a concentration of 8 * 10-5 g / ml), which was used as a measuring standard sample, into a tube. Two standard samples (labeled as STD1.STD2) were prepared for the determination of retention time. Diluting the stock solution 20 times with methanol, and taking 1 mL diluent(at a concentration of 8 * 10-5 g / ml), which was used as a standard add sample, into a tube.</p>
+                      <p class="PP">Pretreatment. Using the tip, pick a single colony and inoculate the cultures by putting the tip into the LB broth. Incubate at 180 rpm, 37°C for overnigt, shaking. Centrifuge at 5000 rpm for 10 minutes.</p>
+                      <p class="PP">Extraction. The supernatant was acidified with 1 mol / L HCl (pH 2.0). Extracted with 1.5 volumes of ethyl acetate.</p>
+                      <p class="PP">Detection of DAPG by HPLC.After removing the solvent by reduced pressure distillation, we used methanol to dissolve DAPG, which was residue in the flask. Pipette it into tube for HPLC.</p>
+                  </div>
+                  <span class="key CuteButton SmallCB GreenCB" onclick="fn(this,15)">More</span>
+              </li>
+
+
+              <h1 id="Trichodermaatrovirideprotocol" class="page-header ArticleHead YellowAH">Trichoderma atroviride protocol</h1>
+
+              <li>
+                  <div class="clickMore" id="protocolPart16">
+                      <h2 class="H2Head">Potato-dextrose agar media and culturing</h2>
+                          <h3 class="H3Head">Materials:</h3>
+                              <p class="PP">1 Litre purified water</p>
+                              <p class="PP">200g potatoes(sliced washed unpeeled)</p>
+                              <p class="PP">20g glucose</p>
+                              <p class="PP">15-20g ager</p>
+                          <h3 class="H3Head">Methods:</h3>
+                              <p class="PP">Potato infusion can be made by boiling 200 grams of sliced potatoes in ~ 1 litre purified water for 30 minutes and then decanting or straining the broth through cheesecloth. 20 grams dextrose and 20 grams agar powder is then added.</p>
+                              <p class="PP">Autoclave(110℃, 30min)</p>
+                              <p class="PP">Streak/inoculate T.atroviride onto plates.</p>
+
+                      <h2 class="H2Head">Induction Broth & Induction Ager</h2>
+                          <h3 class="H3Head">Materials and Methods:</h3>
+                                  <table class="table tableNice">
+                                      <tr>
+                                          <th>Compound</th>
+                                          <th>Liquid medium</th>
+                                          <th>Solid medium</th>
+                                      </tr>
+                                      <tr>
+                                          <td>1.25 K-Phosphate-buffer pH 4.8</td>
+                                          <td>8ml</td>
+                                          <td>8ml</td>
+                                      </tr>
+                                      <tr>
+                                          <td>1 M/L MES(pH5.5)</td>
+                                          <td>40ml</td>
+                                          <td>40ml</td>
+                                      </tr>
+                                      <tr>
+                                          <td>MN-buffer
+                                              (30g/l MgSO4·7H2O, 15g/l NaCl)
+                                          </td>
+                                          <td>20ml</td>
+                                          <td>20ml</td>
+                                      </tr>
+                                      <tr>
+                                          <td>1% CaCl·2H2O(w/v)</td>
+                                          <td>1ml</td>
+                                          <td>1ml</td>
+                                      </tr>
+                                      <tr>
+                                          <td>0.01%FeSO4(w/v)</td>
+                                          <td>10ml</td>
+                                          <td>10ml</td>
+                                      </tr>
+                                      <tr>
+                                          <td>20% NH4NO3(w/v)</td>
+                                          <td>2.5ml</td>
+                                          <td>2.5ml</td>
+                                      </tr>
+                                      <tr>
+                                          <td>50% glycerol(v/v)</td>
+                                          <td>10ml</td>
+                                          <td>10ml</td>
+                                      </tr>
+                                      <tr>
+                                          <td>20% glucose(w/v)</td>
+                                          <td>10ml</td>
+                                          <td>5ml</td>
+                                      </tr>
+                                      <tr>
+                                          <td>Ager</td>
+                                          <td></td>
+                                          <td>15g</td>
+                                      </tr>
+                                  </table>
+                      <p class="PP">Autoclave(110℃, 30min)</p>
+                      <p class="PP">Spore elements(100 mg/l ZnSO4·7H2O, 100mg/l CuSO4·5H2O,100 mg/l H3BO3, 100 mg/l Na2MoO4;2H2O), filter sterilization.</p>
+                      <p class="PP">Add 5000ul spore, 1000ul Kanamycin and 1000ul AS into it.</p>
+
+                  </div>
+                  <span class="key CuteButton SmallCB GreenCB" onclick="fn(this,16)">More</span>
+              </li>
+
+
+
+              <li>
+                  <div class="clickMore" id="protocolPart17">
+                      <h2 class="H2Head">Agrobacterium Tumefaciens-mediated Transformation (ATMT) of Trichoderma Atroviride</h2>
+                      <h3 class="H3Head">Materials:</h3>
+                      <p class="PP">Kanamycin</p>
+                              <p class="PP">LB agar</p>
+                              <p class="PP">LB media/SOC</p>
+                              <p class="PP">Agrobacterium</p>
+                              <p class="PP">Plasmids</p>
+                              <p class="PP">Liquid nitrogen</p>
+                              <p class="PP">200 µg/ml hygromycin B</p>
+                              <p class="PP">SS (Streptomycin sulfate)</p>
+                              <p class="PP">Glufosinate</p>
+                              <p class="PP">Nitrocellulose membrane</p>
+                              <p class="PP">Induction medium</p>
+                              <p class="PP">AIM</p>
+                              <p class="PP">PDA plates</p>
+                      <h3 class="H3Head">Methods:</h3>
+                              <p class="PP">For plasmid constructions, E.coli was used and grown on LB agar supplemented with kanamycin (50 µg ml−1).</p>
+                              <p class="PP">Mini-prepping.</p>
+                              <p class="PP">Add 5 ul plasmids to 50μl competent cells(agrobacterium) on ice. Mixed.</p>
+                              <p class="PP">Place the tube in a mortar and pour liquid nitrogen into it. When liquid nitrogen is completely gasified, putting the tube in 37degree, 5min.</p>
+                              <p class="PP">Add 1 ml LB broth. Incubate at 28°C, 90 rpm for 1.5-2 hours, shaking.</p>
+                              <p class="PP">Centrifuge at 7500 rpm for 1 minute.</p>
+                              <p class="PP">Plate out cells on LB agar(with kanamycin).</p>
+                              <p class="PP">Incubate at 28°C, 1-2 days.</p>
+                              <p class="PP">Using colony PCR to screen positive clones. Picking single positive colones to 5 ml liquid LB media/SOC and adding 5 μl of appropriate antibiotic into the broth.Incubate at 28°C, 90 rpm for overnight, shaking.</p>
+                              <p class="PP">Take 400 ul of the culture to 4ml AIM and the mix.</p>
+                              <p class="PP">Incubate at 28°C, 200 rpm for 5 hours, shaking.</p>
+                              <p class="PP">Take 100ul of the mixture, and mixe it with 100 µl of a conidial suspension (106, 107, or 108 ml−1) from T. atroviride.</p>
+                              <p class="PP">The nitrocellulose membrane was cut into strips and placed on the induction medium.</p>
+                              <p class="PP">The mixture was plated onto sterile NC film placed on induction medium and then incubated at 22 °C, in the dark.</p>
+                              <p class="PP">After growth on induction medium 2 days, the strips were transferred to selection medium (PDA plates supplemented with 200 µg/ml hygromycin B (HygB), 1ul/ml SS and 1 ul/ml Glufosinate)</p>
+                              <p class="PP">Colonies appearing after incubation at 28 °C were transferred to PDA with 200 µg HygB ml−1 and afterwards purified to mitotic stability by two rounds of single-spore isolation.</p>
+                  </div>
+                  <span class="key CuteButton SmallCB GreenCB" onclick="fn(this,17)">More</span>
+              </li>
+
+              <li>
+                  <div class="clickMore" id="protocolPart18">
+                      <h2 class="H2Head">gDNA Library preparation for genome sequencing</h2>
+                        <h3 class="H3Head">materials：</h3>
+                              <p class="PP">Quartz sand</p>
+                              <p class="PP">Trichoderma atroviride</p>
+                              <p class="PP">ddH2O</p>
+                              <p class="PP">CTAB</p>
+                              <p class="PP">CIA</p>
+                              <p class="PP">Isopropyl alcohol</p>
+                          <h3 class="H3Head">methods：</h3>
+                              <p class="PP">Add quartz sand and 500 ul ddH20 to a conidial suspension from T. atroviride.</p>
+                              <p class="PP">Grind with a grinder for 2 minutes(65 HZ)</p>
+                              <p class="PP">Add 500 ul CTAB. Incubate at 65 ℃, 30 minutes and mix it every 10 minutes.</p>
+                              <p class="PP">Add 500 ul CIA. Shaking on the shaker for 15-20 minutes.</p>
+                              <p class="PP">Centrifuge at 10000 rpm for 5-10 minutes to pellet it. Transfer the clarified supernatant into the 2 ml column.</p>
+                              <p class="PP">Add 750 ul isopropyl alcohol to the supernatant. Stand still for 5 minutes.</p>
+                              <p class="PP">Centrifuge at 10,000 rpm, 10 minutes. Discard the supernatant. And then</p>
+                              <p class="PP">Upside down the tube on absorbent paper, about 1 hours.</p>
+                              <p class="PP">Add 50 ul ddH20 into the tube for dissolving. Stored at 4cdegree.</p>
+                  </div>
+                  <span class="key CuteButton SmallCB GreenCB" onclick="fn(this,18)">More</span>
+              </li>
+
+              <h1 id="Phytophthoraprotocol" class="ArticleHead YellowAH">Phytophthora protocol</h1>
+              <li>
+                  <div class="clickMore" id="protocolPart19">
+                      <h2 class="H2Head">Phytophthora culture medium</h2>
+                          <h3 class="H3Head">Materials:</h3>
+                              <p class="PP">PDA media</p>
+                              <p class="PP">Ampicillin</p>
+                              <p class="PP">Rifampicin</p>
+                              <p class="PP">ager</p>
+                          <h3 class="H3Head">Methods:</h3>
+                            <p class="PP">Add Rifampicin(20ng/µ), ampicillin(200ng/µ) and ager(15-20g/L)to PDA madia</p>
+
+                      <h2 class="H2Head">Confrontation between Trichoderma and Phytophthora</h2>
+                          <h3 class="H3Head">Materials:</h3>
+                              <p class="PP">PDA ager media</p>
+                          <h3 class="H3Head">Methods:</h3>
+                              <p class="PP">Trichoderma and Phytophthora infestans were respectively connected to the edge of the PDA.</p>
+                              <p class="PP"> Incubated at 25 ° C, and the growth of the colony was recorded by continuous observation.</p>
+
+                  </div>
+                  <span class="key CuteButton SmallCB GreenCB" onclick="fn(this,19)">More</span>
+              </li>
+
+              <h1 id="Yeastprotocol" class="ArticleHead YellowAH">Yeast protocol</h1>
+
+              <li>
+                  <div class="clickMore" id="protocolPart20">
+                      <h2 class="H2Head">PEG3350</h2>
+                          <h3 class="H3Head">Materials:</h3>
+                            <p class="PP">50 g PEG3350</p>
+                            <p class="PP">ddH2O</p>
+                          <h3 class="H3Head">Methods:</h3>
+                            <p class="PP">50g polyethylene glycol 3350, adding double distilled water to 100mL.</p>
+                            <p class="PP">121 ℃ sterilization 15min</p>
+                            <p class="PP">Store in 4 degree</p>
+
+                      <h2 class="H2Head">Lithium acetate</h2>
+                          <h3 class="H3Head">Materials:</h3>
+                              <p class="PP">5.1g Lithium acetate</p>
+                              <p class="PP">ddH2O</p>
+                              <p class="PP">Acetic acid</p>
+                          <h3 class="H3Head">Methods:</h3>
+                              <p class="PP">5.1g Lithium acetate, adding ddH2O to 50ml</p>
+                              <p class="PP">Use phytic acid and sodium hydroxide to adjust pH to 7.5</p>
+                              <p class="PP">121 ℃ sterilization 15min</p>
+                              <p class="PP">Store in 4 degree</p>
+
+                      <h2 class="H2Head">1 X YPAD</h2>
+                          <h3 class="H3Head">Materials:</h3>
+                              <p class="PP">20g glucose</p>
+                              <p class="PP">20g tryptone</p>
+                              <p class="PP">10g yeast extract</p>
+                              <p class="PP">80mg Adenine Sulfate</p>
+                              <p class="PP">1Litre purified water</p>
+                          <h3 class="H3Head">Methods:</h3>
+                              <p class="PP">Add 20g glucose, 20g tryptone, 10g yeast extract and 80mg Adenine Sulfat to 1liture purified water</p>
+                              <p class="PP">Autoclave(110℃, 30min)</p>
+
+                      <h2 class="H2Head">2 X YPAD</h2>
+                          <h3 class="H3Head">Materials:</h3>
+                              <p class="PP">40g glucose</p>
+                              <p class="PP">40g tryptone</p>
+                              <p class="PP">20g yeast extract</p>
+                              <p class="PP">80mg Adenine Sulfate</p>
+                              <p class="PP">1Litre purified water</p>
+                          <h3 class="H3Head">Methods:</h3>
+                              <p class="PP">Add 40g glucose, 40g tryptone, 20g yeast extract and 80mg Adenine Sulfate to 1liture purified water</p>
+                              <p class="PP">Autoclave(110℃, 30min)</p>
+
+                      <h2 class="H2Head">YPD Ager</h2>
+                        <h3 class="H3Head">Materials:</h3>
+                          <p class="PP">20g glucose</p>
+                          <p class="PP">20g tryptone</p>
+                          <p class="PP">10g yeast extract</p>
+                          <p class="PP">15g ager</p>
+                          <p class="PP">1Litre purified water</p>
+                        <h3 class="H3Head">Methods:</h3>
+                          <p class="PP">Add 20g glucose, 20g tryptone, 10g yeast extract and 15g ager to 1liture purified water</p>
+                          <p class="PP">Autoclave(110℃, 30min)</p>
+
+                  <h2 class="H2Head">YNB</h2>
+                      <h3 class="H3Head">Materials:</h3>
+                          <p class="PP">6.7g YNB</p>
+                          <p class="PP">20g glucose</p>
+                          <p class="PP">0.6mg Leucine</p>
+                          <p class="PP">0.2mg Histidine</p>
+                          <p class="PP">0.2mg Methionine</p>
+                      <h3 class="H3Head">Methods:</h3>
+                          <p class="PP">Add 6.7g YNB, 20g glucose, 0.6mg Leucine, 0.2mg Histidine and 0.2mg Methionine to 1 liture ddH2O</p>
+                          <p class="PP">Autoclave(110℃, 30min)</p>
+                          <p class="PP">Save at room temperature</p>
+
+                  </div>
+                  <span class="key CuteButton SmallCB GreenCB" onclick="fn(this,20)">More</span>
+              </li>
+
+              <li>
+                  <div class="clickMore" id="protocolPart21">
+                      <h2 class="H2Head">Transformation of yeast</h2>
+                          <h3 class="H3Head">Materials:</h3>
+                              <p class="PP">1 X YPAD</p>
+                              <p class="PP">2 X YPAD</p>
+                              <p class="PP">ddH2O</p>
+                              <p class="PP">PEG3350</p>
+                              <p class="PP">1 mol/l LiAc</p>
+                              <p class="PP">Single chain salmon sperm DNA</p>
+                              <p class="PP">YPD</p>
+                              <p class="PP">YNB</p>
+                              <p class="PP">yeast plasmid DNA</p>
+
+                      <h3 class="H3Head">Methods:</h3>
+                          <p class="PP">For plasmid constructions, E.coli was used and grown on LB agar supplemented with appropriate antibiotic<p class="PP">
+                          <p class="PP">Mini-prepping.<p class="PP">
+                          <p class="PP">Add a single colony of yeast(BY4741) to 25 ml 1 X YPAD.Incubate at 30°C, 200 rpm for overnigt, shaking.<p class="PP">
+                          <p class="PP">Take 1ml of the culture medium to 25ml 2 X YPAD. Incubate at 30°C, 200 rpm for 3-4 hours, shaking.<p class="PP">
+                          <p class="PP">Collect 1 ml of the culture. Centrifuge at 600×g for 2 minute to pellet the yeast.<p class="PP">
+                          <p class="PP">Wash the yeast pellet with cold ddH2O twice.<p class="PP">
+                          <p class="PP">Add 240 ul PEG3350, 36 ul of 1 mol/l LiAc, 50ul single chain salmon sperm DNA and 25ul of yeast plasmid DNA in turn into tube and then mix.<p class="PP">
+                          <p class="PP">Incubate at 30°C for 3 hours.<p class="PP">
+                          <p class="PP">Heat shock 42degC 40 min.<p class="PP">
+                          <p class="PP">Centrifuge at 12000×g for 1 minute to pellet the yeast.<p class="PP">
+                          <p class="PP">Resuspend the yeast pellet in 1 ml of YPD broth. Incubate at 30°C, 120 rpm for 2-3 hours.<p class="PP">
+                          <p class="PP">Plate out 100 ul of cells on YNB agar with appropriate antibiotic. Incubate at 37°C 2-3 days.<p class="PP">
+
+                  </div>
+                  <span class="key CuteButton SmallCB GreenCB" onclick="fn(this,21)">More</span>
+              </li>
+
+              <li>
+                  <div class="clickMore" id="protocolPart22">
+                      <h2 class="H2Head">Yeast Total Protein Extraction</h2>
+                          <h3 class="H3Head">Materials:</h3>
+                              <p class="PP">Isotonic solution</p>
+                              <p class="PP">snail enzyme</p>
+                              <p class="PP">Mercaptoethanol</p>
+                              <p class="PP">PMSF</p>
+                          <h3 class="H3Head">Methods:</h3>
+                              <p class="PP">Add a single colony of yeast(BY4741) to 25 ml 1 X YPAD.Incubate at 30°C, 200 rpm until OD600=1.0, shaking.</p>
+                              <p class="PP">Centrifuge at 5000×g for 1 minute to pellet the yeast. Weigh the wet weight of the cells.</p>
+                              <p class="PP">Add 500 μl of isotonic solution, 5ul snail enzyme and 1 ul mercaptoethanol to 50 mg wet weight. Resuspend the yeast pellet by vortexing.</p>
+                              <p class="PP">Incubate at 30°C for 1 hours. Centrifuge at 2500×g for 1 minute. Discard the supernatant.</p>
+                              <p class="PP">Resuspend the yeast pellet in 500 μl of isotonic solution by vortexing and wash the yeast pellet with ddH2O once.</p>
+                              <p class="PP">Resuspend the yeast pellet in 500 ul of low penetration fluid (before using it, add 5 ul PMSF to 500 ul low penetration fluid).</p>
+                              <p class="PP">Put it into -20 ℃ refrigerator frezzing 30 min and then dissolve at room temperature.</p>
+                              <p class="PP">Do it again.</p>
+                              <p class="PP">Centrifuge at 12000 rpm for 5 minute and keep in the supernation.</p>
+
+                  </div>
+                  <span class="key CuteButton SmallCB GreenCB" onclick="fn(this,22)">More</span>
+              </li>
+
+              <li>
+                  <div class="clickMore" id="protocolPart23">
+                      <h2 class="H2Head">Calcium ion detection</h2>
+                      <h3 class="H3Head">Materials:</h3>
+                      <p class="PP">5μM Fluo-4-acetoxymethyl ester solution (solute in sterile water)</p>
+                      <p class="PP">1 x PBS (pH 7.4)</p>
+                      <p class="PP">5μL 20%(w/v) Pluronic F-127 solution (solute in DMSO)</p>
+                      <p class="PP">Sterile water</p>
+                      <p class="PP">1/2 SD/Gal-Raf/-Ura growth medium</p>
+                      <p class="PP">Loops</p>
+                      <p class="PP">Fluorescence plate reader</p>
+                      <p class="PP">96-well plate</p>
+                      <h3 class="H3Head">Methods:</h3>
+                      <p class="PP">Culture yeast in 1/2 SD/Gal-Raf/-Ura growth medium at 30℃ for about 6 hours to reach a density of about 1×107-1.5×107cells per mL.</p>
+                      <p class="PP">Harvest the cells and wash with PBS(pH7.4) three times.</p>
+                      <p class="PP">Resuspend the cells with 2mL 5μM Fluo-4-acetoxymethyl ester solution, add 5μL 20%(w/v) Pluronic F-127 solution, shake gently to mix it up and then incubate in dark at 30℃ (note that all following steps should be done in dark).</p>
+                      <p class="PP">Wash the cells with PBS three times.</p>
+                      <p class="PP">Resuspend cells in sterile water to reach a density of about 1×107-1.5×107cells per mL.</p>
+                      <p class="PP">Add 200μL cell suspensions in each well of the 96-well plates</p>
+                      <p class="PP">Measure fluorescence with plate reader, the excitation wavelength is 488nm and the emission wavelength is between 512-520nm.</p>
+                      <p class="PP">Measure OD600 with fluorescence plate reader.</p>
+                      <p class="PP">Divide the fluorescence intensity with OD600 to get a relative fluorescence intensity</p>
+
+                  </div>
+                  <span class="key CuteButton SmallCB GreenCB" onclick="fn(this,23)">More</span>
+              </li>
+
+              <li>
+                  <div class="clickMore" id="protocolPart24">
+                      <h2 class="H2Head">Western-blot and check flag-tag</h2>
+                          <h3 class="H3Head">Sample preparation for protein gel.</h3>
+                                <p class="PP">Yeast total protein extraction. Load 15-20 ul of supematant per lane on a protein gel. Load 10 ul of prestained protein ladder. Run protein gel at 200V until dye front reaches the bottom of the gel.</p>
+                          <h3 class="H3Head">Western Blot：</h3>
+                              <p class="PP">Run gel as usual. Take gel out of electrophoresis apparatus. Cut into segments as required; Part of gel can be stained directly in Coomassie brilliant blue R-250. Part to be used for electroblotting is put into tap water on shaker, after first having marked it unambiguously to identify top/bottom, left and right etc.</p>
+                              <p class="PP">Leave in water on shaker for 5 minutes. This step can be substituted by washing the gel in electro-transfer buffer (see below) for 5 minutes.</p>
+                              <p class="PP">We use a semidry blotter, which we have found to be quicker, more economical and easier than fully submerged blotting methods. We cut Whatman 3M filter papers to the size of our gels, and place three of these onto the semi dry blotter. These are then wet with transfer buffer (we routinely use 3.03 g Tris base, 14.4 g Glycine, 10% Methanol per liter). The gel is put onto the filters and a prewetted nitrocellulose filter is put ontop of the gel. Alternately put a PVDF membrane on top; if you are using PVDF remember it is essential to prewet the PVDF in 100% methanol. Great care should be taken to ensure that no air bubbles are anywhere in this stack of membranes. Then three more wetted Whatman 3M filters should be placed ontop of the pile, again taking great care not to have any bubbles in pile. Put the top onto the apparatus and screw it down. Proteins in transfer buffer are negative in charge mostly due to residual SDS and they therefore move from -ve to +ve pole. So the +ve electrode is above the nitrocellulose and the -ve side is below the gel.</p>
+                              <p class="PP">Run for 30 minutes to 1 hour at ~100mA. The most reliable way of doing this is to use a powerful power supply 200-500mA and put it on constant voltage, with a setting of 5 to 10 Volts. Low molecular weight proteins (20kDa or less) will transer in 30 minutes at 5 Volts, while higher molecular weight (150kDa or more) transfer in 60 minutes at 10 Volts.</p>
+                              <p class="PP">After running disassemble the apparatus and remove nitrocellulose filter. Stain this for 5 minutes on shaker in Ponceau reagent. Destain with regular SDS-PAGE gel destain solution.</p>
+                              <p class="PP">After Ponceau staining put the nitrocellulose filter into blocking solution, such as 1% bovine serum albumin (BSA) or 1% Carnation non fat milk (NFM), for 20 minutes to 1 hr at RT or 37°C. Since the NFM works just as well as BSA but is much cheaper, there is really no good reason to use BSA. Ponceau staining will fade to become completely invisible. Carry on with antibody incubations etc.</p>
+                          <h3 class="H3Head">Antibody Incubations</h3>
+                              <p class="PP">Put in antibody solutions. Volume should be enough to cover blot and allow it to float freely when you agitate. In initial experiments, antibody concentration should generally be about 1:100 - 1:1,000 for ascites, CL350 tissue culture supernatant or antiserum, undiluted to 1:10 for monoclonal supernatant, and about 1-10µg/ml for a pure IgG. If dilution brings antibody concentration to less than 50 µgs/ml, add some BSA or NFM to act as carrier protein. Incubate for at least 1 hour with shaking (can be room temperature or at 37°C, can also do overnight at 4°C).</p>
+                              <p class="PP">Wash membranes in TBS (10mM Tris, 154mM NaCl, pH=7.5 plus 0.1% Tween 20) for 3 times at least five minutes each time with extensive agitation.</p>
+                              <p class="PP">Incubate in second antibody (peroxidase-conjugate, phosphatase conjugate or radioactive). Add BSA or NFM carrier as before if necessary. Incubate for at least one hour at room temperature or 37°C can also do overnight at 4°C with shaking as before.</p>
+                              <p class="PP">Wash membranes in TBS for 3 times at least five minutes each time with extensive agitation.</p>
+                          <h3 class="H3Head">Alkaline Phosphatase Blot System</h3>
+                              <p class="PP">Incubate in alkaline phosphatase conjugated antibody against the primary antibody. Typical concentration is 1:1,000 in TBS. Add a small amount of BSA or NFM to act as carrier. Incubate for 1 hour at room temperature (or 37°C) with shaking.</p>
+                              <p class="PP">Wash in TBS three times 5 minutes each.
+                              <p class="PP">Put into developer. Buffer is 100mM Tris/HCl, 100mM NaCl, 5mM MgCl2 pH=9.5. To 10ml of this add 33µl BCIP-T and 33µl of NBT. Can store these solutions at -20°C. Can buy this solution made up already from Sigma. Reaction product is purple, and appears in a few minutes; can incubate for up to an hour if the signal is weak. Watch development of reaction and stop with water. Some of background disappears on drying.</p>
+                          <h3 class="H3Head">Horse Radish Peroxidase Staining</h3>
+                            <p class="PP">After washing of blots in TBS or PBS add reaction mixture. This is; 20 mls 0.1M Tris/HCl pH=7.2. 200 µl NiCl (80 mg/ml), 6 µl 30% hydrogen peroxide, 1ml of 5mgs/ml diaminobenzidine. Alternate protocol; Make 20 mls ammonium acetate buffer (50mM, pH=5.0). Add 1 ml of 10mg/ml Diaminobenzidine, 40µl 30% hydrogen peroxide. Brown reaction product is seen in 1-10 minutes, not quite so nice as above method.</p>
+                          <h3 class="H3Head">Chemiluminescence Staining</h3>
+                            <p class="PP">Chemiluminescence has an advantage of perhaps an order of magnitude greater sensitivity than the dye based methods above. In addition, several films may be exposed from a single blot, giving an advantage in interpretation of weak and strong signals on the same membrane. However it requires a darkroom to perform and is more expensive in reagents. Reagents are generally bought in a kit, and we recommend simply following the kit instructions.</p>
+
+                  </div>
+                  <span class="key CuteButton SmallCB GreenCB" onclick="fn(this,24)">More</span>
+              </li>
+
+              <li>
+                  <div class="clickMore" id="protocolPart25">
+                      <h2 class="H2Head">Enzyme activity detection</h2>
+                      <h3 class="H3Head">materials：</h3>
+                      <p class="PP">1.0 mmol / L BAEE solution</p>
+                      <p class="PP">enzyme extract</p>
+                      <p class="PP">PMSF</p>
+                      <h3 class="H3Head">method：</h3>
+                      <p class="PP">Prepare three 1 cm cuvettes with lid and add 2.8 mL of 1.0 mmol / L BAEE solution, which has been preheated at 25 ° C, to the three cuvettes.</p>
+                      <p class="PP">Add 0.2 mL of 10 mmol / L HCl, 0.2 mL of the enzyme extract, the mixture of 0.2ml enzyme extract and inhibitor(PMSF) to cuvettes respectively. The blank which adds HCl is used to set zero at a wavelength of 253 nm.</p>
+                      <p class="PP">Immediately cover the lid quickly and mix. Read every half minutes and read a total of 3 ~ 4min.</p>
+                      <p class="PP">Set the coordinate axis with the time (t) as the abscissa, the light absorption (A253nm) as the ordinate.</p>
+                  </div>
+                  <span class="key CuteButton SmallCB GreenCB" onclick="fn(this,25)">More</span>
+              </li>
+
+          </ul>
+
+
+
+</div>
+        
+
+
+<!-- 右侧监听开始 -->
+<div class="col-md-3 disappear-on-top" role="complementary">
+  <nav  style="position: fixed; top: 100px ; left:50px;" class="bs-docs-sidebar hidden-print hidden-xs hidden-sm">
+    <ul class="nav bs-docs-sidenav shorterli">
+
+
+        <li><a href="#GeneralEcoliprotocol">General/E.coli protocol</a></li>
+        <li><a href="#Trichodermaatrovirideprotocol">Trichoderma atroviride protocol</a></li>
+      <li><a href="#Phytophthoraprotocol">Phytophthora protocol</a></li>
+        <li><a href="#Yeastprotocol">Yeast protocol</a></li>
+
+    </ul>
+
+  <a class="back-to-top" href="#top">
+  <!--   <i class="fa fa-arrow-up nav_icon"></i> -->
+      <img style="width: 50px;" src="http://2017.igem.org/wiki/images/d/da/ZJU_China_UP.png">
+  </a>
+
+            
+          </nav>
+        </div>
+        
+      </div>
+</div>
+<!-- 右侧监听结束 -->
+<!-- footer开始 -->
+<div class="footer"  style="background-color: #000000">
+  <div class="copyright container text-center">
+    <p class="copyright">Copyright &copy; 2017 ZJU-IGEM | <a href="http://www.zju.edu.cn/">Zhejiang University</a> |</p>
+    <!--<p class="copyright">Contact us:<a class="copyright" href="">WeChat</a></p>-->
+  </div>
+</div>
+<!-- footer结束 -->
+
+  <!--点击缩起的js效果开始-->
+  <script type="text/javascript">
+      var h = new Array(0,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50);
+      var tf = new Array(false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false);//是否Close，true为More
+      var minheight = 50;
+      var maxheight = 380;
+      function fn(likey,tag){
+          if (tf[tag]){
+              if (h[tag]>=minheight){
+                  document.getElementById("protocolPart"+tag).style.height = h[tag] + "px";
+                  setTimeout(function(){fn(likey,tag)},1);
+                  h[tag] -= 10;
+              } else {
+                  likey.innerHTML = "More";
+                  tf[tag] = !tf[tag];
+                  h[tag] += 10;
+              }
+          } else {
+              if (h[tag]<=maxheight){
+                  document.getElementById("protocolPart"+tag).style.height = "auto";
+                  setTimeout(function(){fn(likey,tag)},1);
+                  h[tag] += 10;
+              } else {
+                  likey.innerHTML = "Close";
+                  tf[tag] = !tf[tag];
+                  h[tag] -= 10;
+              }
+          }
+      }
+  </script>
+  <!--点击缩起的js效果结束-->
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <!--script src="js/bootstrap.min.js"></script-->
+  <script src="http://2017.igem.org/wiki/images/8/85/ZJUChina_js_docsmin.txt"></script>
+  <!--script src="js/button.js"></script-->
+  <script src="http://2017.igem.org/wiki/images/2/22/ZJUChina_bootstrap.min.txt"></script>
+  <script src="http://2017.igem.org/wiki/images/3/32/ZJUChina_docs.min.txt"></script>
+  <script src="http://2017.igem.org/wiki/images/e/e0/ZJUChina_button.txt"></script>
+
+  <!--<script src="http://2017.igem.org/Team:ZJU-China/js/scrollingnavnonPic?action=raw&ctype=text/javascript"></script>-->
+  <script src="http://2017.igem.org/Zju/js/scrollingnav?action=raw&ctype=text/javascript"></script>
+
+
+  </body>
+</html>
