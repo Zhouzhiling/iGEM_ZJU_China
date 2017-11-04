@@ -1,0 +1,666 @@
+
+<html lang="zh-CN">
+  <head>
+
+
+<link href="http://2017.igem.org/Zju/css/bootstrap?action=raw&ctype=text/css" rel="stylesheet" media="screen" />
+<link href="http://2017.igem.org/Zju/css/bootstraptheme?action=raw&ctype=text/css" rel="stylesheet" id="bs-theme-stylesheet">
+<link href='http://2017.igem.org/Team:ZJU-China/cs/font?action=raw&ctype=text/css' rel='stylesheet' type='text/css'>
+<link href="http://2017.igem.org/Zju/css/docs/min?action=raw&ctype=text/css" rel="stylesheet" type="text/css"/>
+<link href="http://2017.igem.org/Zju/css/doc-style?action=raw&ctype=text/css" rel="stylesheet">
+<link href="http://2017.igem.org/Zju/css/responsive/min?action=raw&ctype=text/css" rel="stylesheet">
+
+<script>
+  var _hmt = _hmt || [];
+</script>
+  </head>
+
+
+<style>
+/*Override default CSS*/
+#sideMenu, #top_title {display:none;}
+#content { padding:0px; width:100%; margin-top:-7px; margin-left:0px;background-color: transparent;}
+
+
+/* set all basic objects to neutral formatting*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+#globalWrapper {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+
+/* set page to fill window*/
+html{
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  background-color: #FFFFFF; 
+}
+
+
+#content_wrapper {
+    position: relative;
+  top: 0px;
+  left: 0px;  
+  margin: 0px;
+    width: 100%; 
+    height: 100%; 
+  text-align:center;
+    background-color: #FFFFFF;
+}
+
+#content_wrapper p {
+    font-family: 'Tempus Sans ITC',Tahoma, Geneva, sans-serif;
+}
+
+#content_wrapper a { 
+    color:#004789;
+}
+
+
+#footer { 
+    position:absolute;    
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.center { 
+  width: 60%; 
+    margin-top: 16px;
+  min-width: 500px;
+    padding-bottom:32px;
+  display: inline-block;        
+}
+
+.TextContent {  
+  text-align: left;
+  vertical-align: baseline;
+  font-size: 0.875em;
+  font-family:'Tempus Sans ITC', verdana, sans-serif;
+}
+
+.TextContent h1{ 
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+  margin-top: 0.2em;
+  color: #3399ff;
+  font-family:'Tempus Sans ITC', verdana, sans-serif;
+}
+
+.TextContent h2{
+  line-height: 1.6;
+  margin-bottom: 0em;
+  margin-top: 1em;
+  text-align: left;
+  font-family:'Tempus Sans ITC', verdana, sans-serif;
+}
+
+.TextContent p{
+  margin-bottom: 1.2em;
+  font-family:'Tempus Sans ITC', verdana, sans-serif;
+}
+
+.Page_Wide {  
+  width:100%; 
+}
+
+.Quarter_Image {
+  width:25%;
+  max-height:250px;
+  float:left;
+}
+
+.Quarter_Image img {
+    display:block;
+    margin:auto;
+    max-height: 250px;  
+    width: auto;
+}
+
+.SocialMediaIconWrapper {
+    width:100%;
+}
+
+.SocialMediaIcon {
+    width:4%;
+    height:auto;
+    margin-left:20px;
+    display: inline-block;
+    float:left;
+
+}
+
+.SocialMediaIcon img{
+    max-width:100%;
+  height:auto
+}
+
+.TeamImage {
+  width:100%; 
+}
+
+.TeamImage img {  
+    max-width:100%;
+  height:auto
+}
+
+.sponsors {
+  width: 100%;  
+}
+
+.sponsor_row {    
+  width: 100%;
+}
+
+.sponsor_img {    
+  width: 16.6666667%; 
+  float:left;    
+}
+
+.sponsor_img img{   
+  max-width:100%;
+  height:auto
+}
+
+.clear {
+    clear:both;
+}
+
+.clear.extra_space {
+    height: 20px;
+}
+
+.line_divider {
+    border-top: 1px solid #d3d3d3;
+    width: 98%;
+    margin: auto;
+}
+
+.copyright{
+  color: #888888;
+  font-size: 13px;
+  text-align: center !important;
+}
+
+
+.copyright a{
+  color: #d2ebe3;
+  border-bottom: dotted 1px #a5d8c7;
+}
+
+.PP {
+    font-family: georgia;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: left;
+}
+
+
+.ArticleHead{
+  font-family: 'Tempus Sans ITC',georgia !important;
+  font-size: 40px !important;
+  font-weight: 800 !important;
+  color: #56A36C !important;
+  text-align: center !important;
+    margin-bottom: 0 !important;
+    /*margin-top: .6em !important;*/
+}
+
+.H3Head{
+  font-family: 'Tempus Sans ITC',georgia !important;
+  color: #FEC43E !important;
+  font-size: 25px !important;
+  font-weight: 400 !important;
+  text-align: left !important;
+    margin-bottom: 0 !important;
+    margin-top:.6em !important;
+}
+
+.PP{
+  font-family:Tahoma, Geneva, sans-serif !important;
+  font-size: 20px !important;
+  font-weight: 100 !important;
+  text-align: left !important;
+}
+
+
+.Retract{
+  padding-left: 50px;
+}
+
+.GreenAH{
+color: #56A36C;
+}
+
+.YellowAH{
+    color: #FEC43E;
+}
+
+.contentLi{
+    margin:0;
+    font-size:17px;
+    line-height: 27px;
+    padding-bottom: 20px;
+    color: #111111;
+}
+
+h2{
+  font-family: 'Tempus Sans ITC';
+  font-weight: 500;
+  font-size: 35px;
+  text-align: left;
+}
+
+h3{
+  font-family: 'Tempus Sans ITC';
+  font-weight: 500;
+  font-size: 32px;
+  text-align: left;
+}
+
+h4{
+  font-family: 'Tempus Sans ITC';
+  font-weight: 500;
+  font-size: 28px;
+  text-align: left;
+}
+
+h5{
+  font-family: 'Tempus Sans ITC';
+  font-weight: 500;
+  font-size: 25px;
+  text-align: left;
+}
+
+p{
+  margin:0;
+  font-size:17px;
+  line-height: 30px;
+  /*padding-bottom: 20px;*/
+  color: #111111;
+}
+
+.bs-docs-sidenav
+{
+    font-family:Tahoma, Geneva, sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 100 !important;
+    text-align: left !important;
+}
+
+
+.textli li{
+    font-family:Tahoma, Geneva, sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 100 !important;
+    text-align: left !important;
+}
+
+.nonStyleTable
+{
+    background: transparent !important;
+    border:none !important;
+}
+
+.textimg{
+    /*width:50%;*/
+    /*margin-top: 20px;*/
+    /*padding-bottom: 20px;*/
+    text-align: center;
+}
+
+
+
+/*老姜要好看一点的表格*/
+.tableNice thead, .tableNice tr {
+    text-align: center;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #b1c6d9;
+}
+.tableNice {
+    width: auto;
+    margin-left: 30%;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #D0E9FF;
+}
+
+/* Padding and font style */
+.tableNice td, .tableNice th {
+    padding: 5px 10px;
+    font-size: 12px;
+
+    color: #00343F;
+}
+
+/* Alternating background colors */
+.tableNice tr:nth-child(even) {
+    background: transparent;
+
+}
+.tableNice tr:nth-child(odd) {
+    background: #EBFFFF;
+}
+
+.tableOuter
+{
+    align: center;
+    text-align: left;
+}
+
+.ref
+{
+    font-size: 16px !important;
+    line-height:22px !important;
+    margin-bottom: 5px !important;
+    color: #353535;
+}
+
+#bronze
+{
+    color: #997509 !important;
+}
+#silver
+{
+    color: #778899 !important;
+}
+#gold
+{
+    color: gold !important;
+}
+/*老姜要好看一点的表格止*/
+/*文中自定义*/
+</style>
+
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <div class="page-loader"></div>
+      <!-- Docs master nav -->
+                  <!-- <h1><a class="navbar-brand" href="index.html">MuMei Lab</a></h1> -->
+
+  <div class="container">
+      <!-- header -->
+      <div class="header-w3layouts">
+          <!-- Navigation -->
+          <nav class="navbar navbar-default navbar-fixed-top">
+              <div class="navbar-header page-scroll">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                  </button>
+
+                  <a href="http://2017.igem.org/Team:ZJU-China">
+                      <img style="margin-top:11px" class="navbar-brand"  src="http://2017.igem.org/wiki/images/d/d5/ZJUChina_logo.png">
+                  </a>
+
+                  <!-- <h1><a class="navbar-brand" href="index.html">My Design</a></h1> -->
+
+              </div>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse navbar-ex1-collapse">
+                  <ul class="nav navbar-nav navbar-right cl-effect-15">
+                      <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                      <li class="hidden"><a class="page-scroll" href="#page-top"></a> </li>
+
+                      <li class="m_nav_item dropdown">
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Overview<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Overview">Description</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Demonstrate">Demonstrate</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Applied_Design">Applied Design</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Achievements">Achievements</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Improve">Improve Parts</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/InterLab">InterLab</a></li>
+
+                          </ul>
+                      </li>
+
+                      <li class="m_nav_item dropdown">
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Project<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Project/tp">Trichoderma Proof</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Project/voc">VOC sensors</a></li>
+                              <li><a style="font-size: 0.7em!important;" href="http://2017.igem.org/Team:ZJU-China/Project/st">Chemical Signal Transduction</a></li>
+                              <li><a style="font-size: 0.7em!important;" href="http://2017.igem.org/Team:ZJU-China/Project/mt">Medium Wave Transduction</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Project/Downstream">Downstream</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Project/conclusion">Conclusions</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Notebook">Notebook</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Protocols">Protocols</a></li>
+                          </ul>
+                      </li>
+
+                      <li class="m_nav_item dropdown" >
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Model<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+                              <!--<li><a href="http://2017.igem.org/Team:ZJU-China/Model">Summery</a></li>-->
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Model">VOC analysis</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Model/Coculture">Coculture</a></li>
+
+                          </ul>
+                      </li>
+
+                      <li class="m_nav_item dropdown">
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Parts<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Parts">All Parts</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Basic_Part">Basic Parts</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Composite_Part">Composite Parts</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Part_Collection">Part Collection</a></li>
+
+
+
+
+                          </ul>
+                      </li>
+
+                      <li class="m_nav_item dropdown" >
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Hardware<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Hardware">Overview</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Hardware/Device">Device</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Hardware/Improvements">Improvements</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Hardware/MediumWave">Medium Wave</a></li>
+                          </ul>
+                      </li>
+
+                      <li class="m_nav_item dropdown" >
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Safety<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Safety">Environment</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Safety/Lab">Laboratory</a></li>
+                          </ul>
+                      </li>
+
+                      <li class="m_nav_item dropdown">
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">HP<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Human_Practices">Summary</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/HP/Silver">Silver</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/HP/Gold_Integrated">Gold Integrated</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Engagement">Engagement</a></li>
+                          </ul>
+                      </li>
+
+                      <li class="m_nav_item dropdown" >
+                          <a href="#" class="dropdown-toggle link" data-toggle="dropdown">Team<b class="caret"></b></a>
+                          <ul class="dropdown-menu ">
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Team">Teammates</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Attributions">Attribution</a></li>
+                              <li><a href="http://2017.igem.org/Team:ZJU-China/Collaborations">Collaboration</a></li>
+                          </ul>
+                      </li>
+                  </ul>
+              </div>
+          </nav>
+      </div>
+  </div>
+<p></p>
+<div style="margin-top:0;padding-top:0">
+  <img src="http://2017.igem.org/wiki/images/5/53/ZJU_China_Medals_head.jpg" width="100%">
+  <!-- <img src="images/HP_temp/banner.jpg" width="100%"> -->
+</div>
+
+
+<div style="width: 100%" class="container zjuContent">
+  <div class="col-md-3"></div>
+    <div class="col-md-9" role="main">
+      <div class="bs-docs-section">
+
+          <h1 class="page-header ArticleHead GreenAH">Achievements</h1>
+
+          <h1 id="bronze" style="margin-top:60px !important;" class="ArticleHead bronze col-md-9 col-sm-9">BRONZE</h1>
+          <img class="col-md-3 col-sm-3" src="http://2017.igem.org/wiki/images/1/19/ZJU_China_Medals_bronze.png">
+
+          
+          <div style="display:inline;height: 20px !important; width: 20px !important;"><img class="col-md-1" style="margin-bottom: 0 !important;height: 1.4em; width: auto;" src="http://2017.igem.org/wiki/images/6/63/ZJU_China_yes.png"></div>
+          <p class="PP col-md-11" style="display: inline;">We have registered our team. <a class="cite" href="http://igem.org/Team.cgi?team_id=2207" target="_black">See our Team List.</a></p>
+          
+          <div style="display:inline;height: 20px !important; width: 20px !important;"><img class="col-md-1" style="margin-bottom: 0 !important;height: 1.4em; width: auto;" src="http://2017.igem.org/wiki/images/6/63/ZJU_China_yes.png"></div>
+          <p class="PP col-md-11" style="display: inline;">We have set up a team wiki.
+
+          <div style="display:inline;height: 20px !important; width: 20px !important;"><img class="col-md-1" style="margin-bottom: 0 !important;height: 1.4em; width: auto;" src="http://2017.igem.org/wiki/images/6/63/ZJU_China_yes.png"></div>
+          <p class="PP col-md-11" style="display: inline;">We have completed the judging form.</p>
+
+          <div style="display:inline;height: 20px !important; width: 20px !important;"><img class="col-md-1" style="margin-bottom: 0 !important;height: 1.4em; width: auto;" src="http://2017.igem.org/wiki/images/6/63/ZJU_China_yes.png"></div>
+          <p class="PP col-md-11" style="display: inline;">We have prepared a poster and a presentation, which we will be presenting at the Jamboree.</p>
+
+          <div style="display:inline;height: 20px !important; width: 20px !important;"><img class="col-md-1" style="margin-bottom: 0 !important;height: 1.4em; width: auto;" src="http://2017.igem.org/wiki/images/6/63/ZJU_China_yes.png"></div>
+          <p class="PP col-md-11" style="display: inline;">We have designed several new biobricks. <a class="cite" href="http://2017.igem.org/Team:ZJU-China/Parts" target="_black">See our Parts</a></p>
+
+          <div style="display:inline;height: 20px !important; width: 20px !important;"><img class="col-md-1" style="margin-bottom: 0 !important;height: 1.4em; width: auto;" src="http://2017.igem.org/wiki/images/6/63/ZJU_China_yes.png"></div>
+          <p class="PP col-md-11" style="display: inline;">We have completed the safety form.<a class="cite" href="http://2017.igem.org/Team:ZJU-China/Safety" target="_black">See our Safety</a></p>
+
+          <div style="display:inline;height: 20px !important; width: 20px !important;"><img class="col-md-1" style="margin-bottom: 0 !important;height: 1.4em; width: auto;" src="http://2017.igem.org/wiki/images/6/63/ZJU_China_yes.png"></div>
+          <p class="PP col-md-11" style="display: inline;">We have created a page on our team wiki with clear attribution of each aspect of our project.</p>
+
+          <div style="display:inline;height: 20px !important; width: 20px !important;"><img class="col-md-1" style="margin-bottom: 0 !important;height: 1.4em; width: auto;" src="http://2017.igem.org/wiki/images/6/63/ZJU_China_yes.png"></div>
+          <p class="PP col-md-11" style="display: inline;">We participated in the Interlab Measurement Study and met all the Interlab Requirement. <a class="cite" href="http://2017.igem.org/Team:ZJU-China/InterLab" target="_black">See our interlab measurement</a>.</p>
+
+
+          <h1 id="silver" style="margin-top:60px !important;"  class="ArticleHead silver col-md-9 col-sm-9">SILVER</h1>
+          <img class="col-md-3 col-sm-3" src="http://2017.igem.org/wiki/images/f/f3/ZJU_China_Medals_silver.png">
+
+          <div style="display:inline;height: 20px !important; width: 20px !important;"><img class="col-md-1" style="margin-bottom: 0 !important;height: 1.4em; width: auto;" src="http://2017.igem.org/wiki/images/6/63/ZJU_China_yes.png"></div>
+          <p class="PP col-md-11" style="display: inline;">Several of our BioBricks work as expected. For example, <a class="cite" href="http://parts.igem.org/Part:BBa_K2207997" target="_black">BBa_K2207997</a>, <a class="cite" href="http://parts.igem.org/Part:BBa_K2207021" target="_black">BBa_K2207021</a>, <a class="cite" href="http://parts.igem.org/Part:BBa_K2207023" target="_black">BBa_K2207023</a>, and they had been submitted as required</p>
+
+          <div style="display:inline;height: 20px !important; width: 20px !important;"><img class="col-md-1" style="margin-bottom: 0 !important;height: 1.4em; width: auto;" src="http://2017.igem.org/wiki/images/6/63/ZJU_China_yes.png"></div>
+          <p class="PP col-md-11" style="display: inline;">We have collaborated with UCAS, HFLS_H2Z_Hangzhou, UESTC, NEU-China. All of us have gained a lot. <a class="cite" href="http://2017.igem.org/Team:ZJU-China/Collaborations" target="_black">See our collaboration</a>.</p>
+
+          <div style="display:inline;height: 20px !important; width: 20px !important;"><img class="col-md-1" style="margin-bottom: 0 !important;height: 1.4em; width: auto;" src="http://2017.igem.org/wiki/images/6/63/ZJU_China_yes.png"></div>
+          <p class="PP col-md-11" style="display: inline;">We considered the biosafety problem and the ecological effect of our project and consulted same experts and professors for suggestions.  <a class="cite" href="http://2017.igem.org/Team:ZJU-China/HP/Silver" target="_black">See our HP silver</a></p>
+
+          
+          <h1 id="gold" style="margin-top:60px !important;" class="ArticleHead gold col-md-9 col-sm-9">GOLD</h1>
+          <img class="col-md-3 col-sm-3" src="http://2017.igem.org/wiki/images/8/8a/ZJU_China_Medals_gold.png">
+          
+          <div style="display:inline;height: 20px !important; width: 20px !important;"><img class="col-md-1" style="margin-bottom: 0 !important;height: 1.4em; width: auto;" src="http://2017.igem.org/wiki/images/6/63/ZJU_China_yes.png"></div>
+          <p class="PP col-md-11" style="display: inline;">We have integrated the investigated issues into our design and execution of our project. <a class="cite" href="http://2017.igem.org/Team:ZJU-China/HP/Gold_Integrated" target="_black">See our integrated HP</a></p>
+
+          <div style="display:inline;height: 20px !important; width: 20px !important;"><img class="col-md-1" style="margin-bottom: 0 !important;height: 1.4em; width: auto;" src="http://2017.igem.org/wiki/images/6/63/ZJU_China_yes.png"></div>
+          <p class="PP col-md-11" style="display: inline;">We have optimized the part BBa_K525998 and submitted several new parts. <a class="cite" href="http://2017.igem.org/Team:ZJU-China/Improve" target="_black">See our improve parts</a></p>
+
+          <div style="display:inline;height: 20px !important; width: 20px !important;"><img class="col-md-1" style="margin-bottom: 0 !important;height: 1.4em; width: auto;" src="http://2017.igem.org/wiki/images/6/63/ZJU_China_yes.png"></div>
+          <p class="PP col-md-11" style="display: inline;">We constructed a model to tell the physiological state of tobaccos which has contributed a lot to our project. <a class="cite" href="http://2017.igem.org/Team:ZJU-China/Model" target="_black">See our model</a></p>
+
+          <div style="display:inline;height: 20px !important; width: 20px !important;"><img class="col-md-1" style="margin-bottom: 0 !important;height: 1.4em; width: auto;" src="http://2017.igem.org/wiki/images/6/63/ZJU_China_yes.png"></div>
+          <p class="PP col-md-11" style="display: inline;">We tried to demonstrate that each part of our project work well. <a class="cite" href="http://2017.igem.org/Team:ZJU-China/Demonstrate" target="_black">See our demonstration</a></p>
+
+          
+
+
+        <h1 id="prize" style="margin-top:60px !important;" class="ArticleHead col-md-9 col-sm-9">For Prize</h1>
+        <img class="col-md-3 col-sm-3" src="http://2017.igem.org/wiki/images/0/01/ZJU_China_Achievement_cup.png">
+
+          <div style="display:inline;height: 20px !important; width: 20px !important;"><img class="col-md-1" style="margin-bottom: 0 !important;height: 1.4em; width: auto;" src="http://2017.igem.org/wiki/images/6/63/ZJU_China_yes.png"></div>
+          <p class="PP col-md-11" style="display: inline;">We engaged with stakeholders as well as experts, and did field study etc., which as a whole helped us to design and improve our project.  <a class="cite" href="http://2017.igem.org/Team:ZJU-China/HP/Gold_Integrated" target="_black">More details for Integrated Human Practice</a></p>
+
+          <div style="display:inline;height: 20px !important; width: 20px !important;"><img class="col-md-1" style="margin-bottom: 0 !important;height: 1.4em; width: auto;" src="http://2017.igem.org/wiki/images/6/63/ZJU_China_yes.png"></div>
+          <p class="PP col-md-11" style="display: inline;">We made a lot of connection with public, especially teenagers, through activities like garden party, open house day, project-related computer game and so on. <a class="cite" href="http://2017.igem.org/Team:ZJU-China/Engagement" target="_black">More details for Public Engagement</a></p>
+
+          <div style="display:inline;height: 20px !important; width: 20px !important;"><img class="col-md-1" style="margin-bottom: 0 !important;height: 1.4em; width: auto;" src="http://2017.igem.org/wiki/images/6/63/ZJU_China_yes.png"></div>
+          <p class="PP col-md-11" style="display: inline;">We apply mathematical models and computer simulations on our project and help our project more perfect. <a class="cite" href="http://2017.igem.org/Team:ZJU-China/Model" target="_black">More details for modeling</a></p>
+
+          <div style="display:inline;height: 20px !important; width: 20px !important;"><img class="col-md-1" style="margin-bottom: 0 !important;height: 1.4em; width: auto;" src="http://2017.igem.org/wiki/images/6/63/ZJU_China_yes.png"></div>
+          <p class="PP col-md-11" style="display: inline;">We have come up with a detailed design to provid some ways for the development of modern agriculture. <a class="cite" href="http://2017.igem.org/Team:ZJU-China/Applied_Design" target="_black">More details for Applied Design</a></p>
+
+          <div style="display:inline;height: 20px !important; width: 20px !important;"><img class="col-md-1" style="margin-bottom: 0 !important;height: 1.4em; width: auto;" src="http://2017.igem.org/wiki/images/6/63/ZJU_China_yes.png"></div>
+          <p class="PP col-md-11" style="display: inline;">We have designed a complete set of devices to achieve the automatic agriculture, and build up  interactions between people and plants. <a class="cite" href="http://2017.igem.org/Team:ZJU-China/Hardware" target="_black">More details for Hardware</a></p>
+
+          
+          
+          </br></br></br>
+
+
+
+      </div>
+
+
+
+<!-- 右侧监听开始 -->
+<div class="col-md-3 disappear-on-top" role="complementary">
+  <nav  style="position: fixed; top: 100px ; left:50px; " class="bs-docs-sidebar hidden-print hidden-xs hidden-sm">
+    <ul class="nav bs-docs-sidenav shorterli">
+      <li><a href="#bronze">Brzone</a></li>
+        <li><a href="#silver">Silver</a></li>
+        <li><a href="#gold">Gold</a></li>
+        <li><a href="#prize">Prize</a></li>
+    </ul>
+
+  <a class="back-to-top" href="#top">
+  <!--   <i class="fa fa-arrow-up nav_icon"></i> -->
+    <img style="width: 50px;" src="http://2017.igem.org/wiki/images/d/da/ZJU_China_UP.png">
+  </a>
+
+            
+          </nav>
+        </div>
+        
+      </div>
+</div>
+<!-- 右侧监听结束 -->
+<!-- footer开始 -->
+<div class="footer"  style="background-color: #000000">
+  <div class="copyright container text-center">
+      <p><br></p>
+    <p class="copyright">Copyright &copy; 2017 ZJU-IGEM | <a href="http://www.zju.edu.cn/">Zhejiang University</a> |</p>
+    <p><br></p>
+  </div>
+</div>
+<!-- footer结束 -->
+
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <!--script src="js/bootstrap.min.js"></script-->
+  <script src="http://2017.igem.org/wiki/images/8/85/ZJUChina_js_docsmin.txt"></script>
+  <!--script src="js/button.js"></script-->
+  <script src="http://2017.igem.org/wiki/images/2/22/ZJUChina_bootstrap.min.txt"></script>
+  <script src="http://2017.igem.org/wiki/images/3/32/ZJUChina_docs.min.txt"></script>
+  <script src="http://2017.igem.org/wiki/images/e/e0/ZJUChina_button.txt"></script>
+
+  <!--<script src="js/scrolling-nav.js"></script>-->
+  <script src="http://2017.igem.org/Zju/js/scrollingnav?action=raw&ctype=text/javascript"></script>
+  <script src="http://2017.igem.org/wiki/images/c/c0/ZJUChina_txtSmoothScroll.min.txt"></script>
+
+  </body>
+</html>
